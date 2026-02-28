@@ -1,0 +1,14 @@
+{
+  "name": "Asegúrate – Protección Patrimonial",
+  "short_name": "Asegúrate",
+  "description": "La primera empresa en Uruguay especializada en blindaje empresarial a través de estructuras aseguradas.",
+  "icons": [
+    { "src": "/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "theme_color": "#155dfc",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "/",
+  "lang": "es"
+}
