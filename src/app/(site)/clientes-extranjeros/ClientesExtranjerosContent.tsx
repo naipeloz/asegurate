@@ -12,7 +12,18 @@ const ICONS = {
   Seguridad: '/brand/icons/Seguridad.svg',
 }
 
-// ─── Translations ──────────────────────────────────────────────────────────────
+// ─── Color tokens ───────────────────────────────────────────────────────────────
+// Primary bg:    #303E60  (brand slate blue)
+// Deeper bg:     #273050  (alternating sections)
+// Deepest bg:    #040C1F  (CTA, footer-level)
+// Card surface:  rgba(255,255,255,0.07)  +  border rgba(255,255,255,0.12)
+// Headings:      white
+// Body:          rgba(255,255,255,0.75)
+// Gold accent:   #C6A23A  (primary brand gold)
+// Gold hover:    #816828
+// Icons:         brightness-0 invert (black SVG → white) on bg-white/10
+
+// ─── Translations ───────────────────────────────────────────────────────────────
 
 const content = {
   es: {
@@ -152,7 +163,7 @@ const content = {
   },
 }
 
-// ─── Icons ─────────────────────────────────────────────────────────────────────
+// ─── Icons ──────────────────────────────────────────────────────────────────────
 
 function CalendarIcon({ size = 20 }: { size?: number }) {
   return (
@@ -183,24 +194,32 @@ export default function ClientesExtranjerosContent() {
 
   return (
     <>
-      {/* ─── HERO ─── */}
-      <section id="inicio" className="pt-20 bg-white">
+      {/* ─── HERO — primary slate ─── */}
+      <section id="inicio" className="pt-20 bg-[#303E60]">
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8 py-20 lg:py-28">
           <div className="max-w-3xl mx-auto text-center">
+
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 bg-white border text-[#C6A23A] text-sm font-semibold px-4 py-2 rounded-full shadow-sm mb-8 border-[#C6A23A]/30">
+            <div
+              className="inline-flex items-center gap-2 text-[#C6A23A] text-sm font-semibold px-4 py-2 rounded-full mb-8 backdrop-blur-sm"
+              style={{
+                backgroundColor: 'rgba(198,162,58,0.15)',
+                border: '1px solid rgba(198,162,58,0.40)',
+              }}
+            >
               <GlobeIcon size={16} />
               {t.hero.badge}
             </div>
 
-            <h1 className="font-bold text-4xl lg:text-6xl leading-tight mb-6 text-[#040C1F]">
+            <h1 className="font-bold text-4xl lg:text-6xl leading-tight mb-6 text-white">
               {t.hero.h1}
             </h1>
-            <p className="text-xl lg:text-2xl leading-relaxed mb-10 text-[#303E60]">
+            <p className="text-xl lg:text-2xl leading-relaxed mb-10 text-white/75">
               {t.hero.subtitle}
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              {/* Primary gold button */}
               <a
                 href="/#contacto"
                 className="flex items-center gap-2 bg-[#C6A23A] hover:bg-[#816828] text-[#040C1F] font-semibold text-base px-8 py-4 rounded-[10px] shadow-lg transition-colors"
@@ -208,9 +227,10 @@ export default function ClientesExtranjerosContent() {
                 <CalendarIcon size={20} />
                 {t.hero.cta1}
               </a>
+              {/* Outline white button */}
               <a
                 href="/#contacto"
-                className="font-semibold text-base text-[#C6A23A] border-2 border-[#C6A23A] px-8 py-4 rounded-[10px] hover:bg-[#C6A23A]/10 transition-colors"
+                className="font-semibold text-base text-white border-2 border-white/50 px-8 py-4 rounded-[10px] hover:bg-white/10 transition-colors"
               >
                 {t.hero.cta2}
               </a>
@@ -219,17 +239,23 @@ export default function ClientesExtranjerosContent() {
         </div>
       </section>
 
-      {/* ─── INTRO CARD ─── */}
-      <section className="bg-white py-16">
+      {/* ─── INTRO CARD — deeper slate ─── */}
+      <section className="py-16 bg-[#273050]">
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
-          <div className="bg-white border border-[#e5e7eb] rounded-2xl shadow-sm max-w-4xl mx-auto px-10 lg:px-16 py-12">
-            <h2 className="font-bold text-2xl lg:text-3xl mb-5 text-[#040C1F]">
+          <div
+            className="rounded-2xl max-w-4xl mx-auto px-10 lg:px-16 py-12"
+            style={{
+              backgroundColor: 'rgba(255,255,255,0.06)',
+              border: '1px solid rgba(255,255,255,0.12)',
+            }}
+          >
+            <h2 className="font-bold text-2xl lg:text-3xl mb-5 text-white">
               {t.intro.heading}
             </h2>
-            <p className="text-lg leading-relaxed mb-4 text-[#303E60]">
+            <p className="text-lg leading-relaxed mb-4 text-white/75">
               {t.intro.p1}
             </p>
-            <p className="text-lg leading-relaxed text-[#303E60]">
+            <p className="text-lg leading-relaxed text-white/75">
               {t.intro.p2}{' '}
               <span className="font-semibold text-[#C6A23A]">USD 1.200.000</span>{' '}
               {t.intro.p2suffix}
@@ -238,55 +264,78 @@ export default function ClientesExtranjerosContent() {
         </div>
       </section>
 
-      {/* ─── BENEFITS ─── */}
-      <section className="bg-[#f9fafb] py-20">
+      {/* ─── BENEFITS — primary slate ─── */}
+      <section className="py-20 bg-[#303E60]">
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-bold text-4xl lg:text-5xl mb-4 text-[#040C1F]">
+            <h2 className="font-bold text-4xl lg:text-5xl mb-4 text-white">
               {t.benefits.heading}
             </h2>
-            <p className="text-lg text-[#303E60]">{t.benefits.subtitle}</p>
+            <p className="text-lg text-white/70">{t.benefits.subtitle}</p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             {t.benefits.cards.map((b) => (
-              <div key={b.title} className="bg-white border border-[#e5e7eb] rounded-[14px] p-8">
-                <div className="bg-[#f5edd6] w-14 h-14 rounded-[10px] flex items-center justify-center mb-6">
-                  <img src={b.icon} alt="" className="w-7 h-7" />
+              <div
+                key={b.title}
+                className="rounded-[14px] p-8"
+                style={{
+                  backgroundColor: 'rgba(255,255,255,0.07)',
+                  border: '1px solid rgba(255,255,255,0.12)',
+                }}
+              >
+                {/* White glass icon container, icon inverted to white */}
+                <div
+                  className="w-14 h-14 rounded-[10px] flex items-center justify-center mb-6"
+                  style={{ backgroundColor: 'rgba(255,255,255,0.12)' }}
+                >
+                  <img src={b.icon} alt="" className="w-7 h-7 brightness-0 invert" />
                 </div>
-                <h3 className="font-semibold text-xl mb-3 text-[#040C1F]">{b.title}</h3>
-                <p className="text-base leading-relaxed text-[#303E60]">{b.desc}</p>
+                <h3 className="font-semibold text-xl mb-3 text-white">{b.title}</h3>
+                <p className="text-base leading-relaxed text-white/70">{b.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ─── ¿POR QUÉ URUGUAY? ─── */}
-      <section className="bg-white py-20">
+      {/* ─── ¿POR QUÉ URUGUAY? — deeper slate ─── */}
+      <section className="py-20 bg-[#273050]">
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-bold text-4xl lg:text-5xl mb-4 text-[#040C1F]">
+            <h2 className="font-bold text-4xl lg:text-5xl mb-4 text-white">
               {t.why.heading}
             </h2>
-            <p className="text-lg max-w-2xl mx-auto text-[#303E60]">{t.why.subtitle}</p>
+            <p className="text-lg max-w-2xl mx-auto text-white/70">{t.why.subtitle}</p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {t.why.cards.map((card) => (
-              <div key={card.title} className="bg-white border border-[#e5e7eb] rounded-[14px] p-8">
-                <div className="bg-[#f5edd6] w-12 h-12 rounded-[10px] flex items-center justify-center mb-5">
-                  <img src={card.icon} alt="" className="w-6 h-6" />
+              <div
+                key={card.title}
+                className="rounded-[14px] p-8"
+                style={{
+                  backgroundColor: 'rgba(255,255,255,0.07)',
+                  border: '1px solid rgba(255,255,255,0.12)',
+                }}
+              >
+                {/* Gold-tinted icon container */}
+                <div
+                  className="w-12 h-12 rounded-[10px] flex items-center justify-center mb-5"
+                  style={{ backgroundColor: 'rgba(198,162,58,0.20)' }}
+                >
+                  <img src={card.icon} alt="" className="w-6 h-6 brightness-0 invert" />
                 </div>
+                {/* Gold titles for "Why Uruguay" cards */}
                 <h3 className="font-bold text-xl mb-3 text-[#C6A23A]">{card.title}</h3>
-                <p className="text-base leading-relaxed text-[#303E60]">{card.desc}</p>
+                <p className="text-base leading-relaxed text-white/70">{card.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ─── CTA — dark institutional ─── */}
+      {/* ─── CTA — deepest navy ─── */}
       <section className="py-20 bg-[#040C1F]">
         <div className="max-w-[896px] mx-auto px-6 text-center">
           <h2 className="font-bold text-4xl lg:text-5xl mb-5 text-white">

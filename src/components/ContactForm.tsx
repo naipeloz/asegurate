@@ -29,29 +29,34 @@ export default function ContactForm() {
   if (submitted) {
     return (
       <div className="flex flex-col items-center justify-center h-full min-h-[300px] text-center gap-4">
-        {/* Success icon — gold on light gold bg */}
-        <div className="w-16 h-16 rounded-full flex items-center justify-center" style={{ backgroundColor: '#f5edd6' }}>
+        {/* Success icon — gold on glass bg */}
+        <div
+          className="w-16 h-16 rounded-full flex items-center justify-center"
+          style={{ backgroundColor: 'rgba(255,255,255,0.12)' }}
+        >
           <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#C6A23A" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
             <polyline points="20 6 9 17 4 12" />
           </svg>
         </div>
-        <h4 className="font-bold text-xl" style={{ color: '#040C1F' }}>¡Consulta enviada!</h4>
-        <p className="text-sm" style={{ color: '#303E60' }}>Nos pondremos en contacto con usted a la brevedad.</p>
+        <h4 className="font-bold text-xl text-white">¡Consulta enviada!</h4>
+        <p className="text-sm" style={{ color: 'rgba(255,255,255,0.70)' }}>
+          Nos pondremos en contacto con usted a la brevedad.
+        </p>
       </div>
     )
   }
 
   const inputClass = `w-full border rounded-[8px] px-3 py-2 text-sm outline-none transition-colors`
   const inputStyle = {
-    borderColor: '#d1d5dc',
-    color: '#040C1F',
+    backgroundColor: 'rgba(255,255,255,0.08)',
+    borderColor: 'rgba(255,255,255,0.20)',
+    color: 'white',
   }
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-5">
-      {/* Label style: brand near-black */}
       <div className="flex flex-col gap-2">
-        <label className="text-sm font-medium" style={{ color: '#141414' }}>Nombre Completo *</label>
+        <label className="text-sm font-medium text-white">Nombre Completo *</label>
         <input
           type="text"
           required
@@ -60,11 +65,11 @@ export default function ContactForm() {
           className={inputClass}
           style={inputStyle}
           onFocus={(e) => { e.target.style.borderColor = '#C6A23A'; e.target.style.boxShadow = '0 0 0 2px rgba(198,162,58,0.2)' }}
-          onBlur={(e) => { e.target.style.borderColor = '#d1d5dc'; e.target.style.boxShadow = 'none' }}
+          onBlur={(e) => { e.target.style.borderColor = 'rgba(255,255,255,0.20)'; e.target.style.boxShadow = 'none' }}
         />
       </div>
       <div className="flex flex-col gap-2">
-        <label className="text-sm font-medium" style={{ color: '#141414' }}>Correo Electrónico *</label>
+        <label className="text-sm font-medium text-white">Correo Electrónico *</label>
         <input
           type="email"
           required
@@ -73,11 +78,11 @@ export default function ContactForm() {
           className={inputClass}
           style={inputStyle}
           onFocus={(e) => { e.target.style.borderColor = '#C6A23A'; e.target.style.boxShadow = '0 0 0 2px rgba(198,162,58,0.2)' }}
-          onBlur={(e) => { e.target.style.borderColor = '#d1d5dc'; e.target.style.boxShadow = 'none' }}
+          onBlur={(e) => { e.target.style.borderColor = 'rgba(255,255,255,0.20)'; e.target.style.boxShadow = 'none' }}
         />
       </div>
       <div className="flex flex-col gap-2">
-        <label className="text-sm font-medium" style={{ color: '#141414' }}>Teléfono</label>
+        <label className="text-sm font-medium text-white">Teléfono</label>
         <input
           type="tel"
           value={form.telefono}
@@ -85,11 +90,11 @@ export default function ContactForm() {
           className={inputClass}
           style={inputStyle}
           onFocus={(e) => { e.target.style.borderColor = '#C6A23A'; e.target.style.boxShadow = '0 0 0 2px rgba(198,162,58,0.2)' }}
-          onBlur={(e) => { e.target.style.borderColor = '#d1d5dc'; e.target.style.boxShadow = 'none' }}
+          onBlur={(e) => { e.target.style.borderColor = 'rgba(255,255,255,0.20)'; e.target.style.boxShadow = 'none' }}
         />
       </div>
       <div className="flex flex-col gap-2">
-        <label className="text-sm font-medium" style={{ color: '#141414' }}>Empresa</label>
+        <label className="text-sm font-medium text-white">Empresa</label>
         <input
           type="text"
           value={form.empresa}
@@ -97,11 +102,11 @@ export default function ContactForm() {
           className={inputClass}
           style={inputStyle}
           onFocus={(e) => { e.target.style.borderColor = '#C6A23A'; e.target.style.boxShadow = '0 0 0 2px rgba(198,162,58,0.2)' }}
-          onBlur={(e) => { e.target.style.borderColor = '#d1d5dc'; e.target.style.boxShadow = 'none' }}
+          onBlur={(e) => { e.target.style.borderColor = 'rgba(255,255,255,0.20)'; e.target.style.boxShadow = 'none' }}
         />
       </div>
       <div className="flex flex-col gap-2">
-        <label className="text-sm font-medium" style={{ color: '#141414' }}>Mensaje *</label>
+        <label className="text-sm font-medium text-white">Mensaje *</label>
         <textarea
           required
           rows={3}
@@ -110,7 +115,7 @@ export default function ContactForm() {
           className={`${inputClass} resize-none`}
           style={inputStyle}
           onFocus={(e) => { e.target.style.borderColor = '#C6A23A'; e.target.style.boxShadow = '0 0 0 2px rgba(198,162,58,0.2)' }}
-          onBlur={(e) => { e.target.style.borderColor = '#d1d5dc'; e.target.style.boxShadow = 'none' }}
+          onBlur={(e) => { e.target.style.borderColor = 'rgba(255,255,255,0.20)'; e.target.style.boxShadow = 'none' }}
         />
       </div>
 

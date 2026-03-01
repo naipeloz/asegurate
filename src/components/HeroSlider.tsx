@@ -153,33 +153,36 @@ export default function HeroSlider() {
 
   return (
     <div
+      className="relative w-full overflow-hidden"
+      style={{ height: 'calc(100vh - 5rem)' }}
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
       onTouchStart={() => setPaused(true)}
       onTouchEnd={() => setPaused(false)}
     >
-      <div className="relative mx-6 lg:mx-[144px] mt-8 rounded-2xl overflow-hidden min-h-[580px] lg:min-h-[640px]">
-        {/* Background image */}
-        <img
-          src={imgHero}
-          alt="Punta del Este"
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-        {/* Gradient overlay — brand deep navy */}
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage:
-              'linear-gradient(90deg, rgba(4,12,31,0.92) 0%, rgba(4,12,31,0.68) 45%, rgba(4,12,31,0.10) 100%)',
-          }}
-        />
+      {/* Background image */}
+      <img
+        src={imgHero}
+        alt="Punta del Este"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
 
-        {/* Slide content with fade-in animation */}
-        <div
-          key={animKey}
-          className="hero-slide-enter relative h-full flex items-center pl-8 lg:pl-14 pr-8 lg:pr-[45%] py-16"
-        >
-          <div className="w-full">
+      {/* Gradient overlay — brand deep navy */}
+      <div
+        className="absolute inset-0"
+        style={{
+          backgroundImage:
+            'linear-gradient(90deg, rgba(4,12,31,0.92) 0%, rgba(4,12,31,0.68) 50%, rgba(4,12,31,0.10) 100%)',
+        }}
+      />
+
+      {/* Slide content with fade-in animation */}
+      <div
+        key={animKey}
+        className="hero-slide-enter relative h-full flex items-center"
+      >
+        <div className="w-full max-w-[1280px] mx-auto px-8 lg:px-16">
+          <div className="max-w-[620px]">
             {/* Badge — gold tint */}
             <span
               className="inline-block text-sm font-semibold px-4 py-1.5 rounded-full mb-6 backdrop-blur-sm border"
@@ -227,43 +230,43 @@ export default function HeroSlider() {
             </div>
           </div>
         </div>
+      </div>
 
-        {/* Prev arrow */}
-        <button
-          onClick={goPrev}
-          aria-label="Anterior"
-          className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm text-white hover:bg-white/35 transition-colors flex items-center justify-center border border-white/30"
-        >
-          <ChevronLeft />
-        </button>
+      {/* Prev arrow */}
+      <button
+        onClick={goPrev}
+        aria-label="Anterior"
+        className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm text-white hover:bg-white/35 transition-colors flex items-center justify-center border border-white/30"
+      >
+        <ChevronLeft />
+      </button>
 
-        {/* Next arrow */}
-        <button
-          onClick={goNext}
-          aria-label="Siguiente"
-          className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm text-white hover:bg-white/35 transition-colors flex items-center justify-center border border-white/30"
-        >
-          <ChevronRight />
-        </button>
+      {/* Next arrow */}
+      <button
+        onClick={goNext}
+        aria-label="Siguiente"
+        className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm text-white hover:bg-white/35 transition-colors flex items-center justify-center border border-white/30"
+      >
+        <ChevronRight />
+      </button>
 
-        {/* Progress dots */}
-        <div className="absolute bottom-5 left-1/2 -translate-x-1/2 flex items-center gap-2">
-          {slides.map((_, i) => (
-            <button
-              key={i}
-              onClick={() => goTo(i)}
-              aria-label={`Ir a diapositiva ${i + 1}`}
-              className={`h-2 rounded-full transition-all duration-300 ${
-                i === current
-                  ? 'w-7'
-                  : 'w-2 hover:bg-white/70'
-              }`}
-              style={{
-                backgroundColor: i === current ? '#C6A23A' : 'rgba(255,255,255,0.45)',
-              }}
-            />
-          ))}
-        </div>
+      {/* Progress dots */}
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex items-center gap-2">
+        {slides.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => goTo(i)}
+            aria-label={`Ir a diapositiva ${i + 1}`}
+            className={`h-2 rounded-full transition-all duration-300 ${
+              i === current
+                ? 'w-7'
+                : 'w-2 hover:bg-white/70'
+            }`}
+            style={{
+              backgroundColor: i === current ? '#C6A23A' : 'rgba(255,255,255,0.45)',
+            }}
+          />
+        ))}
       </div>
     </div>
   )

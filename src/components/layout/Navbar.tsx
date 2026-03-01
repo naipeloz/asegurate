@@ -61,13 +61,16 @@ export default function Navbar() {
   const isActive = (section: string) => isHome && activeSection === section
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-[#e5e7eb] shadow-sm">
+    <nav
+      className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm border-b"
+      style={{ backgroundColor: 'rgba(4,12,31,0.96)', borderColor: 'rgba(255,255,255,0.08)' }}
+    >
       <div className="max-w-[1280px] mx-auto px-6 lg:px-8 h-20 flex items-center justify-between">
 
-        {/* Logo */}
+        {/* Logo — white variant */}
         <Link href="/" className="flex items-center shrink-0">
           <img
-            src="/brand/logo/Asegurate_Horizontal_Negro.svg"
+            src="/brand/logo/Asegurate_Horizontal_Blanco.svg"
             alt="Asegúrate"
             className="h-9"
           />
@@ -82,16 +85,16 @@ export default function Navbar() {
               className={`px-3.5 py-2 rounded-[10px] text-sm transition-colors whitespace-nowrap ${
                 isActive(link.section)
                   ? 'font-semibold'
-                  : 'font-medium text-[#303E60]'
+                  : 'font-medium text-white/70'
               }`}
               style={
                 isActive(link.section)
-                  ? { backgroundColor: 'rgba(198,162,58,0.10)', color: '#C6A23A' }
+                  ? { backgroundColor: 'rgba(198,162,58,0.15)', color: '#C6A23A' }
                   : undefined
               }
               onMouseEnter={(e) => {
                 if (!isActive(link.section)) {
-                  e.currentTarget.style.backgroundColor = 'rgba(198,162,58,0.08)'
+                  e.currentTarget.style.backgroundColor = 'rgba(198,162,58,0.10)'
                   e.currentTarget.style.color = '#C6A23A'
                 }
               }}
@@ -112,39 +115,37 @@ export default function Navbar() {
             className="px-3.5 py-2 rounded-[10px] text-sm font-semibold transition-colors whitespace-nowrap ml-1"
             style={
               isClientes
-                ? { backgroundColor: '#040C1F', color: '#C6A23A' }
-                : { backgroundColor: 'rgba(198,162,58,0.10)', color: '#C6A23A' }
+                ? { backgroundColor: 'rgba(198,162,58,0.20)', color: '#C6A23A' }
+                : { backgroundColor: 'rgba(198,162,58,0.12)', color: '#C6A23A' }
             }
             onMouseEnter={(e) => {
-              if (!isClientes) {
-                e.currentTarget.style.backgroundColor = 'rgba(198,162,58,0.18)'
-              }
+              e.currentTarget.style.backgroundColor = 'rgba(198,162,58,0.25)'
             }}
             onMouseLeave={(e) => {
-              if (!isClientes) {
-                e.currentTarget.style.backgroundColor = 'rgba(198,162,58,0.10)'
-              }
+              e.currentTarget.style.backgroundColor = isClientes
+                ? 'rgba(198,162,58,0.20)'
+                : 'rgba(198,162,58,0.12)'
             }}
           >
             {clientesLabel}
           </Link>
 
-          {/* Language toggle — shows the label of the OTHER language (click to switch TO it) */}
+          {/* Language toggle */}
           <button
             onClick={toggle}
             aria-label={lang === 'es' ? 'Mudar para Português' : 'Cambiar a Español'}
             title={lang === 'es' ? 'Mudar para Português' : 'Cambiar a Español'}
             className="flex items-center gap-1.5 px-3 py-2 rounded-[10px] text-sm font-semibold transition-colors ml-1 border"
-            style={{ color: '#303E60', borderColor: '#e5e7eb' }}
+            style={{ color: 'rgba(255,255,255,0.70)', borderColor: 'rgba(255,255,255,0.15)' }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.backgroundColor = 'rgba(198,162,58,0.08)'
+              e.currentTarget.style.backgroundColor = 'rgba(198,162,58,0.12)'
               e.currentTarget.style.color = '#C6A23A'
-              e.currentTarget.style.borderColor = '#C6A23A'
+              e.currentTarget.style.borderColor = 'rgba(198,162,58,0.40)'
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.backgroundColor = ''
-              e.currentTarget.style.color = '#303E60'
-              e.currentTarget.style.borderColor = '#e5e7eb'
+              e.currentTarget.style.color = 'rgba(255,255,255,0.70)'
+              e.currentTarget.style.borderColor = 'rgba(255,255,255,0.15)'
             }}
           >
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -152,7 +153,6 @@ export default function Navbar() {
               <line x1="2" y1="12" x2="22" y2="12" />
               <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
             </svg>
-            {/* Show the language you'll switch TO */}
             <span className="uppercase tracking-wide">{lang === 'es' ? 'PT' : 'ES'}</span>
           </button>
         </div>
@@ -163,26 +163,29 @@ export default function Navbar() {
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
-          <span className={`block w-6 h-0.5 transition-all duration-200 ${menuOpen ? 'rotate-45 translate-y-2' : ''}`} style={{ backgroundColor: '#141414' }} />
-          <span className={`block w-6 h-0.5 transition-all duration-200 ${menuOpen ? 'opacity-0' : ''}`} style={{ backgroundColor: '#141414' }} />
-          <span className={`block w-6 h-0.5 transition-all duration-200 ${menuOpen ? '-rotate-45 -translate-y-2' : ''}`} style={{ backgroundColor: '#141414' }} />
+          <span className={`block w-6 h-0.5 transition-all duration-200 ${menuOpen ? 'rotate-45 translate-y-2' : ''}`} style={{ backgroundColor: 'rgba(255,255,255,0.85)' }} />
+          <span className={`block w-6 h-0.5 transition-all duration-200 ${menuOpen ? 'opacity-0' : ''}`} style={{ backgroundColor: 'rgba(255,255,255,0.85)' }} />
+          <span className={`block w-6 h-0.5 transition-all duration-200 ${menuOpen ? '-rotate-45 -translate-y-2' : ''}`} style={{ backgroundColor: 'rgba(255,255,255,0.85)' }} />
         </button>
       </div>
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="lg:hidden bg-white border-t border-[#e5e7eb] px-6 py-4 flex flex-col gap-1">
+        <div
+          className="lg:hidden border-t px-6 py-4 flex flex-col gap-1"
+          style={{ backgroundColor: '#040C1F', borderColor: 'rgba(255,255,255,0.08)' }}
+        >
           {navLinks.map((link) => (
             <a
               key={link.section}
               href={link.href}
               onClick={() => setMenuOpen(false)}
               className={`px-4 py-3 rounded-[10px] text-sm transition-colors ${
-                isActive(link.section) ? 'font-semibold' : 'font-medium text-[#303E60]'
+                isActive(link.section) ? 'font-semibold' : 'font-medium text-white/70'
               }`}
               style={
                 isActive(link.section)
-                  ? { backgroundColor: 'rgba(198,162,58,0.10)', color: '#C6A23A' }
+                  ? { backgroundColor: 'rgba(198,162,58,0.15)', color: '#C6A23A' }
                   : undefined
               }
             >
@@ -195,17 +198,17 @@ export default function Navbar() {
             className="px-4 py-3 rounded-[10px] text-sm font-semibold transition-colors"
             style={
               isClientes
-                ? { backgroundColor: '#040C1F', color: '#C6A23A' }
+                ? { backgroundColor: 'rgba(198,162,58,0.20)', color: '#C6A23A' }
                 : { color: '#C6A23A' }
             }
           >
             {clientesLabel}
           </Link>
-          <div className="border-t border-[#e5e7eb] mt-2 pt-3 px-1">
+          <div className="border-t mt-2 pt-3 px-1" style={{ borderColor: 'rgba(255,255,255,0.08)' }}>
             <button
               onClick={() => { toggle(); setMenuOpen(false) }}
-              className="flex items-center gap-2 px-3 py-2 rounded-[10px] text-sm font-semibold border border-[#e5e7eb] transition-colors"
-              style={{ color: '#303E60' }}
+              className="flex items-center gap-2 px-3 py-2 rounded-[10px] text-sm font-semibold border transition-colors"
+              style={{ color: 'rgba(255,255,255,0.70)', borderColor: 'rgba(255,255,255,0.15)' }}
             >
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <circle cx="12" cy="12" r="10" />

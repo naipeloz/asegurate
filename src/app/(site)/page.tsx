@@ -133,12 +133,12 @@ export default function HomePage() {
       </section>
 
       {/* ─── NOSOTROS ─── */}
-      <section id="nosotros" className="bg-white py-20">
+      <section id="nosotros" className="py-20" style={{ backgroundColor: '#303E60' }}>
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
           {/* Heading */}
           <div className="text-center mb-16">
-            <h2 className="font-bold text-4xl lg:text-5xl mb-6 text-[#040C1F]">Nosotros</h2>
-            <p className="text-lg max-w-2xl mx-auto leading-relaxed text-[#303E60]">
+            <h2 className="font-bold text-4xl lg:text-5xl mb-6 text-white">Nosotros</h2>
+            <p className="text-lg max-w-2xl mx-auto leading-relaxed text-white/75">
               Asegúrate es pionera en ofrecer seguros exclusivos para comercios, empresas y
               sociedades, garantizando la protección de capitales asegurados no embargables.
               Nuestra misión es brindar solidez jurídica, confidencialidad absoluta y una visión de
@@ -151,24 +151,34 @@ export default function HomePage() {
             {features.map((f) => (
               <div
                 key={f.title}
-                className="bg-white border border-[#e5e7eb] rounded-[14px] p-8"
+                className="rounded-[14px] p-8"
+                style={{ backgroundColor: 'rgba(255,255,255,0.07)', border: '1px solid rgba(255,255,255,0.12)' }}
               >
-                <div className="bg-[#f5edd6] w-12 h-12 rounded-[10px] flex items-center justify-center mb-6">
-                  <img src={f.icon} alt="" className="w-6 h-6" />
+                <div
+                  className="w-12 h-12 rounded-[10px] flex items-center justify-center mb-6"
+                  style={{ backgroundColor: 'rgba(255,255,255,0.12)' }}
+                >
+                  <img src={f.icon} alt="" className="w-6 h-6 brightness-0 invert" />
                 </div>
-                <h3 className="font-semibold text-xl mb-3 text-[#040C1F]">{f.title}</h3>
-                <p className="text-base leading-relaxed text-[#303E60]">{f.desc}</p>
+                <h3 className="font-semibold text-xl mb-3 text-white">{f.title}</h3>
+                <p className="text-base leading-relaxed text-white/75">{f.desc}</p>
               </div>
             ))}
           </div>
 
           {/* Mission card */}
-          <div className="bg-white border border-[#e5e7eb] rounded-2xl shadow-sm max-w-4xl mx-auto px-12 py-12 text-center">
-            <div className="bg-[#f5edd6] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-              <img src={ICONS.Seguridad} alt="" className="w-8 h-8" />
+          <div
+            className="rounded-2xl max-w-4xl mx-auto px-12 py-12 text-center"
+            style={{ backgroundColor: 'rgba(255,255,255,0.07)', border: '1px solid rgba(255,255,255,0.12)' }}
+          >
+            <div
+              className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6"
+              style={{ backgroundColor: 'rgba(255,255,255,0.12)' }}
+            >
+              <img src={ICONS.Seguridad} alt="" className="w-8 h-8 brightness-0 invert" />
             </div>
-            <h3 className="font-bold text-3xl mb-4 text-[#040C1F]">Nuestra Misión</h3>
-            <p className="text-lg leading-relaxed max-w-2xl mx-auto text-[#303E60]">
+            <h3 className="font-bold text-3xl mb-4 text-white">Nuestra Misión</h3>
+            <p className="text-lg leading-relaxed max-w-2xl mx-auto text-white/75">
               Ser el socio estratégico de confianza para empresas y sociedades que buscan proteger
               su patrimonio con la máxima seguridad jurídica. Nos comprometemos a ofrecer
               soluciones personalizadas, confidenciales y de largo plazo, respaldadas por nuestra
@@ -179,12 +189,12 @@ export default function HomePage() {
       </section>
 
       {/* ─── SERVICIOS ─── */}
-      <section id="servicios" className="bg-[#f9fafb] py-20">
+      <section id="servicios" className="py-20" style={{ backgroundColor: '#273050' }}>
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
           {/* Heading */}
           <div className="text-center mb-16">
-            <h2 className="font-bold text-4xl lg:text-5xl mb-4 text-[#040C1F]">Servicios</h2>
-            <p className="text-lg text-[#303E60]">Soluciones de Protección Patrimonial</p>
+            <h2 className="font-bold text-4xl lg:text-5xl mb-4 text-white">Servicios</h2>
+            <p className="text-lg text-white/75">Soluciones de Protección Patrimonial</p>
           </div>
 
           {/* Service cards */}
@@ -192,27 +202,34 @@ export default function HomePage() {
             {services.map((s) => (
               <div
                 key={s.title}
-                className="bg-white border border-[#e5e7eb] rounded-[14px] p-8"
+                className="rounded-[14px] p-8"
+                style={{ backgroundColor: 'rgba(255,255,255,0.07)', border: '1px solid rgba(255,255,255,0.12)' }}
               >
-                <div className="bg-[#f5edd6] w-14 h-14 rounded-[10px] flex items-center justify-center mb-6">
-                  <img src={s.icon} alt="" className="w-7 h-7" />
+                <div
+                  className="w-14 h-14 rounded-[10px] flex items-center justify-center mb-6"
+                  style={{ backgroundColor: 'rgba(255,255,255,0.12)' }}
+                >
+                  <img src={s.icon} alt="" className="w-7 h-7 brightness-0 invert" />
                 </div>
-                <h3 className="font-semibold text-2xl mb-3 text-[#040C1F]">{s.title}</h3>
-                <p className="text-lg leading-relaxed text-[#303E60]">{s.desc}</p>
+                <h3 className="font-semibold text-2xl mb-3 text-white">{s.title}</h3>
+                <p className="text-lg leading-relaxed text-white/75">{s.desc}</p>
               </div>
             ))}
           </div>
 
           {/* Coverage highlight card */}
-          <div className="bg-white border border-[#e5e7eb] rounded-2xl shadow-sm max-w-4xl mx-auto px-12 py-12">
-            <h3 className="font-bold text-3xl text-center mb-8 text-[#040C1F]">
+          <div
+            className="rounded-2xl max-w-4xl mx-auto px-12 py-12"
+            style={{ backgroundColor: 'rgba(255,255,255,0.07)', border: '1px solid rgba(255,255,255,0.12)' }}
+          >
+            <h3 className="font-bold text-3xl text-center mb-8 text-white">
               Cobertura Exclusiva
             </h3>
             <ul className="flex flex-col gap-4">
               {coveragePoints.map((point, i) => (
                 <li key={i} className="flex items-start gap-3">
                   <span className="mt-2 w-2 h-2 rounded-full bg-[#C6A23A] shrink-0" />
-                  <p className="text-lg leading-relaxed text-[#303E60]">{point}</p>
+                  <p className="text-lg leading-relaxed text-white/75">{point}</p>
                 </li>
               ))}
             </ul>
@@ -221,10 +238,10 @@ export default function HomePage() {
       </section>
 
       {/* ─── FAQ ─── */}
-      <section id="faq" className="bg-white py-20">
+      <section id="faq" className="py-20" style={{ backgroundColor: '#303E60' }}>
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-bold text-4xl lg:text-5xl text-[#040C1F]">
+            <h2 className="font-bold text-4xl lg:text-5xl text-white">
               Preguntas Frecuentes
             </h2>
           </div>
@@ -235,37 +252,39 @@ export default function HomePage() {
       </section>
 
       {/* ─── CONTACTO ─── */}
-      <section id="contacto" className="bg-[#f9fafb] py-20">
+      <section id="contacto" className="py-20" style={{ backgroundColor: '#273050' }}>
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
           {/* Heading */}
           <div className="text-center mb-16">
-            <h2 className="font-bold text-4xl lg:text-5xl mb-4 text-[#040C1F]">Contacto</h2>
-            <p className="text-lg text-[#303E60]">Agenda una Consulta Confidencial</p>
+            <h2 className="font-bold text-4xl lg:text-5xl mb-4 text-white">Contacto</h2>
+            <p className="text-lg text-white/75">Agenda una Consulta Confidencial</p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact form */}
-            <div className="bg-white border border-[#e5e7eb] rounded-[14px] shadow-sm p-8">
-              <h3 className="font-bold text-2xl mb-6 text-[#040C1F]">Formulario de Contacto</h3>
+            <div
+              className="rounded-[14px] p-8"
+              style={{ backgroundColor: 'rgba(255,255,255,0.07)', border: '1px solid rgba(255,255,255,0.12)' }}
+            >
+              <h3 className="font-bold text-2xl mb-6 text-white">Formulario de Contacto</h3>
               <ContactForm />
             </div>
 
             {/* Right column */}
             <div className="flex flex-col gap-8">
-              {/* Schedule meeting — light gold gradient */}
+              {/* Schedule meeting — gold glass */}
               <div
-                className="border rounded-[14px] p-8"
+                className="rounded-[14px] p-8"
                 style={{
-                  backgroundImage: 'linear-gradient(156deg, #fdf6e3 0%, #f5edd6 100%)',
-                  borderColor: 'rgba(198,162,58,0.25)',
+                  backgroundColor: 'rgba(198,162,58,0.08)',
+                  border: '1px solid rgba(198,162,58,0.30)',
                 }}
               >
-                <h3 className="font-bold text-2xl mb-3 text-[#040C1F]">Agenda una Reunión</h3>
-                <p className="text-base leading-relaxed mb-6 text-[#303E60]">
+                <h3 className="font-bold text-2xl mb-3 text-white">Agenda una Reunión</h3>
+                <p className="text-base leading-relaxed mb-6 text-white/75">
                   ¿Prefieres hablar directamente con nosotros? Agenda una consulta confidencial en
                   el horario que mejor te convenga.
                 </p>
-                {/* Gold CTA button — uses Tailwind hover (no JS event handlers) */}
                 <a
                   href="#"
                   className="flex items-center justify-center gap-2 bg-[#C6A23A] hover:bg-[#816828] text-[#040C1F] font-semibold text-base py-4 rounded-[10px] shadow-lg transition-colors"
@@ -276,15 +295,18 @@ export default function HomePage() {
               </div>
 
               {/* Contact info */}
-              <div className="bg-white border border-[#e5e7eb] rounded-[14px] shadow-sm p-8">
-                <h3 className="font-bold text-2xl mb-6 text-[#040C1F]">
+              <div
+                className="rounded-[14px] p-8"
+                style={{ backgroundColor: 'rgba(255,255,255,0.07)', border: '1px solid rgba(255,255,255,0.12)' }}
+              >
+                <h3 className="font-bold text-2xl mb-6 text-white">
                   Información de Contacto
                 </h3>
                 <div className="flex flex-col gap-5">
                   {contactDetails.map((item) => (
                     <div key={item.label}>
-                      <p className="text-xs mb-1 text-[#303E60]">{item.label}</p>
-                      <div className="flex items-center gap-2 text-[#040C1F]">
+                      <p className="text-xs mb-1 text-white/55">{item.label}</p>
+                      <div className="flex items-center gap-2 text-white">
                         {item.icon && <span className="opacity-60 shrink-0">{item.icon}</span>}
                         <p className="text-base">{item.value}</p>
                       </div>

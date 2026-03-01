@@ -48,28 +48,29 @@ export default function FAQAccordion() {
         return (
           <div
             key={i}
-            className="bg-white border rounded-[14px] overflow-hidden transition-colors"
-            style={{ borderColor: isOpen ? '#C6A23A' : '#e5e7eb' }}
+            className="rounded-[14px] overflow-hidden transition-colors"
+            style={{
+              backgroundColor: 'rgba(255,255,255,0.07)',
+              border: `1px solid ${isOpen ? '#C6A23A' : 'rgba(255,255,255,0.12)'}`,
+            }}
           >
             <button
               className="w-full flex items-center justify-between px-6 py-5 text-left"
               onClick={() => setOpenIndex(isOpen ? null : i)}
             >
-              {/* Brand text: #040C1F for question */}
-              <span className="font-medium text-base pr-4" style={{ color: '#040C1F' }}>
+              <span className="font-medium text-base pr-4 text-white">
                 {faq.question}
               </span>
               <span
                 className={`shrink-0 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
-                style={{ color: isOpen ? '#C6A23A' : '#303E60' }}
+                style={{ color: isOpen ? '#C6A23A' : 'rgba(255,255,255,0.55)' }}
               >
                 <ChevronDown />
               </span>
             </button>
             {isOpen && (
               <div className="px-6 pb-5">
-                {/* Brand text: #303E60 for answer body */}
-                <p className="text-base leading-relaxed" style={{ color: '#303E60' }}>
+                <p className="text-base leading-relaxed" style={{ color: 'rgba(255,255,255,0.70)' }}>
                   {faq.answer}
                 </p>
               </div>
