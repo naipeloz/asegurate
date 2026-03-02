@@ -1,9 +1,10 @@
 const footerLinks = [
+  { label: 'Inicio', href: '/#inicio' },
   { label: 'Nosotros', href: '/#nosotros' },
   { label: 'Servicios', href: '/#servicios' },
+  { label: 'Clientes Extranjeros', href: '/clientes-extranjeros' },
   { label: 'Preguntas Frecuentes', href: '/#faq' },
   { label: 'Contacto', href: '/#contacto' },
-  { label: 'Clientes Extranjeros', href: '/clientes-extranjeros' },
 ]
 
 const contactInfo = [
@@ -45,9 +46,9 @@ export default function Footer() {
           <div className="md:col-span-1">
             <a href="/" className="inline-flex mb-5">
               <img
-                src="/brand/logo/Asegurate_Horizontal_Blanco.svg"
+                src="/brand/logo/Asegurate_Horizontal_Negativo.svg"
                 alt="Asegúrate"
-                className="h-8"
+                className="h-16"
               />
             </a>
             <p className="text-sm leading-relaxed max-w-sm text-white/55">

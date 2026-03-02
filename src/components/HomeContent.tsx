@@ -6,14 +6,14 @@ import ContactForm from '@/components/ContactForm'
 
 // ─── Brand assets ─────────────────────────────────────────────────────────────
 const ICONS = {
-  Seguridad:       '/brand/icons/Seguridad.svg',
-  Exclusividad:    '/brand/icons/Exclusividad.svg',
-  Juridico:        '/brand/icons/Juridico.svg',
-  Innovacion:      '/brand/icons/Innovacion.svg',
-  Empresa:         '/brand/icons/Empresa.svg',
-  Rentabilidad:    '/brand/icons/Rentabilidad.svg',
-  Contrato:        '/brand/icons/Contrato.svg',
-  Confidencialidad:'/brand/icons/Confidencialidad.svg',
+  Seguridad: '/brand/icons/Seguridad.svg',
+  Exclusividad: '/brand/icons/Exclusividad.svg',
+  Juridico: '/brand/icons/Juridico.svg',
+  Innovacion: '/brand/icons/Innovacion.svg',
+  Empresa: '/brand/icons/Empresa.svg',
+  Rentabilidad: '/brand/icons/Rentabilidad.svg',
+  Contrato: '/brand/icons/Contrato.svg',
+  Confidencialidad: '/brand/icons/Confidencialidad.svg',
 }
 
 // CSS filter: converts black SVG → brand gold #C6A23A
@@ -66,10 +66,10 @@ const content = {
       misionBody: 'Ser el socio estratégico de confianza para empresas y sociedades que buscan proteger su patrimonio con la máxima seguridad jurídica. Nos comprometemos a ofrecer soluciones personalizadas, confidenciales y de largo plazo, respaldadas por nuestra autoridad en el mercado y nuestra inquebrantable solidez institucional.',
     },
     features: [
-      { icon: ICONS.Seguridad,    title: 'Protección Estratégica',  desc: 'Soluciones diseñadas para proteger su patrimonio empresarial con máxima seguridad jurídica.' },
+      { icon: ICONS.Seguridad, title: 'Protección Estratégica', desc: 'Soluciones diseñadas para proteger su patrimonio empresarial con máxima seguridad jurídica.' },
       { icon: ICONS.Exclusividad, title: 'Exclusividad Insondable', desc: 'Servicio personalizado y confidencial para un selecto grupo de clientes.' },
-      { icon: ICONS.Juridico,     title: 'Solidez Jurídica',        desc: 'Respaldados por marcos legales robustos que garantizan la intangibilidad de sus activos.' },
-      { icon: ICONS.Innovacion,   title: 'Visión de Largo Plazo',   desc: 'Estrategias de protección pensadas para el futuro de su empresa.' },
+      { icon: ICONS.Juridico, title: 'Solidez Jurídica', desc: 'Respaldados por marcos legales robustos que garantizan la intangibilidad de sus activos.' },
+      { icon: ICONS.Innovacion, title: 'Visión de Largo Plazo', desc: 'Estrategias de protección pensadas para el futuro de su empresa.' },
     ],
     servicios: {
       h2: 'Servicios',
@@ -83,10 +83,10 @@ const content = {
       ],
     },
     services: [
-      { icon: ICONS.Empresa,          title: 'Seguros Empresariales',    desc: 'Coberturas exclusivas diseñadas para empresas y sociedades con necesidades especiales de protección.' },
-      { icon: ICONS.Rentabilidad,     title: 'Capitales No Embargables', desc: 'Aseguramos capitales de hasta USD 1.200.000 con garantía de no embargo.' },
-      { icon: ICONS.Contrato,         title: 'Asesoramiento Estratégico',desc: 'Consultoría personalizada para estructurar la mejor protección para su patrimonio.' },
-      { icon: ICONS.Confidencialidad, title: 'Gestión Confidencial',     desc: 'Manejo discreto y profesional de todas sus operaciones y documentación.' },
+      { icon: ICONS.Empresa, title: 'Seguros Empresariales', desc: 'Coberturas exclusivas diseñadas para empresas y sociedades con necesidades especiales de protección.' },
+      { icon: ICONS.Rentabilidad, title: 'Capitales No Embargables', desc: 'Aseguramos capitales de hasta USD 1.200.000 con garantía de no embargo.' },
+      { icon: ICONS.Contrato, title: 'Asesoramiento Estratégico', desc: 'Consultoría personalizada para estructurar la mejor protección para su patrimonio.' },
+      { icon: ICONS.Confidencialidad, title: 'Gestión Confidencial', desc: 'Manejo discreto y profesional de todas sus operaciones y documentación.' },
     ],
     faq: { h2: 'Preguntas Frecuentes' },
     contacto: {
@@ -114,10 +114,10 @@ const content = {
       misionBody: 'Ser o parceiro estratégico de confiança para empresas e sociedades que buscam proteger seu patrimônio com máxima segurança jurídica. Comprometemo-nos a oferecer soluções personalizadas, confidenciais e de longo prazo, respaldadas pela nossa autoridade no mercado e pela nossa inabalável solidez institucional.',
     },
     features: [
-      { icon: ICONS.Seguridad,    title: 'Proteção Estratégica', desc: 'Soluções desenvolvidas para proteger seu patrimônio empresarial com máxima segurança jurídica.' },
-      { icon: ICONS.Exclusividad, title: 'Exclusividade',        desc: 'Serviço personalizado e confidencial para um seleto grupo de clientes.' },
-      { icon: ICONS.Juridico,     title: 'Solidez Jurídica',     desc: 'Respaldados por marcos legais robustos que garantem a intangibilidade dos seus ativos.' },
-      { icon: ICONS.Innovacion,   title: 'Visão de Longo Prazo', desc: 'Estratégias de proteção pensadas para o futuro da sua empresa.' },
+      { icon: ICONS.Seguridad, title: 'Proteção Estratégica', desc: 'Soluções desenvolvidas para proteger seu patrimônio empresarial com máxima segurança jurídica.' },
+      { icon: ICONS.Exclusividad, title: 'Exclusividade', desc: 'Serviço personalizado e confidencial para um seleto grupo de clientes.' },
+      { icon: ICONS.Juridico, title: 'Solidez Jurídica', desc: 'Respaldados por marcos legais robustos que garantem a intangibilidade dos seus ativos.' },
+      { icon: ICONS.Innovacion, title: 'Visão de Longo Prazo', desc: 'Estratégias de proteção pensadas para o futuro da sua empresa.' },
     ],
     servicios: {
       h2: 'Serviços',
@@ -131,10 +131,10 @@ const content = {
       ],
     },
     services: [
-      { icon: ICONS.Empresa,          title: 'Seguros Empresariais',      desc: 'Coberturas exclusivas desenvolvidas para empresas e sociedades com necessidades especiais de proteção.' },
-      { icon: ICONS.Rentabilidad,     title: 'Capitais Não Penhoráveis',  desc: 'Asseguramos capitais de até USD 1.200.000 com garantia de não penhora.' },
-      { icon: ICONS.Contrato,         title: 'Assessoria Estratégica',    desc: 'Consultoria personalizada para estruturar a melhor proteção para o seu patrimônio.' },
-      { icon: ICONS.Confidencialidad, title: 'Gestão Confidencial',       desc: 'Tratamento discreto e profissional de todas as suas operações e documentação.' },
+      { icon: ICONS.Empresa, title: 'Seguros Empresariais', desc: 'Coberturas exclusivas desenvolvidas para empresas e sociedades com necessidades especiais de proteção.' },
+      { icon: ICONS.Rentabilidad, title: 'Capitais Não Penhoráveis', desc: 'Asseguramos capitais de até USD 1.200.000 com garantia de não penhora.' },
+      { icon: ICONS.Contrato, title: 'Assessoria Estratégica', desc: 'Consultoria personalizada para estruturar a melhor proteção para o seu patrimônio.' },
+      { icon: ICONS.Confidencialidad, title: 'Gestão Confidencial', desc: 'Tratamento discreto e profissional de todas as suas operações e documentação.' },
     ],
     faq: { h2: 'Perguntas Frequentes' },
     contacto: {
@@ -162,10 +162,10 @@ const content = {
       misionBody: 'To be the trusted strategic partner for companies and corporations seeking to protect their assets with maximum legal security. We are committed to offering personalized, confidential and long-term solutions, backed by our authority in the market and our unwavering institutional strength.',
     },
     features: [
-      { icon: ICONS.Seguridad,    title: 'Strategic Protection', desc: 'Solutions designed to protect your business assets with maximum legal security.' },
-      { icon: ICONS.Exclusividad, title: 'Exclusivity',          desc: 'Personalized and confidential service for a select group of clients.' },
-      { icon: ICONS.Juridico,     title: 'Legal Strength',       desc: 'Backed by robust legal frameworks that guarantee the intangibility of your assets.' },
-      { icon: ICONS.Innovacion,   title: 'Long-term Vision',     desc: 'Protection strategies designed for the future of your company.' },
+      { icon: ICONS.Seguridad, title: 'Strategic Protection', desc: 'Solutions designed to protect your business assets with maximum legal security.' },
+      { icon: ICONS.Exclusividad, title: 'Exclusivity', desc: 'Personalized and confidential service for a select group of clients.' },
+      { icon: ICONS.Juridico, title: 'Legal Strength', desc: 'Backed by robust legal frameworks that guarantee the intangibility of your assets.' },
+      { icon: ICONS.Innovacion, title: 'Long-term Vision', desc: 'Protection strategies designed for the future of your company.' },
     ],
     servicios: {
       h2: 'Services',
@@ -179,10 +179,10 @@ const content = {
       ],
     },
     services: [
-      { icon: ICONS.Empresa,          title: 'Corporate Insurance',      desc: 'Exclusive coverage designed for companies with special protection needs.' },
-      { icon: ICONS.Rentabilidad,     title: 'Non-Seizable Capital',     desc: 'We insure capital up to USD 1,200,000 with a non-seizure guarantee.' },
-      { icon: ICONS.Contrato,         title: 'Strategic Advisory',       desc: 'Personalized consulting to structure the best protection for your assets.' },
-      { icon: ICONS.Confidencialidad, title: 'Confidential Management',  desc: 'Discreet and professional handling of all your operations and documentation.' },
+      { icon: ICONS.Empresa, title: 'Corporate Insurance', desc: 'Exclusive coverage designed for companies with special protection needs.' },
+      { icon: ICONS.Rentabilidad, title: 'Non-Seizable Capital', desc: 'We insure capital up to USD 1,200,000 with a non-seizure guarantee.' },
+      { icon: ICONS.Contrato, title: 'Strategic Advisory', desc: 'Personalized consulting to structure the best protection for your assets.' },
+      { icon: ICONS.Confidencialidad, title: 'Confidential Management', desc: 'Discreet and professional handling of all your operations and documentation.' },
     ],
     faq: { h2: 'Frequently Asked Questions' },
     contacto: {
@@ -205,9 +205,9 @@ const content = {
 
 const contactDetails = (labels: { location: string; email: string; phone: string; hours: string }) => [
   { icon: <MapPinIcon />, label: labels.location, value: 'Punta del Este, Uruguay' },
-  { icon: <MailIcon />,   label: labels.email,    value: 'info@asegurate.com' },
-  { icon: <PhoneIcon />,  label: labels.phone,    value: '+598 XXXX XXXX' },
-  { icon: null,           label: labels.hours,    value: 'Lun – Vie: 9:00 – 18:00' },
+  { icon: <MailIcon />, label: labels.email, value: 'info@asegurate.com' },
+  { icon: <PhoneIcon />, label: labels.phone, value: '+598 XXXX XXXX' },
+  { icon: null, label: labels.hours, value: 'Lun – Vie: 8:00 – 20:00 | Sáb: 8:00 – 12:00' },
 ]
 
 // ─── Component ────────────────────────────────────────────────────────────────

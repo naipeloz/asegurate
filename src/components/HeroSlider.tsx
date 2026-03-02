@@ -110,14 +110,13 @@ const slidesEn: Slide[] = [
   },
 ]
 
-// Hero background image (Figma placeholder — replace with /public asset for production)
-const imgHero = 'https://www.figma.com/api/mcp/asset/9a5cb372-991d-4cf2-b88f-8021998ebd83'
+
 
 const CALENDLY_URL = 'https://calendly.com/asegurate'
 
 const discoverLabels = { es: 'Descubrí más', pt: 'Descubra mais', en: 'Discover more' }
-const ctaLabels     = { es: 'Agenda tu consulta', pt: 'Agende sua consulta', en: 'Schedule a consultation' }
-const ctaContact    = { es: 'Contáctanos', pt: 'Contate-nos', en: 'Contact us' }
+const ctaLabels = { es: 'Agenda tu consulta', pt: 'Agende sua consulta', en: 'Schedule a consultation' }
+const ctaContact = { es: 'Contáctanos', pt: 'Contate-nos', en: 'Contact us' }
 
 // ─── Icons ───────────────────────────────────────────────────────────────────
 function ChevronLeft() {
@@ -194,36 +193,27 @@ export default function HeroSlider() {
 
   return (
     <div
-      className="relative w-full overflow-hidden"
+      className="relative w-full overflow-hidden bg-[#040C1F]"
       style={{ height: 'calc(100vh - 5rem)' }}
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
       onTouchStart={() => setPaused(true)}
       onTouchEnd={() => setPaused(false)}
     >
-      {/* Background image */}
-      <img
-        src={imgHero}
-        alt="Punta del Este"
-        className="absolute inset-0 w-full h-full object-cover"
-      />
-
-      {/* Gradient overlay — deep navy */}
-      <div
-        className="absolute inset-0"
-        style={{
-          backgroundImage:
-            'linear-gradient(90deg, rgba(4,12,31,0.94) 0%, rgba(4,12,31,0.70) 50%, rgba(4,12,31,0.12) 100%)',
-        }}
-      />
-
       {/* Slide content */}
       <div
         key={animKey}
-        className="hero-slide-enter relative h-full flex items-center"
+        className="hero-slide-enter relative h-full flex items-center justify-center text-center"
       >
-        <div className="w-full max-w-[1280px] mx-auto px-8 lg:px-16">
-          <div className="max-w-[620px]">
+        <div className="w-full max-w-[1280px] mx-auto px-8 lg:px-16 flex flex-col items-center">
+          <div className="max-w-[800px] flex flex-col items-center">
+            {/* Logo */}
+            <img
+              src="/brand/logo/Asegurate_Horizontal_Tagline.svg"
+              alt="Asegúrate"
+              className="h-36 md:h-54 mb-8"
+            />
+
             {/* Badge */}
             <span
               className="inline-block text-sm font-semibold px-4 py-1.5 rounded-full mb-6 backdrop-blur-sm border"
@@ -242,16 +232,16 @@ export default function HeroSlider() {
             </h1>
 
             {/* Body paragraphs */}
-            <div className="flex flex-col gap-3 mb-8">
+            <div className="flex flex-col gap-3 mb-8 items-center">
               {slide.body.map((p, i) => (
-                <p key={i} className="text-base lg:text-lg leading-relaxed" style={{ color: 'rgba(255,255,255,0.80)' }}>
+                <p key={i} className="text-base lg:text-lg leading-relaxed max-w-[620px]" style={{ color: 'rgba(255,255,255,0.80)' }}>
                   {p}
                 </p>
               ))}
             </div>
 
             {/* CTA buttons */}
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap gap-3 justify-center">
               <a
                 href={CALENDLY_URL}
                 target="_blank"
