@@ -22,7 +22,7 @@ const slidesEs: Slide[] = [
   },
   {
     badge: 'Comercios',
-    title: 'Sabemos que detrás de cada comercio hay años de esfuerzo.\n Que un imprevisto no ponga en riesgo todo lo que construiste. ',
+    title: 'Sabemos que detrás de cada comercio hay años de esfuerzo. Que un imprevisto no ponga en riesgo todo lo que construiste. ',
     body: [
       'Nosotros nos ocupamos de eso.',
     ],
