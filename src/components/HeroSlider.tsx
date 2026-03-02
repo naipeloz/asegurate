@@ -15,23 +15,23 @@ interface Slide {
 const slidesEs: Slide[] = [
   {
     badge: 'Empresas y sociedades',
-    title: 'Construiste tu patrimonio,\nahora protegelo estratégicamente.',
+    title: 'En Uruguay muchos empresarios construyen patrimonio pero pocos lo protegen estratégicamente.\n Asegurate nace para cambiar eso.',
     body: [
       'Somos la primera empresa en Uruguay especializada en blindaje empresarial a través de estructuras aseguradas.',
     ],
   },
   {
     badge: 'Comercios',
-    title: 'Años de esfuerzo merecen protección real.',
+    title: 'Sabemos que detrás de cada comercio hay años de esfuerzo.\n Que un imprevisto no ponga en riesgo todo lo que construiste. ',
     body: [
-      'Sabemos que detrás de cada comercio hay años de esfuerzo. Que un imprevisto no ponga en riesgo todo lo que construiste.',
+      'Nosotros nos ocupamos de eso.',
     ],
   },
   {
     badge: 'Trabajadores independientes',
-    title: 'Trabajas por tu cuenta,\nplanifica tu respaldo.',
+    title: 'Trabajas por tu cuenta.\n Tu respaldo también tiene que depender de vos. ',
     body: [
-      'Protegé tus ingresos hoy y asegurá tu retiro mañana. Respaldo para tu actividad, garantizando tu retiro jubilatorio.',
+      'Ser independiente no significa estar solo. Protegé tus ingresos hoy y asegura tu retiro mañana. Respaldo para tu actividad, garantizando tu retiro jubilatorio.	',
     ],
   },
   {
@@ -204,8 +204,8 @@ export default function HeroSlider() {
         key={animKey}
         className="hero-slide-enter relative h-full flex items-center justify-center text-center"
       >
-        <div className="w-full max-w-[1280px] mx-auto px-8 lg:px-16 flex flex-col items-center">
-          <div className="max-w-[1000px] flex flex-col items-center">
+        <div className="w-full max-w-[1600px] mx-auto px-8 lg:px-16 flex flex-col items-center">
+          <div className="w-full  flex flex-col items-center">
             {/* Logo */}
             <img
               src="/brand/logo/Asegurate_Horizontal_Tagline.svg"
@@ -213,34 +213,42 @@ export default function HeroSlider() {
               className="h-45 md:h-56 mb-6"
             />
 
-            {/* Badge */}
-            <span
-              className="inline-block text-sm font-semibold px-4 py-1.5 rounded-full mb-6 backdrop-blur-sm border"
-              style={{
-                backgroundColor: 'rgba(198,162,58,0.18)',
-                borderColor: 'rgba(198,162,58,0.45)',
-                color: '#f0d98a',
-              }}
-            >
-              {slide.badge}
-            </span>
+            {/* Fixed-height container to prevent layout shift */}
+            <div className="flex flex-col items-center h-[380px] md:h-[300px] lg:h-[260px] w-full mb-8">
+              {/* Badge (always at top) */}
+              <div className="shrink-0 mb-6">
+                <span
+                  className="inline-block text-sm font-semibold px-4 py-1.5 rounded-full backdrop-blur-sm border"
+                  style={{
+                    backgroundColor: 'rgba(198,162,58,0.18)',
+                    borderColor: 'rgba(198,162,58,0.45)',
+                    color: '#f0d98a',
+                  }}
+                >
+                  {slide.badge}
+                </span>
+              </div>
 
-            {/* Title */}
-            <h1 className="text-white font-bold text-3xl lg:text-5xl leading-tight mb-5 whitespace-pre-line">
-              {slide.title}
-            </h1>
+              {/* Title & Body Container (centered in remaining space) */}
+              <div className="flex-1 flex flex-col justify-center items-center w-full">
+                {/* Title */}
+                <h1 className="text-white font-bold text-3xl lg:text-5xl leading-tight mb-5 whitespace-pre-line text-center w-full">
+                  {slide.title}
+                </h1>
 
-            {/* Body paragraphs */}
-            <div className="flex flex-col gap-3 mb-8 items-center">
-              {slide.body.map((p, i) => (
-                <p key={i} className="text-base lg:text-lg leading-relaxed max-w-[1000px]" style={{ color: 'rgba(255,255,255,0.80)' }}>
-                  {p}
-                </p>
-              ))}
+                {/* Body paragraphs */}
+                <div className="flex flex-col gap-3 items-center w-full">
+                  {slide.body.map((p, i) => (
+                    <p key={i} className="text-base lg:text-lg leading-relaxed max-w-[1000px] text-center" style={{ color: 'rgba(255,255,255,0.80)' }}>
+                      {p}
+                    </p>
+                  ))}
+                </div>
+              </div>
             </div>
 
             {/* CTA buttons */}
-            <div className="flex flex-wrap gap-3 justify-center">
+            <div className="flex flex-wrap gap-3 mt-4 justify-center">
               <a
                 href={CALENDLY_URL}
                 target="_blank"

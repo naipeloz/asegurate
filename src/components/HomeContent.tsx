@@ -107,10 +107,9 @@ const content = {
       ],
     },
     services: [
-      { icon: ICONS.Empresa, title: 'Seguros Empresariales', desc: 'Coberturas exclusivas diseñadas para empresas y sociedades con necesidades especiales de protección.' },
-      { icon: ICONS.Rentabilidad, title: 'Capitales No Embargables', desc: 'Aseguramos capitales de hasta USD 1.200.000 con garantía de no embargo.' },
-      { icon: ICONS.Contrato, title: 'Asesoramiento Estratégico', desc: 'Consultoría personalizada para estructurar la mejor protección para su patrimonio.' },
-      { icon: ICONS.Confidencialidad, title: 'Gestión Confidencial', desc: 'Manejo discreto y profesional de todas sus operaciones y documentación.' },
+      { icon: ICONS.Empresa, title: 'Dueños de empresas y sociedades', desc: 'Diseñamos esquemas de respaldo basados en un **capital asegurado no embargable**, sin período de carencia, que puede representar el valor total de la empresa o de sus participaciones societarias. La solución se adapta a la estructura societaria y puede contemplar socios, directores o personas clave.' },
+      { icon: ICONS.Rentabilidad, title: 'Dueños de comercios', desc: 'Para negocios donde el funcionamiento depende directamente del dueño, diseñamos una estructura de respaldo orientada a **continuidad operativa:** previsibilidad ante imprevistos, protección del valor construido y un esquema claro para no improvisar cuando el comercio necesita estabilidad.' },
+      { icon: ICONS.Contrato, title: 'Profesionales independientes', desc: 'Estructuramos un respaldo patrimonial estratégico con foco en **planificación de retiro**: un esquema en USD que construye **fondo jubilatorio**.' },
     ],
     faq: { h2: 'Preguntas Frecuentes' },
     contacto: {
@@ -319,11 +318,11 @@ export default function HomeContent() {
             <h2 className="font-bold text-4xl lg:text-5xl mb-4 text-[#C6A23A]">{t.servicios.h2}</h2>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-12">
-            {t.services.map((s) => (
+          <div className="flex flex-wrap justify-center gap-8 mb-12">
+            {t.services.map((s, i) => (
               <div
                 key={s.title}
-                className="rounded-[14px] p-8"
+                className="w-full sm:w-[calc(50%-1rem)] rounded-[14px] p-8"
                 style={{ backgroundColor: 'rgba(255,255,255,0.07)', border: '1px solid rgba(255,255,255,0.12)' }}
               >
                 <div
@@ -333,7 +332,7 @@ export default function HomeContent() {
                   <img src={s.icon} alt="" className="w-7 h-7" style={{ filter: GOLD_FILTER }} />
                 </div>
                 <h3 className="font-semibold text-2xl mb-3 text-white">{s.title}</h3>
-                <p className="text-lg leading-relaxed text-white/75">{s.desc}</p>
+                <RichText key={i} text={s.desc} className="text-lg leading-relaxed text-white/75" />
               </div>
             ))}
           </div>
