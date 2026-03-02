@@ -210,11 +210,11 @@ export default function HeroSlider() {
             <img
               src="/brand/logo/Asegurate_Horizontal_Tagline.svg"
               alt="Asegúrate"
-              className="h-45 md:h-56 mb-6"
+              className="h-30 md:45 md:h-56 mb-6"
             />
 
             {/* Fixed-height container to prevent layout shift */}
-            <div className="flex flex-col items-center h-[200px] md:h-[300px] lg:h-[260px] w-full mb-8">
+            <div className="flex flex-col items-center h-[260px] md:h-[300px] lg:h-[260px] w-[380px] md:w-full mb-8">
               {/* Badge (always at top) */}
               <div className="shrink-0 mb-6">
                 <span
