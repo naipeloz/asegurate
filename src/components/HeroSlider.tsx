@@ -214,7 +214,7 @@ export default function HeroSlider() {
             />
 
             {/* Fixed-height container to prevent layout shift */}
-            <div className="flex flex-col items-center h-[380px] md:h-[300px] lg:h-[260px] w-full mb-8">
+            <div className="flex flex-col items-center h-[200px] md:h-[300px] lg:h-[260px] w-full mb-8">
               {/* Badge (always at top) */}
               <div className="shrink-0 mb-6">
                 <span
@@ -232,7 +232,7 @@ export default function HeroSlider() {
               {/* Title & Body Container (centered in remaining space) */}
               <div className="flex-1 flex flex-col justify-center items-center w-full">
                 {/* Title */}
-                <h1 className="text-white font-bold text-3xl lg:text-5xl leading-tight mb-5 whitespace-pre-line text-center w-full">
+                <h1 className="text-white font-bold md:text-2xl lg:text-5xl text-xl leading-tight mb-5 whitespace-pre-line text-center w-full">
                   {slide.title}
                 </h1>
 
