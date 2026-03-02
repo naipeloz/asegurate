@@ -56,20 +56,44 @@ function PhoneIcon() {
   )
 }
 
+// ─── Rich text renderer (renders **bold** as gold text) ───────────────────────
+function RichText({ text, className }: { text: string; className?: string }) {
+  const parts = text.split(/\*\*(.*?)\*\*/g)
+  return (
+    <p className={className}>
+      {parts.map((part, i) =>
+        i % 2 === 1 ? (
+          <span key={i} style={{ color: '#C6A23A', fontWeight: 700 }}>{part}</span>
+        ) : (
+          part
+        )
+      )}
+    </p>
+  )
+}
+
 // ─── Content ─────────────────────────────────────────────────────────────────
 const content = {
   es: {
     nosotros: {
       h2: 'Nosotros',
-      body: 'Asegúrate es pionera en ofrecer seguros exclusivos para comercios, empresas y sociedades, garantizando la protección de capitales asegurados no embargables. Nuestra misión es brindar solidez jurídica, confidencialidad absoluta y una visión de largo plazo para nuestros clientes más exigentes.',
-      misionH3: 'Nuestra Misión',
-      misionBody: 'Ser el socio estratégico de confianza para empresas y sociedades que buscan proteger su patrimonio con la máxima seguridad jurídica. Nos comprometemos a ofrecer soluciones personalizadas, confidenciales y de largo plazo, respaldadas por nuestra autoridad en el mercado y nuestra inquebrantable solidez institucional.',
+      body: [
+        'En ASEGURATE somos especialistas en **respaldo patrimonial estratégico** para dueños de empresas, sociedades, comercios y profesionales independientes.',
+        'Diseñamos estructuras de protección pensadas para anticipar riesgos, ordenar la continuidad del negocio y resguardar el valor de lo construido.',
+        'Trabajamos con un enfoque **exclusivo y confidencial**, combinando análisis personalizado, solidez jurídica y una ejecución clara: diagnóstico, propuesta y definición.',
+      ],
+      beneficiosH2: 'Beneficios —',
+      misionH3: 'Nuestra misión',
+      misionBody: [
+        'Nuestra misión es proteger el patrimonio de quienes construyen empresas —**dueños, socios, comerciantes y profesionales independientes**— anticipando riesgos con estructuras sólidas, confidenciales y sostenibles.',
+        'Acompañamos a quienes lideran y sostienen su actividad en la toma de decisiones estratégicas para garantizar **continuidad, orden patrimonial y visión de largo plazo**, con un proceso claro y a medida.',
+      ],
     },
-    features: [
-      { icon: ICONS.Seguridad, title: 'Protección Estratégica', desc: 'Soluciones diseñadas para proteger su patrimonio empresarial con máxima seguridad jurídica.' },
-      { icon: ICONS.Exclusividad, title: 'Exclusividad Insondable', desc: 'Servicio personalizado y confidencial para un selecto grupo de clientes.' },
-      { icon: ICONS.Juridico, title: 'Solidez Jurídica', desc: 'Respaldados por marcos legales robustos que garantizan la intangibilidad de sus activos.' },
-      { icon: ICONS.Innovacion, title: 'Visión de Largo Plazo', desc: 'Estrategias de protección pensadas para el futuro de su empresa.' },
+    benefits: [
+      { icon: ICONS.Seguridad, title: 'Capital asegurado no embargable', desc: 'Resguarda el valor de tu empresa o participaciones societarias bajo una estructura diseñada para proteger tu patrimonio.' },
+      { icon: ICONS.Exclusividad, title: 'Sin período de carencia', desc: 'La cobertura comienza desde el inicio. Una solución pensada para actuar cuando el negocio lo necesita, sin esperas innecesarias.' },
+      { icon: ICONS.Juridico, title: 'Fondo rentable en USD', desc: 'Además de proteger, el capital va a un fondo rentable en dólares, combinando respaldo y planificación.' },
+      { icon: ICONS.Innovacion, title: 'Diseño personalizado y confidencial', desc: 'Cada caso es único. Analizamos tu estructura y objetivos para diseñar una propuesta a medida, en un proceso privado y profesional.' },
     ],
     servicios: {
       h2: 'Servicios',
@@ -109,9 +133,14 @@ const content = {
   pt: {
     nosotros: {
       h2: 'Sobre Nós',
-      body: 'A Asegurate é pioneira na oferta de seguros exclusivos para comércios, empresas e sociedades, garantindo a proteção de capitais segurados não penhoráveis. Nossa missão é fornecer solidez jurídica, confidencialidade absoluta e uma visão de longo prazo para os nossos clientes mais exigentes.',
+      body: [
+        'A Asegurate é pioneira na oferta de seguros exclusivos para comércios, empresas e sociedades, garantindo a proteção de capitais segurados não penhoráveis. Nossa missão é fornecer solidez jurídica, confidencialidade absoluta e uma visão de longo prazo para os nossos clientes mais exigentes.',
+      ],
+      beneficiosH2: 'Benefícios —',
       misionH3: 'Nossa Missão',
-      misionBody: 'Ser o parceiro estratégico de confiança para empresas e sociedades que buscam proteger seu patrimônio com máxima segurança jurídica. Comprometemo-nos a oferecer soluções personalizadas, confidenciais e de longo prazo, respaldadas pela nossa autoridade no mercado e pela nossa inabalável solidez institucional.',
+      misionBody: [
+        'Ser o parceiro estratégico de confiança para empresas e sociedades que buscam proteger seu patrimônio com máxima segurança jurídica. Comprometemo-nos a oferecer soluções personalizadas, confidenciais e de longo prazo, respaldadas pela nossa autoridade no mercado e pela nossa inabalável solidez institucional.',
+      ],
     },
     features: [
       { icon: ICONS.Seguridad, title: 'Proteção Estratégica', desc: 'Soluções desenvolvidas para proteger seu patrimônio empresarial com máxima segurança jurídica.' },
@@ -119,6 +148,7 @@ const content = {
       { icon: ICONS.Juridico, title: 'Solidez Jurídica', desc: 'Respaldados por marcos legais robustos que garantem a intangibilidade dos seus ativos.' },
       { icon: ICONS.Innovacion, title: 'Visão de Longo Prazo', desc: 'Estratégias de proteção pensadas para o futuro da sua empresa.' },
     ],
+    benefits: [],
     servicios: {
       h2: 'Serviços',
       subtitle: 'Soluções de Proteção Patrimonial',
@@ -157,9 +187,14 @@ const content = {
   en: {
     nosotros: {
       h2: 'About Us',
-      body: 'Asegúrate is a pioneer in offering exclusive insurance for businesses and corporations, guaranteeing the protection of non-seizable insured capital. Our mission is to provide legal strength, absolute confidentiality and a long-term vision for our most demanding clients.',
+      body: [
+        'Asegúrate is a pioneer in offering exclusive insurance for businesses and corporations, guaranteeing the protection of non-seizable insured capital. Our mission is to provide legal strength, absolute confidentiality and a long-term vision for our most demanding clients.',
+      ],
+      beneficiosH2: 'Benefits —',
       misionH3: 'Our Mission',
-      misionBody: 'To be the trusted strategic partner for companies and corporations seeking to protect their assets with maximum legal security. We are committed to offering personalized, confidential and long-term solutions, backed by our authority in the market and our unwavering institutional strength.',
+      misionBody: [
+        'To be the trusted strategic partner for companies and corporations seeking to protect their assets with maximum legal security. We are committed to offering personalized, confidential and long-term solutions, backed by our authority in the market and our unwavering institutional strength.',
+      ],
     },
     features: [
       { icon: ICONS.Seguridad, title: 'Strategic Protection', desc: 'Solutions designed to protect your business assets with maximum legal security.' },
@@ -167,6 +202,7 @@ const content = {
       { icon: ICONS.Juridico, title: 'Legal Strength', desc: 'Backed by robust legal frameworks that guarantee the intangibility of your assets.' },
       { icon: ICONS.Innovacion, title: 'Long-term Vision', desc: 'Protection strategies designed for the future of your company.' },
     ],
+    benefits: [],
     servicios: {
       h2: 'Services',
       subtitle: 'Asset Protection Solutions',
@@ -205,7 +241,7 @@ const content = {
 
 const contactDetails = (labels: { location: string; email: string; phone: string; hours: string }) => [
   { icon: <MapPinIcon />, label: labels.location, value: 'Punta del Este, Uruguay' },
-  { icon: <MailIcon />, label: labels.email, value: 'info@asegurate.com' },
+  { icon: <MailIcon />, label: labels.email, value: 'contacto@somosasegurate.com' },
   { icon: <PhoneIcon />, label: labels.phone, value: '+598 XXXX XXXX' },
   { icon: null, label: labels.hours, value: 'Lun – Vie: 8:00 – 20:00 | Sáb: 8:00 – 12:00' },
 ]
@@ -221,14 +257,23 @@ export default function HomeContent() {
       {/* ─── NOSOTROS ─── */}
       <section id="nosotros" className="py-20" style={{ backgroundColor: '#303E60' }}>
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
+          {/* Intro */}
           <div className="text-center mb-16">
             <h2 className="font-bold text-4xl lg:text-5xl mb-6 text-[#C6A23A]">{t.nosotros.h2}</h2>
-            <p className="text-lg max-w-2xl mx-auto leading-relaxed text-white/80">{t.nosotros.body}</p>
+            <div className="flex flex-col gap-4 max-w-2xl mx-auto">
+              {t.nosotros.body.map((p, i) => (
+                <RichText key={i} text={p} className="text-lg leading-relaxed text-white/80" />
+              ))}
+            </div>
           </div>
 
+          {/* Beneficios heading */}
+          {/* <h3 className="font-bold text-2xl text-white mb-8">{t.nosotros.beneficiosH2}</h3> */}
+
           {/* Feature cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-            {t.features.map((f) => (
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+            {t.benefits.map((f) => (
               <div
                 key={f.title}
                 className="rounded-[14px] p-8"
@@ -258,7 +303,11 @@ export default function HomeContent() {
               <img src={ICONS.Seguridad} alt="" className="w-8 h-8" style={{ filter: GOLD_FILTER }} />
             </div>
             <h3 className="font-bold text-3xl mb-4 text-[#C6A23A]">{t.nosotros.misionH3}</h3>
-            <p className="text-lg leading-relaxed max-w-2xl mx-auto text-white/80">{t.nosotros.misionBody}</p>
+            <div className="flex flex-col gap-4">
+              {t.nosotros.misionBody.map((p, i) => (
+                <RichText key={i} text={p} className="text-lg leading-relaxed max-w-2xl mx-auto text-white/80" />
+              ))}
+            </div>
           </div>
         </div>
       </section>

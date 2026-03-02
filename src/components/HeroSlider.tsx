@@ -15,16 +15,9 @@ interface Slide {
 const slidesEs: Slide[] = [
   {
     badge: 'Empresas y sociedades',
-    title: 'Construiste tu patrimonio.\nAhora protégelo estratégicamente.',
+    title: 'Construiste tu patrimonio,\nahora protegelo estratégicamente.',
     body: [
       'Somos la primera empresa en Uruguay especializada en blindaje empresarial a través de estructuras aseguradas.',
-    ],
-  },
-  {
-    badge: 'Blindaje Empresarial',
-    title: 'La protección que tu empresa necesita.',
-    body: [
-      'En Uruguay muchos empresarios construyen patrimonio pero pocos lo protegen estratégicamente. Asegurate nace para cambiar eso.',
     ],
   },
   {
@@ -32,7 +25,13 @@ const slidesEs: Slide[] = [
     title: 'Años de esfuerzo merecen protección real.',
     body: [
       'Sabemos que detrás de cada comercio hay años de esfuerzo. Que un imprevisto no ponga en riesgo todo lo que construiste.',
-      'Nosotros nos ocupamos de eso.',
+    ],
+  },
+  {
+    badge: 'Trabajadores independientes',
+    title: 'Trabajas por tu cuenta,\nplanifica tu respaldo.',
+    body: [
+      'Protegé tus ingresos hoy y asegurá tu retiro mañana. Respaldo para tu actividad, garantizando tu retiro jubilatorio.',
     ],
   },
   {
@@ -116,7 +115,7 @@ const CALENDLY_URL = 'https://calendly.com/asegurate'
 
 const discoverLabels = { es: 'Descubrí más', pt: 'Descubra mais', en: 'Discover more' }
 const ctaLabels = { es: 'Agenda tu consulta', pt: 'Agende sua consulta', en: 'Schedule a consultation' }
-const ctaContact = { es: 'Contáctanos', pt: 'Contate-nos', en: 'Contact us' }
+const ctaContact = { es: 'Contactanos', pt: 'Contate-nos', en: 'Contact us' }
 
 // ─── Icons ───────────────────────────────────────────────────────────────────
 function ChevronLeft() {
@@ -206,12 +205,12 @@ export default function HeroSlider() {
         className="hero-slide-enter relative h-full flex items-center justify-center text-center"
       >
         <div className="w-full max-w-[1280px] mx-auto px-8 lg:px-16 flex flex-col items-center">
-          <div className="max-w-[800px] flex flex-col items-center">
+          <div className="max-w-[1000px] flex flex-col items-center">
             {/* Logo */}
             <img
               src="/brand/logo/Asegurate_Horizontal_Tagline.svg"
               alt="Asegúrate"
-              className="h-45 md:h-68 mb-2"
+              className="h-45 md:h-56 mb-6"
             />
 
             {/* Badge */}
@@ -234,7 +233,7 @@ export default function HeroSlider() {
             {/* Body paragraphs */}
             <div className="flex flex-col gap-3 mb-8 items-center">
               {slide.body.map((p, i) => (
-                <p key={i} className="text-base lg:text-lg leading-relaxed max-w-[620px]" style={{ color: 'rgba(255,255,255,0.80)' }}>
+                <p key={i} className="text-base lg:text-lg leading-relaxed max-w-[1000px]" style={{ color: 'rgba(255,255,255,0.80)' }}>
                   {p}
                 </p>
               ))}
