@@ -80,7 +80,7 @@ export default function Navbar() {
         {/* Logo — white variant, enlarged */}
         <Link href="/" className="flex items-center shrink-0">
           <img
-            src="/brand/logo/Asegurate_Horizontal.svg"
+            src="/brand/logo/Asegurate_Horizontal_Tagline.svg"
             alt="Asegúrate"
             className="h-10"
           />

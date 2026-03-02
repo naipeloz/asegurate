@@ -202,19 +202,19 @@ export default function HeroSlider() {
       {/* Slide content */}
       <div
         key={animKey}
-        className="hero-slide-enter relative h-full flex items-center justify-center text-center"
+        className="hero-slide-enter relative h-full flex sm:items-center justify-center text-center"
       >
         <div className="w-full max-w-[1600px] mx-auto px-8 lg:px-16 flex flex-col items-center">
-          <div className="w-full  flex flex-col items-center">
+          <div className="w-full  flex flex-col items-center pt-8 md:pt-0">
             {/* Logo */}
             <img
               src="/brand/logo/Asegurate_Horizontal_Tagline.svg"
               alt="Asegúrate"
-              className="h-30 md:45 md:h-56 mb-6"
+              className="h-28 md:h-45 md:h-56 mb-6"
             />
 
             {/* Fixed-height container to prevent layout shift */}
-            <div className="flex flex-col items-center h-[260px] md:h-[300px] lg:h-[260px] w-[380px] md:w-full mb-8">
+            <div className="flex flex-col items-center h-[260px] md:h-[300px] lg:h-[260px] w-[280px] md:w-full mb-8">
               {/* Badge (always at top) */}
               <div className="shrink-0 mb-6">
                 <span
