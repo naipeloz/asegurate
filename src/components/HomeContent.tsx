@@ -317,7 +317,6 @@ export default function HomeContent() {
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-bold text-4xl lg:text-5xl mb-4 text-[#C6A23A]">{t.servicios.h2}</h2>
-            <p className="text-lg text-white/75">{t.servicios.subtitle}</p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-12">
