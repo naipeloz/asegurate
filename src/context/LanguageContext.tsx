@@ -2,37 +2,34 @@
 
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react'
 
-export type Lang = 'es' | 'pt'
+export type Lang = 'es' | 'pt' | 'en'
 
 interface LanguageContextValue {
   lang: Lang
-  toggle: () => void
+  setLang: (l: Lang) => void
 }
 
 const LanguageContext = createContext<LanguageContextValue>({
   lang: 'es',
-  toggle: () => {},
+  setLang: () => {},
 })
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [lang, setLang] = useState<Lang>('es')
+  const [lang, setLangState] = useState<Lang>('es')
 
   // Persist preference in localStorage
   useEffect(() => {
     const stored = localStorage.getItem('lang') as Lang | null
-    if (stored === 'es' || stored === 'pt') setLang(stored)
+    if (stored === 'es' || stored === 'pt' || stored === 'en') setLangState(stored)
   }, [])
 
-  const toggle = () => {
-    setLang((prev) => {
-      const next: Lang = prev === 'es' ? 'pt' : 'es'
-      localStorage.setItem('lang', next)
-      return next
-    })
+  const setLang = (l: Lang) => {
+    setLangState(l)
+    localStorage.setItem('lang', l)
   }
 
   return (
-    <LanguageContext.Provider value={{ lang, toggle }}>
+    <LanguageContext.Provider value={{ lang, setLang }}>
       {children}
     </LanguageContext.Provider>
   )

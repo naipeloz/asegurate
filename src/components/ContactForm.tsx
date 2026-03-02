@@ -1,6 +1,40 @@
 'use client'
 
 import { useState } from 'react'
+import { useLanguage } from '@/context/LanguageContext'
+
+const labels = {
+  es: {
+    nombre:   'Nombre Completo *',
+    email:    'Correo Electrónico *',
+    telefono: 'Teléfono',
+    empresa:  'Empresa',
+    mensaje:  'Mensaje *',
+    submit:   'Enviar Consulta',
+    successH: '¡Consulta enviada!',
+    successP: 'Nos pondremos en contacto con usted a la brevedad.',
+  },
+  pt: {
+    nombre:   'Nome Completo *',
+    email:    'E-mail *',
+    telefono: 'Telefone',
+    empresa:  'Empresa',
+    mensaje:  'Mensagem *',
+    submit:   'Enviar Consulta',
+    successH: 'Consulta enviada!',
+    successP: 'Entraremos em contato com você em breve.',
+  },
+  en: {
+    nombre:   'Full Name *',
+    email:    'Email Address *',
+    telefono: 'Phone',
+    empresa:  'Company',
+    mensaje:  'Message *',
+    submit:   'Send Inquiry',
+    successH: 'Inquiry sent!',
+    successP: 'We will get in touch with you shortly.',
+  },
+}
 
 function SendIcon() {
   return (
@@ -12,13 +46,10 @@ function SendIcon() {
 }
 
 export default function ContactForm() {
-  const [form, setForm] = useState({
-    nombre: '',
-    email: '',
-    telefono: '',
-    empresa: '',
-    mensaje: '',
-  })
+  const { lang } = useLanguage()
+  const l = labels[lang]
+
+  const [form, setForm] = useState({ nombre: '', email: '', telefono: '', empresa: '', mensaje: '' })
   const [submitted, setSubmitted] = useState(false)
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -29,7 +60,6 @@ export default function ContactForm() {
   if (submitted) {
     return (
       <div className="flex flex-col items-center justify-center h-full min-h-[300px] text-center gap-4">
-        {/* Success icon — gold on glass bg */}
         <div
           className="w-16 h-16 rounded-full flex items-center justify-center"
           style={{ backgroundColor: 'rgba(255,255,255,0.12)' }}
@@ -38,10 +68,8 @@ export default function ContactForm() {
             <polyline points="20 6 9 17 4 12" />
           </svg>
         </div>
-        <h4 className="font-bold text-xl text-white">¡Consulta enviada!</h4>
-        <p className="text-sm" style={{ color: 'rgba(255,255,255,0.70)' }}>
-          Nos pondremos en contacto con usted a la brevedad.
-        </p>
+        <h4 className="font-bold text-xl text-white">{l.successH}</h4>
+        <p className="text-sm" style={{ color: 'rgba(255,255,255,0.70)' }}>{l.successP}</p>
       </div>
     )
   }
@@ -52,74 +80,38 @@ export default function ContactForm() {
     borderColor: 'rgba(255,255,255,0.20)',
     color: 'white',
   }
+  const onFocus = (e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    e.target.style.borderColor = '#C6A23A'
+    e.target.style.boxShadow = '0 0 0 2px rgba(198,162,58,0.2)'
+  }
+  const onBlur = (e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    e.target.style.borderColor = 'rgba(255,255,255,0.20)'
+    e.target.style.boxShadow = 'none'
+  }
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-5">
       <div className="flex flex-col gap-2">
-        <label className="text-sm font-medium text-white">Nombre Completo *</label>
-        <input
-          type="text"
-          required
-          value={form.nombre}
-          onChange={(e) => setForm({ ...form, nombre: e.target.value })}
-          className={inputClass}
-          style={inputStyle}
-          onFocus={(e) => { e.target.style.borderColor = '#C6A23A'; e.target.style.boxShadow = '0 0 0 2px rgba(198,162,58,0.2)' }}
-          onBlur={(e) => { e.target.style.borderColor = 'rgba(255,255,255,0.20)'; e.target.style.boxShadow = 'none' }}
-        />
+        <label className="text-sm font-medium text-white">{l.nombre}</label>
+        <input type="text" required value={form.nombre} onChange={(e) => setForm({ ...form, nombre: e.target.value })} className={inputClass} style={inputStyle} onFocus={onFocus} onBlur={onBlur} />
       </div>
       <div className="flex flex-col gap-2">
-        <label className="text-sm font-medium text-white">Correo Electrónico *</label>
-        <input
-          type="email"
-          required
-          value={form.email}
-          onChange={(e) => setForm({ ...form, email: e.target.value })}
-          className={inputClass}
-          style={inputStyle}
-          onFocus={(e) => { e.target.style.borderColor = '#C6A23A'; e.target.style.boxShadow = '0 0 0 2px rgba(198,162,58,0.2)' }}
-          onBlur={(e) => { e.target.style.borderColor = 'rgba(255,255,255,0.20)'; e.target.style.boxShadow = 'none' }}
-        />
+        <label className="text-sm font-medium text-white">{l.email}</label>
+        <input type="email" required value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} className={inputClass} style={inputStyle} onFocus={onFocus} onBlur={onBlur} />
       </div>
       <div className="flex flex-col gap-2">
-        <label className="text-sm font-medium text-white">Teléfono</label>
-        <input
-          type="tel"
-          value={form.telefono}
-          onChange={(e) => setForm({ ...form, telefono: e.target.value })}
-          className={inputClass}
-          style={inputStyle}
-          onFocus={(e) => { e.target.style.borderColor = '#C6A23A'; e.target.style.boxShadow = '0 0 0 2px rgba(198,162,58,0.2)' }}
-          onBlur={(e) => { e.target.style.borderColor = 'rgba(255,255,255,0.20)'; e.target.style.boxShadow = 'none' }}
-        />
+        <label className="text-sm font-medium text-white">{l.telefono}</label>
+        <input type="tel" value={form.telefono} onChange={(e) => setForm({ ...form, telefono: e.target.value })} className={inputClass} style={inputStyle} onFocus={onFocus} onBlur={onBlur} />
       </div>
       <div className="flex flex-col gap-2">
-        <label className="text-sm font-medium text-white">Empresa</label>
-        <input
-          type="text"
-          value={form.empresa}
-          onChange={(e) => setForm({ ...form, empresa: e.target.value })}
-          className={inputClass}
-          style={inputStyle}
-          onFocus={(e) => { e.target.style.borderColor = '#C6A23A'; e.target.style.boxShadow = '0 0 0 2px rgba(198,162,58,0.2)' }}
-          onBlur={(e) => { e.target.style.borderColor = 'rgba(255,255,255,0.20)'; e.target.style.boxShadow = 'none' }}
-        />
+        <label className="text-sm font-medium text-white">{l.empresa}</label>
+        <input type="text" value={form.empresa} onChange={(e) => setForm({ ...form, empresa: e.target.value })} className={inputClass} style={inputStyle} onFocus={onFocus} onBlur={onBlur} />
       </div>
       <div className="flex flex-col gap-2">
-        <label className="text-sm font-medium text-white">Mensaje *</label>
-        <textarea
-          required
-          rows={3}
-          value={form.mensaje}
-          onChange={(e) => setForm({ ...form, mensaje: e.target.value })}
-          className={`${inputClass} resize-none`}
-          style={inputStyle}
-          onFocus={(e) => { e.target.style.borderColor = '#C6A23A'; e.target.style.boxShadow = '0 0 0 2px rgba(198,162,58,0.2)' }}
-          onBlur={(e) => { e.target.style.borderColor = 'rgba(255,255,255,0.20)'; e.target.style.boxShadow = 'none' }}
-        />
+        <label className="text-sm font-medium text-white">{l.mensaje}</label>
+        <textarea required rows={3} value={form.mensaje} onChange={(e) => setForm({ ...form, mensaje: e.target.value })} className={`${inputClass} resize-none`} style={inputStyle} onFocus={onFocus} onBlur={onBlur} />
       </div>
 
-      {/* Submit — gold button (#C6A23A) with dark text (#040C1F) */}
       <button
         type="submit"
         className="w-full flex items-center justify-center gap-2 font-semibold text-sm py-2.5 rounded-[8px] transition-colors shadow-md"
@@ -128,7 +120,7 @@ export default function ContactForm() {
         onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#C6A23A')}
       >
         <SendIcon />
-        Enviar Consulta
+        {l.submit}
       </button>
     </form>
   )

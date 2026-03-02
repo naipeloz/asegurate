@@ -3,14 +3,16 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { useLanguage } from '@/context/LanguageContext'
+import { useLanguage, Lang } from '@/context/LanguageContext'
 
 const SECTION_IDS = ['inicio', 'nosotros', 'servicios', 'faq', 'contacto']
 
+// Menu order: Inicio / Nosotros / Servicios / Clientes Extranjeros / Preguntas Frecuentes / Contacto
 const navLinksEs = [
   { label: 'Inicio', href: '/#inicio', section: 'inicio' },
   { label: 'Nosotros', href: '/#nosotros', section: 'nosotros' },
   { label: 'Servicios', href: '/#servicios', section: 'servicios' },
+  { label: 'Clientes Extranjeros', href: '/clientes-extranjeros', section: '__clientes__' },
   { label: 'Preguntas Frecuentes', href: '/#faq', section: 'faq' },
   { label: 'Contacto', href: '/#contacto', section: 'contacto' },
 ]
@@ -19,46 +21,54 @@ const navLinksPt = [
   { label: 'Início', href: '/#inicio', section: 'inicio' },
   { label: 'Sobre nós', href: '/#nosotros', section: 'nosotros' },
   { label: 'Serviços', href: '/#servicios', section: 'servicios' },
+  { label: 'Clientes Estrangeiros', href: '/clientes-extranjeros', section: '__clientes__' },
   { label: 'Perguntas Frequentes', href: '/#faq', section: 'faq' },
   { label: 'Contato', href: '/#contacto', section: 'contacto' },
 ]
 
+const navLinksEn = [
+  { label: 'Home', href: '/#inicio', section: 'inicio' },
+  { label: 'About Us', href: '/#nosotros', section: 'nosotros' },
+  { label: 'Services', href: '/#servicios', section: 'servicios' },
+  { label: 'Foreign Clients', href: '/clientes-extranjeros', section: '__clientes__' },
+  { label: 'FAQ', href: '/#faq', section: 'faq' },
+  { label: 'Contact', href: '/#contacto', section: 'contacto' },
+]
+
+const LANG_LABELS: Record<Lang, string> = { es: 'ES', pt: 'PT', en: 'EN' }
+const ALL_LANGS: Lang[] = ['es', 'pt', 'en']
+
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [activeSection, setActiveSection] = useState<string>('inicio')
-  const { lang, toggle } = useLanguage()
+  const { lang, setLang } = useLanguage()
   const pathname = usePathname()
 
   const isHome = pathname === '/'
   const isClientes = pathname === '/clientes-extranjeros'
-  const navLinks = lang === 'es' ? navLinksEs : navLinksPt
-  const clientesLabel = lang === 'es' ? 'Clientes Extranjeros' : 'Clientes Estrangeiros'
+  const navLinks = lang === 'es' ? navLinksEs : lang === 'pt' ? navLinksPt : navLinksEn
 
   // Active section via IntersectionObserver — home page only
   useEffect(() => {
     if (!isHome) return
-
     const observers: IntersectionObserver[] = []
-
     SECTION_IDS.forEach((id) => {
       const el = document.getElementById(id)
       if (!el) return
-
       const obs = new IntersectionObserver(
-        ([entry]) => {
-          if (entry.isIntersecting) setActiveSection(id)
-        },
-        // Trigger zone: middle 10% of viewport
+        ([entry]) => { if (entry.isIntersecting) setActiveSection(id) },
         { rootMargin: '-45% 0px -45% 0px', threshold: 0 }
       )
       obs.observe(el)
       observers.push(obs)
     })
-
     return () => observers.forEach((o) => o.disconnect())
   }, [isHome])
 
-  const isActive = (section: string) => isHome && activeSection === section
+  const isLinkActive = (section: string) => {
+    if (section === '__clientes__') return isClientes
+    return isHome && activeSection === section
+  }
 
   return (
     <nav
@@ -67,94 +77,87 @@ export default function Navbar() {
     >
       <div className="max-w-[1280px] mx-auto px-6 lg:px-8 h-20 flex items-center justify-between">
 
-        {/* Logo — white variant */}
+        {/* Logo — white variant, enlarged */}
         <Link href="/" className="flex items-center shrink-0">
           <img
             src="/brand/logo/Asegurate_Horizontal_Blanco.svg"
             alt="Asegúrate"
-            className="h-9"
+            className="h-18"
           />
         </Link>
 
         {/* Desktop nav */}
         <div className="hidden lg:flex items-center gap-0.5">
-          {navLinks.map((link) => (
-            <a
-              key={link.section}
-              href={link.href}
-              className={`px-3.5 py-2 rounded-[10px] text-sm transition-colors whitespace-nowrap ${
-                isActive(link.section)
-                  ? 'font-semibold'
-                  : 'font-medium text-white/70'
-              }`}
-              style={
-                isActive(link.section)
-                  ? { backgroundColor: 'rgba(198,162,58,0.15)', color: '#C6A23A' }
-                  : undefined
-              }
-              onMouseEnter={(e) => {
-                if (!isActive(link.section)) {
+          {navLinks.map((link) => {
+            const active = isLinkActive(link.section)
+            const isPage = link.href.startsWith('/') && !link.href.startsWith('/#')
+            const sharedClass = `px-3 py-2 rounded-[10px] text-sm font-medium transition-colors whitespace-nowrap`
+
+            const activeStyle = { backgroundColor: 'rgba(198,162,58,0.18)', color: '#C6A23A' }
+            const defaultStyle = { color: '#C6A23A' }
+
+            const handlers = {
+              onMouseEnter: (e: React.MouseEvent<HTMLAnchorElement>) => {
+                if (!active) {
                   e.currentTarget.style.backgroundColor = 'rgba(198,162,58,0.10)'
-                  e.currentTarget.style.color = '#C6A23A'
                 }
-              }}
-              onMouseLeave={(e) => {
-                if (!isActive(link.section)) {
-                  e.currentTarget.style.backgroundColor = ''
-                  e.currentTarget.style.color = ''
-                }
-              }}
-            >
-              {link.label}
-            </a>
-          ))}
-
-          {/* Clientes Extranjeros */}
-          <Link
-            href="/clientes-extranjeros"
-            className="px-3.5 py-2 rounded-[10px] text-sm font-semibold transition-colors whitespace-nowrap ml-1"
-            style={
-              isClientes
-                ? { backgroundColor: 'rgba(198,162,58,0.20)', color: '#C6A23A' }
-                : { backgroundColor: 'rgba(198,162,58,0.12)', color: '#C6A23A' }
+              },
+              onMouseLeave: (e: React.MouseEvent<HTMLAnchorElement>) => {
+                if (!active) e.currentTarget.style.backgroundColor = ''
+              },
             }
-            onMouseEnter={(e) => {
-              e.currentTarget.style.backgroundColor = 'rgba(198,162,58,0.25)'
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.backgroundColor = isClientes
-                ? 'rgba(198,162,58,0.20)'
-                : 'rgba(198,162,58,0.12)'
-            }}
-          >
-            {clientesLabel}
-          </Link>
 
-          {/* Language toggle */}
-          <button
-            onClick={toggle}
-            aria-label={lang === 'es' ? 'Mudar para Português' : 'Cambiar a Español'}
-            title={lang === 'es' ? 'Mudar para Português' : 'Cambiar a Español'}
-            className="flex items-center gap-1.5 px-3 py-2 rounded-[10px] text-sm font-semibold transition-colors ml-1 border"
-            style={{ color: 'rgba(255,255,255,0.70)', borderColor: 'rgba(255,255,255,0.15)' }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.backgroundColor = 'rgba(198,162,58,0.12)'
-              e.currentTarget.style.color = '#C6A23A'
-              e.currentTarget.style.borderColor = 'rgba(198,162,58,0.40)'
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.backgroundColor = ''
-              e.currentTarget.style.color = 'rgba(255,255,255,0.70)'
-              e.currentTarget.style.borderColor = 'rgba(255,255,255,0.15)'
-            }}
+            return isPage ? (
+              <Link
+                key={link.section}
+                href={link.href}
+                className={`${sharedClass} ${active ? 'font-semibold' : ''}`}
+                style={active ? activeStyle : defaultStyle}
+                onMouseEnter={handlers.onMouseEnter}
+                onMouseLeave={handlers.onMouseLeave}
+              >
+                {link.label}
+              </Link>
+            ) : (
+              <a
+                key={link.section}
+                href={link.href}
+                className={`${sharedClass} ${active ? 'font-semibold' : ''}`}
+                style={active ? activeStyle : defaultStyle}
+                onMouseEnter={handlers.onMouseEnter}
+                onMouseLeave={handlers.onMouseLeave}
+              >
+                {link.label}
+              </a>
+            )
+          })}
+
+          {/* Language switcher — 3 compact chips */}
+          <div
+            className="flex gap-0.5 ml-3 p-1 rounded-[8px]"
+            style={{ backgroundColor: 'rgba(255,255,255,0.06)' }}
           >
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <circle cx="12" cy="12" r="10" />
-              <line x1="2" y1="12" x2="22" y2="12" />
-              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-            </svg>
-            <span className="uppercase tracking-wide">{lang === 'es' ? 'PT' : 'ES'}</span>
-          </button>
+            {ALL_LANGS.map((l) => (
+              <button
+                key={l}
+                onClick={() => setLang(l)}
+                className="px-2.5 py-1 rounded-[6px] text-xs font-bold uppercase tracking-wide transition-colors"
+                style={
+                  lang === l
+                    ? { backgroundColor: '#C6A23A', color: '#040C1F' }
+                    : { color: 'rgba(255,255,255,0.50)' }
+                }
+                onMouseEnter={(e) => {
+                  if (lang !== l) e.currentTarget.style.color = '#C6A23A'
+                }}
+                onMouseLeave={(e) => {
+                  if (lang !== l) e.currentTarget.style.color = 'rgba(255,255,255,0.50)'
+                }}
+              >
+                {LANG_LABELS[l]}
+              </button>
+            ))}
+          </div>
         </div>
 
         {/* Mobile hamburger */}
@@ -175,48 +178,41 @@ export default function Navbar() {
           className="lg:hidden border-t px-6 py-4 flex flex-col gap-1"
           style={{ backgroundColor: '#040C1F', borderColor: 'rgba(255,255,255,0.08)' }}
         >
-          {navLinks.map((link) => (
-            <a
-              key={link.section}
-              href={link.href}
-              onClick={() => setMenuOpen(false)}
-              className={`px-4 py-3 rounded-[10px] text-sm transition-colors ${
-                isActive(link.section) ? 'font-semibold' : 'font-medium text-white/70'
-              }`}
-              style={
-                isActive(link.section)
-                  ? { backgroundColor: 'rgba(198,162,58,0.15)', color: '#C6A23A' }
-                  : undefined
-              }
-            >
-              {link.label}
-            </a>
-          ))}
-          <Link
-            href="/clientes-extranjeros"
-            onClick={() => setMenuOpen(false)}
-            className="px-4 py-3 rounded-[10px] text-sm font-semibold transition-colors"
-            style={
-              isClientes
-                ? { backgroundColor: 'rgba(198,162,58,0.20)', color: '#C6A23A' }
-                : { color: '#C6A23A' }
-            }
-          >
-            {clientesLabel}
-          </Link>
-          <div className="border-t mt-2 pt-3 px-1" style={{ borderColor: 'rgba(255,255,255,0.08)' }}>
-            <button
-              onClick={() => { toggle(); setMenuOpen(false) }}
-              className="flex items-center gap-2 px-3 py-2 rounded-[10px] text-sm font-semibold border transition-colors"
-              style={{ color: 'rgba(255,255,255,0.70)', borderColor: 'rgba(255,255,255,0.15)' }}
-            >
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <circle cx="12" cy="12" r="10" />
-                <line x1="2" y1="12" x2="22" y2="12" />
-                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-              </svg>
-              {lang === 'es' ? 'Mudar para Português' : 'Cambiar a Español'}
-            </button>
+          {navLinks.map((link) => {
+            const active = isLinkActive(link.section)
+            const isPage = link.href.startsWith('/') && !link.href.startsWith('/#')
+            const sharedClass = `px-4 py-3 rounded-[10px] text-sm transition-colors ${active ? 'font-semibold' : 'font-medium'}`
+            const style = active
+              ? { backgroundColor: 'rgba(198,162,58,0.18)', color: '#C6A23A' }
+              : { color: '#C6A23A' }
+
+            return isPage ? (
+              <Link key={link.section} href={link.href} onClick={() => setMenuOpen(false)} className={sharedClass} style={style}>
+                {link.label}
+              </Link>
+            ) : (
+              <a key={link.section} href={link.href} onClick={() => setMenuOpen(false)} className={sharedClass} style={style}>
+                {link.label}
+              </a>
+            )
+          })}
+
+          {/* Mobile language switcher */}
+          <div className="border-t mt-2 pt-3 px-1 flex gap-2" style={{ borderColor: 'rgba(255,255,255,0.08)' }}>
+            {ALL_LANGS.map((l) => (
+              <button
+                key={l}
+                onClick={() => { setLang(l); setMenuOpen(false) }}
+                className="px-4 py-2 rounded-[8px] text-sm font-bold uppercase tracking-wide transition-colors border"
+                style={
+                  lang === l
+                    ? { backgroundColor: '#C6A23A', color: '#040C1F', borderColor: '#C6A23A' }
+                    : { color: 'rgba(255,255,255,0.60)', borderColor: 'rgba(255,255,255,0.15)' }
+                }
+              >
+                {LANG_LABELS[l]}
+              </button>
+            ))}
           </div>
         </div>
       )}

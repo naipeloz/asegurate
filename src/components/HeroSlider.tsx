@@ -11,13 +11,20 @@ interface Slide {
   body: string[]
 }
 
+// ─── Spanish slides ──────────────────────────────────────────────────────────
 const slidesEs: Slide[] = [
   {
     badge: 'Empresas y sociedades',
     title: 'Construiste tu patrimonio.\nAhora protégelo estratégicamente.',
     body: [
-      'En Uruguay muchos empresarios construyen patrimonio pero pocos lo protegen estratégicamente. Asegurate nace para cambiar eso.',
       'Somos la primera empresa en Uruguay especializada en blindaje empresarial a través de estructuras aseguradas.',
+    ],
+  },
+  {
+    badge: 'Blindaje Empresarial',
+    title: 'La protección que tu empresa necesita.',
+    body: [
+      'En Uruguay muchos empresarios construyen patrimonio pero pocos lo protegen estratégicamente. Asegurate nace para cambiar eso.',
     ],
   },
   {
@@ -29,15 +36,6 @@ const slidesEs: Slide[] = [
     ],
   },
   {
-    badge: 'Trabajadores independientes',
-    title: 'Ser independiente no significa estar solo.',
-    body: [
-      'Trabajas por tu cuenta. Tu respaldo también tiene que depender de vos.',
-      'Protegé tus ingresos hoy y asegura tu retiro mañana.',
-      'Respaldo para tu actividad, garantizando tu retiro jubilatorio.',
-    ],
-  },
-  {
     badge: 'Respaldo',
     title: 'La confianza se construye con trayectoria.',
     body: [
@@ -46,13 +44,20 @@ const slidesEs: Slide[] = [
   },
 ]
 
+// ─── Portuguese slides ───────────────────────────────────────────────────────
 const slidesPt: Slide[] = [
   {
     badge: 'Empresas e sociedades',
     title: 'Você construiu seu patrimônio.\nAgora proteja-o estrategicamente.',
     body: [
-      'No Uruguai, muitos empresários constroem patrimônio, mas poucos o protegem estrategicamente. A Asegurate nasce para mudar isso.',
       'Somos a primeira empresa no Uruguai especializada em blindagem empresarial através de estruturas seguradas.',
+    ],
+  },
+  {
+    badge: 'Blindagem Empresarial',
+    title: 'A proteção que sua empresa precisa.',
+    body: [
+      'No Uruguai, muitos empresários constroem patrimônio, mas poucos o protegem estrategicamente. A Asegurate nasce para mudar isso.',
     ],
   },
   {
@@ -64,15 +69,6 @@ const slidesPt: Slide[] = [
     ],
   },
   {
-    badge: 'Trabalhadores independentes',
-    title: 'Ser independente não significa estar sozinho.',
-    body: [
-      'Você trabalha por conta própria. Seu respaldo também deve depender de você.',
-      'Proteja sua renda hoje e garanta sua aposentadoria amanhã.',
-      'Respaldo para sua atividade, garantindo sua aposentadoria.',
-    ],
-  },
-  {
     badge: 'Respaldo',
     title: 'A confiança se constrói com trajetória.',
     body: [
@@ -81,9 +77,49 @@ const slidesPt: Slide[] = [
   },
 ]
 
+// ─── English slides ──────────────────────────────────────────────────────────
+const slidesEn: Slide[] = [
+  {
+    badge: 'Companies & Corporations',
+    title: 'You built your wealth.\nNow protect it strategically.',
+    body: [
+      'We are the first company in Uruguay specializing in corporate protection through insured structures.',
+    ],
+  },
+  {
+    badge: 'Corporate Protection',
+    title: 'The protection your company needs.',
+    body: [
+      'In Uruguay, many entrepreneurs build wealth but few protect it strategically. Asegurate was created to change that.',
+    ],
+  },
+  {
+    badge: 'Businesses',
+    title: 'Years of effort deserve real protection.',
+    body: [
+      'We know that behind every business there are years of hard work. Don\'t let the unexpected put everything at risk.',
+      'We take care of that.',
+    ],
+  },
+  {
+    badge: 'Track Record',
+    title: 'Trust is built through experience.',
+    body: [
+      'That\'s why we work with a company with over 30 years in Uruguay.',
+    ],
+  },
+]
+
 // Hero background image (Figma placeholder — replace with /public asset for production)
 const imgHero = 'https://www.figma.com/api/mcp/asset/9a5cb372-991d-4cf2-b88f-8021998ebd83'
 
+const CALENDLY_URL = 'https://calendly.com/asegurate'
+
+const discoverLabels = { es: 'Descubrí más', pt: 'Descubra mais', en: 'Discover more' }
+const ctaLabels     = { es: 'Agenda tu consulta', pt: 'Agende sua consulta', en: 'Schedule a consultation' }
+const ctaContact    = { es: 'Contáctanos', pt: 'Contate-nos', en: 'Contact us' }
+
+// ─── Icons ───────────────────────────────────────────────────────────────────
 function ChevronLeft() {
   return (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
@@ -100,6 +136,14 @@ function ChevronRight() {
   )
 }
 
+function ChevronDown() {
+  return (
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <polyline points="6 9 12 15 18 9" />
+    </svg>
+  )
+}
+
 function CalendarIcon() {
   return (
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -111,9 +155,10 @@ function CalendarIcon() {
   )
 }
 
+// ─── Component ───────────────────────────────────────────────────────────────
 export default function HeroSlider() {
   const { lang } = useLanguage()
-  const slides = lang === 'es' ? slidesEs : slidesPt
+  const slides = lang === 'es' ? slidesEs : lang === 'pt' ? slidesPt : slidesEn
 
   const [current, setCurrent] = useState(0)
   const [animKey, setAnimKey] = useState(0)
@@ -136,9 +181,7 @@ export default function HeroSlider() {
   useEffect(() => {
     if (paused) return
     timerRef.current = setTimeout(goNext, AUTOPLAY_MS)
-    return () => {
-      if (timerRef.current) clearTimeout(timerRef.current)
-    }
+    return () => { if (timerRef.current) clearTimeout(timerRef.current) }
   }, [current, paused, goNext])
 
   // Reset to first slide when language changes
@@ -148,8 +191,6 @@ export default function HeroSlider() {
   }, [lang])
 
   const slide = slides[current]
-  const ctaLabel = lang === 'es' ? 'Agendar Consulta' : 'Agendar Consulta'
-  const ctaContact = lang === 'es' ? 'Contactar' : 'Contatar'
 
   return (
     <div
@@ -167,23 +208,23 @@ export default function HeroSlider() {
         className="absolute inset-0 w-full h-full object-cover"
       />
 
-      {/* Gradient overlay — brand deep navy */}
+      {/* Gradient overlay — deep navy */}
       <div
         className="absolute inset-0"
         style={{
           backgroundImage:
-            'linear-gradient(90deg, rgba(4,12,31,0.92) 0%, rgba(4,12,31,0.68) 50%, rgba(4,12,31,0.10) 100%)',
+            'linear-gradient(90deg, rgba(4,12,31,0.94) 0%, rgba(4,12,31,0.70) 50%, rgba(4,12,31,0.12) 100%)',
         }}
       />
 
-      {/* Slide content with fade-in animation */}
+      {/* Slide content */}
       <div
         key={animKey}
         className="hero-slide-enter relative h-full flex items-center"
       >
         <div className="w-full max-w-[1280px] mx-auto px-8 lg:px-16">
           <div className="max-w-[620px]">
-            {/* Badge — gold tint */}
+            {/* Badge */}
             <span
               className="inline-block text-sm font-semibold px-4 py-1.5 rounded-full mb-6 backdrop-blur-sm border"
               style={{
@@ -212,27 +253,29 @@ export default function HeroSlider() {
             {/* CTA buttons */}
             <div className="flex flex-wrap gap-3">
               <a
-                href="/#contacto"
+                href={CALENDLY_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-2 font-semibold text-sm lg:text-base px-5 py-3.5 rounded-[10px] shadow-lg transition-colors"
                 style={{ backgroundColor: '#C6A23A', color: '#040C1F' }}
                 onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#816828')}
                 onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#C6A23A')}
               >
                 <CalendarIcon />
-                {ctaLabel}
+                {ctaLabels[lang]}
               </a>
               <a
                 href="/#contacto"
                 className="font-semibold text-sm lg:text-base text-white border-2 border-white/60 px-5 py-3.5 rounded-[10px] hover:bg-white/10 transition-colors"
               >
-                {ctaContact}
+                {ctaContact[lang]}
               </a>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Prev arrow */}
+      {/* Prev / Next arrows */}
       <button
         onClick={goPrev}
         aria-label="Anterior"
@@ -240,8 +283,6 @@ export default function HeroSlider() {
       >
         <ChevronLeft />
       </button>
-
-      {/* Next arrow */}
       <button
         onClick={goNext}
         aria-label="Siguiente"
@@ -251,23 +292,34 @@ export default function HeroSlider() {
       </button>
 
       {/* Progress dots */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex items-center gap-2">
+      <div className="absolute bottom-20 left-1/2 -translate-x-1/2 flex items-center gap-2">
         {slides.map((_, i) => (
           <button
             key={i}
             onClick={() => goTo(i)}
-            aria-label={`Ir a diapositiva ${i + 1}`}
-            className={`h-2 rounded-full transition-all duration-300 ${
-              i === current
-                ? 'w-7'
-                : 'w-2 hover:bg-white/70'
-            }`}
-            style={{
-              backgroundColor: i === current ? '#C6A23A' : 'rgba(255,255,255,0.45)',
-            }}
+            aria-label={`Slide ${i + 1}`}
+            className={`h-2 rounded-full transition-all duration-300 ${i === current ? 'w-7' : 'w-2 hover:bg-white/70'}`}
+            style={{ backgroundColor: i === current ? '#C6A23A' : 'rgba(255,255,255,0.45)' }}
           />
         ))}
       </div>
+
+      {/* "Descubrí más" scroll indicator */}
+      <button
+        onClick={() => document.getElementById('nosotros')?.scrollIntoView({ behavior: 'smooth' })}
+        className="absolute bottom-5 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 group"
+        aria-label={discoverLabels[lang]}
+      >
+        <span
+          className="text-xs font-semibold uppercase tracking-[0.18em] transition-colors"
+          style={{ color: 'rgba(255,255,255,0.55)' }}
+        >
+          {discoverLabels[lang]}
+        </span>
+        <span className="animate-bounce" style={{ color: 'rgba(255,255,255,0.55)' }}>
+          <ChevronDown />
+        </span>
+      </button>
     </div>
   )
 }
