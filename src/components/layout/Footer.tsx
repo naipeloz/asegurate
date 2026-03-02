@@ -46,7 +46,7 @@ export default function Footer() {
           <div className="md:col-span-1">
             <a href="/" className="inline-flex mb-5">
               <img
-                src="/brand/logo/Asegurate_Horizontal_Negativo.svg"
+                src="/brand/logo/Asegurate_Horizontal.svg"
                 alt="Asegúrate"
                 className="h-16"
               />

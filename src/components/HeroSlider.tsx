@@ -211,7 +211,7 @@ export default function HeroSlider() {
             <img
               src="/brand/logo/Asegurate_Horizontal_Tagline.svg"
               alt="Asegúrate"
-              className="h-36 md:h-54 mb-8"
+              className="h-45 md:h-68 mb-2"
             />
 
             {/* Badge */}
