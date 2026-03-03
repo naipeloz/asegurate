@@ -47,29 +47,28 @@ const slidesEs: Slide[] = [
 const slidesPt: Slide[] = [
   {
     badge: 'Empresas e sociedades',
-    title: 'Você construiu seu patrimônio.\nAgora proteja-o estrategicamente.',
+    title: 'No Uruguai, muitos empresários constroem patrimônio, mas poucos o protegem estrategicamente.\nA Asegurate nasce para mudar isso.',
     body: [
       'Somos a primeira empresa no Uruguai especializada em blindagem empresarial através de estruturas seguradas.',
     ],
   },
   {
-    badge: 'Blindagem Empresarial',
-    title: 'A proteção que sua empresa precisa.',
-    body: [
-      'No Uruguai, muitos empresários constroem patrimônio, mas poucos o protegem estrategicamente. A Asegurate nasce para mudar isso.',
-    ],
-  },
-  {
     badge: 'Comércios',
-    title: 'Anos de esforço merecem proteção real.',
+    title: 'Sabemos que por trás de cada comércio há anos de esforço. Que um imprevisto não coloque em risco tudo o que você construiu. ',
     body: [
-      'Sabemos que por trás de cada comércio há anos de esforço. Que um imprevisto não coloque em risco tudo o que você construiu.',
       'Nós cuidamos disso.',
     ],
   },
   {
+    badge: 'Trabalhadores independentes',
+    title: 'Você trabalha por conta própria.\nSeu respaldo também tem que depender de você. ',
+    body: [
+      'Ser independente não significa estar sozinho. Proteja sua renda hoje e garanta sua aposentadoria amanhã. Respaldo para sua atividade, garantindo sua aposentadoria.',
+    ],
+  },
+  {
     badge: 'Respaldo',
-    title: 'A confiança se constrói com trajetória.',
+    title: 'A confiança é construída com trajetória.',
     body: [
       'Por isso trabalhamos com uma empresa com mais de 30 anos no Uruguai.',
     ],
@@ -79,30 +78,29 @@ const slidesPt: Slide[] = [
 // ─── English slides ──────────────────────────────────────────────────────────
 const slidesEn: Slide[] = [
   {
-    badge: 'Companies & Corporations',
-    title: 'You built your wealth.\nNow protect it strategically.',
+    badge: 'Companies and corporations',
+    title: 'In Uruguay, many entrepreneurs build wealth but few protect it strategically.\nAsegurate is born to change that.',
     body: [
       'We are the first company in Uruguay specializing in corporate protection through insured structures.',
     ],
   },
   {
-    badge: 'Corporate Protection',
-    title: 'The protection your company needs.',
-    body: [
-      'In Uruguay, many entrepreneurs build wealth but few protect it strategically. Asegurate was created to change that.',
-    ],
-  },
-  {
     badge: 'Businesses',
-    title: 'Years of effort deserve real protection.',
+    title: 'We know that behind every business there are years of effort. Don\'t let an unforeseen event put everything you\'ve built at risk. ',
     body: [
-      'We know that behind every business there are years of hard work. Don\'t let the unexpected put everything at risk.',
       'We take care of that.',
     ],
   },
   {
-    badge: 'Track Record',
-    title: 'Trust is built through experience.',
+    badge: 'Independent workers',
+    title: 'You work for yourself.\nYour backup also has to depend on you. ',
+    body: [
+      'Being independent doesn\'t mean being alone. Protect your income today and secure your retirement tomorrow. Backup for your activity, guaranteeing your retirement.',
+    ],
+  },
+  {
+    badge: 'Backing',
+    title: 'Trust is built with a track record.',
     body: [
       'That\'s why we work with a company with over 30 years in Uruguay.',
     ],
@@ -114,7 +112,7 @@ const slidesEn: Slide[] = [
 const CALENDLY_URL = 'https://calendly.com/asegurate'
 
 const discoverLabels = { es: 'Descubrí más', pt: 'Descubra mais', en: 'Discover more' }
-const ctaLabels = { es: 'Agenda tu consulta', pt: 'Agende sua consulta', en: 'Schedule a consultation' }
+const ctaLabels = { es: 'Agendá tu consulta', pt: 'Agende sua consulta', en: 'Schedule a consultation' }
 const ctaContact = { es: 'Contactanos', pt: 'Contate-nos', en: 'Contact us' }
 
 // ─── Icons ───────────────────────────────────────────────────────────────────
@@ -202,7 +200,7 @@ export default function HeroSlider() {
       {/* Slide content */}
       <div
         key={animKey}
-        className="hero-slide-enter relative h-full flex sm:items-center justify-center text-center"
+        className="hero-slide-enter relative h-full flex items-center justify-center text-center"
       >
         <div className="w-full max-w-[1600px] mx-auto px-8 lg:px-16 flex flex-col items-center">
           <div className="w-full  flex flex-col items-center pt-8 md:pt-0">
@@ -210,7 +208,7 @@ export default function HeroSlider() {
             <img
               src="/brand/logo/Asegurate_Horizontal_Tagline.svg"
               alt="Asegúrate"
-              className="h-28 md:h-45 md:h-56 mb-6"
+              className="h-28 md:h-38 md:h-56 mb-6 hidden sm:block"
             />
 
             {/* Fixed-height container to prevent layout shift */}

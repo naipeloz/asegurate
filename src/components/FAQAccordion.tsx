@@ -6,68 +6,92 @@ import { useLanguage } from '@/context/LanguageContext'
 const faqs = {
   es: [
     {
-      question: '¿Qué tipo de empresas pueden asegurarse?',
-      answer: 'Asegúrate trabaja exclusivamente con comercios, empresas y sociedades de todo tipo. Ya sea que tenga una pequeña empresa, una sociedad anónima o un holding empresarial, podemos ofrecerle soluciones personalizadas para proteger su patrimonio.',
+      question: '¿A quién está dirigido este respaldo?',
+      answer: 'Está pensado para deportistas profesionales que desean proteger su carrera, cubrir imprevistos y planificar su futuro económico.',
     },
     {
-      question: '¿Cuál es el monto máximo asegurado?',
-      answer: 'Aseguramos capitales de hasta USD 1.200.000 con garantía de no embargo. Este límite está diseñado para cubrir las necesidades de la mayoría de nuestros clientes empresariales.',
+      question: '¿Qué tipo de respaldo ofrece?',
+      answer: 'Ofrece un capital asegurado que brinda protección económica ante lesiones, interrupciones de la actividad y permite planificar el retiro jubilatorio.',
     },
     {
-      question: '¿Qué significa "capital no embargable"?',
-      answer: 'Un capital no embargable es aquel que, por ley o estructura jurídica, no puede ser incautado ni utilizado para satisfacer deudas de terceros. Nuestros seguros están estructurados para garantizar esta protección legal de sus activos.',
+      question: '¿El deportista puede seguir compitiendo normalmente?',
+      answer: 'Sí. El respaldo acompaña la carrera deportiva sin interferir en la actividad ni en el rendimiento.',
     },
     {
-      question: '¿En qué zonas operan?',
-      answer: 'Brindamos atención personalizada principalmente en Punta del Este y zonas aledañas del Este uruguayo. Sin embargo, también atendemos clientes de todo Uruguay y del extranjero de forma remota o con visitas coordinadas.',
+      question: '¿El capital está disponible desde el inicio?',
+      answer: 'Sí. La cobertura es sin período de carencia, brindando protección desde el primer momento.',
     },
     {
-      question: '¿Cómo es el proceso de contratación?',
-      answer: 'El proceso comienza con una consulta confidencial donde evaluamos sus necesidades. Luego presentamos una propuesta personalizada y, una vez aprobada, gestionamos toda la documentación necesaria con absoluta discreción.',
+      question: '¿El capital es embargable?',
+      answer: 'No. El capital asegurado es no embargable, ofreciendo mayor seguridad patrimonial.',
+    },
+    {
+      question: '¿Se adapta a cada disciplina deportiva?',
+      answer: 'Sí. Las soluciones son personalizadas según el deporte, nivel de competencia y etapa de la carrera.',
+    },
+    {
+      question: '¿Sirve también para el retiro del deportista?',
+      answer: 'Sí. Permite planificar un retiro jubilatorio una vez finalizada la carrera deportiva.',
     },
   ],
   pt: [
     {
-      question: 'Que tipo de empresas podem ser seguradas?',
-      answer: 'A Asegurate trabalha exclusivamente com comércios, empresas e sociedades de todos os tipos. Seja uma pequena empresa, uma sociedade anônima ou um holding empresarial, podemos oferecer soluções personalizadas para proteger seu patrimônio.',
+      question: 'A quem se destina este respaldo?',
+      answer: 'É pensado para atletas profissionais que desejam proteger sua carreira, cobrir imprevistos e planejar seu futuro financeiro.',
     },
     {
-      question: 'Qual é o valor máximo segurado?',
-      answer: 'Asseguramos capitais de até USD 1.200.000 com garantia de não penhora. Este limite foi desenvolvido para atender às necessidades da maioria dos nossos clientes empresariais.',
+      question: 'Que tipo de respaldo oferece?',
+      answer: 'Oferece um capital segurado que proporciona proteção financeira contra lesões, interrupções da atividade e permite planejar a aposentadoria.',
     },
     {
-      question: 'O que significa "capital não penhorável"?',
-      answer: 'Um capital não penhorável é aquele que, por lei ou estrutura jurídica, não pode ser apreendido nem utilizado para satisfazer dívidas de terceiros. Nossos seguros estão estruturados para garantir essa proteção legal dos seus ativos.',
+      question: 'O atleta pode continuar competindo normalmente?',
+      answer: 'Sim. O respaldo acompanha a carreira esportiva sem interferir na atividade ou no desempenho.',
     },
     {
-      question: 'Em quais regiões vocês operam?',
-      answer: 'Prestamos atendimento personalizado principalmente em Punta del Este e regiões vizinhas do leste uruguaio. No entanto, também atendemos clientes de todo o Uruguai e do exterior de forma remota ou com visitas coordenadas.',
+      question: 'O capital está disponível desde o início?',
+      answer: 'Sim. A cobertura é sem período de carência, oferecendo proteção desde o primeiro momento.',
     },
     {
-      question: 'Como é o processo de contratação?',
-      answer: 'O processo começa com uma consulta confidencial onde avaliamos suas necessidades. Em seguida, apresentamos uma proposta personalizada e, uma vez aprovada, gerenciamos toda a documentação necessária com absoluta discrição.',
+      question: 'O capital é penhorável?',
+      answer: 'Não. O capital segurado é impenhorável, oferecendo maior segurança patrimonial.',
+    },
+    {
+      question: 'Adapta-se a cada disciplina esportiva?',
+      answer: 'Sim. As soluções são personalizadas de acordo com o esporte, nível de competição e fase da carreira.',
+    },
+    {
+      question: 'Serve também para a aposentadoria do atleta?',
+      answer: 'Sim. Permite planejar uma aposentadoria após o término da carreira esportiva.',
     },
   ],
   en: [
     {
-      question: 'What types of companies can be insured?',
-      answer: 'Asegúrate works exclusively with businesses, companies and corporations of all types. Whether you have a small business, a corporation or a business holding, we can offer personalized solutions to protect your assets.',
+      question: 'Who is this backing for?',
+      answer: 'It is designed for professional athletes who want to protect their career, cover unforeseen events, and plan their financial future.',
     },
     {
-      question: 'What is the maximum insured amount?',
-      answer: 'We insure capital up to USD 1,200,000 with a non-seizure guarantee. This limit is designed to meet the needs of most of our corporate clients.',
+      question: 'What kind of backing does it offer?',
+      answer: 'It offers an insured capital that provides financial protection against injuries, activity interruptions, and allows for retirement planning.',
     },
     {
-      question: 'What does "non-seizable capital" mean?',
-      answer: 'Non-seizable capital is one that, by law or legal structure, cannot be seized or used to satisfy third-party debts. Our insurance policies are structured to guarantee this legal protection of your assets.',
+      question: 'Can the athlete continue competing normally?',
+      answer: 'Yes. The backing accompanies the sports career without interfering with the activity or performance.',
     },
     {
-      question: 'Where do you operate?',
-      answer: 'We provide personalized service primarily in Punta del Este and surrounding areas in eastern Uruguay. However, we also serve clients throughout Uruguay and abroad remotely or with coordinated visits.',
+      question: 'Is the capital available from the beginning?',
+      answer: 'Yes. The coverage has no waiting period, providing protection from the very first moment.',
     },
     {
-      question: 'What is the contracting process?',
-      answer: 'The process begins with a confidential consultation where we evaluate your needs. We then present a personalized proposal and, once approved, we handle all necessary documentation with complete discretion.',
+      question: 'Is the capital seizable?',
+      answer: 'No. The insured capital is non-seizable, offering greater asset security.',
+    },
+    {
+      question: 'Does it adapt to each sports discipline?',
+      answer: 'Yes. The solutions are personalized according to the sport, level of competition, and stage of the career.',
+    },
+    {
+      question: 'Does it also serve for the athlete\'s retirement?',
+      answer: 'Yes. It allows planning for retirement once the sports career is over.',
     },
   ],
 }

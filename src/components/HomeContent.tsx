@@ -114,18 +114,18 @@ const content = {
     faq: { h2: 'Preguntas Frecuentes' },
     contacto: {
       h2: 'Contacto',
-      subtitle: 'Agenda una Consulta Confidencial',
+      subtitle: 'Agendá una Consulta Confidencial',
       formH3: 'Formulario de Contacto',
-      meetingH3: 'Agenda una Reunión',
-      meetingBody: '¿Prefieres hablar directamente con nosotros? Agenda una consulta confidencial en el horario que mejor te convenga.',
-      meetingCta: 'Agenda tu consulta',
+      meetingH3: 'Agendá una Reunión',
+      meetingBody: '¿Prefieres hablar directamente con nosotros? Agendá una consulta confidencial en el horario que mejor te convenga.',
+      meetingCta: 'Agendá tu consulta',
       infoH3: 'Información de Contacto',
-      labels: { location: 'Ubicación', email: 'Email', phone: 'Teléfono', hours: 'Horario' },
+      labels: { location: 'Ubicación', email: 'Email', phone: 'Teléfono', hours: 'Horario', hoursValue: 'Lun – Vie: 8:00 – 20:00 | Sáb: 8:00 – 12:00' },
     },
     cta: {
       h2: '¿Listo para Proteger su Patrimonio?',
-      body: 'Agenda una consulta confidencial con nuestros especialistas y descubre cómo podemos ayudarte.',
-      button: 'Agenda tu consulta',
+      body: 'Agendá una consulta confidencial con nuestros especialistas y descubre cómo podemos ayudarte.',
+      button: 'Agendá tu consulta',
     },
   },
 
@@ -133,12 +133,15 @@ const content = {
     nosotros: {
       h2: 'Sobre Nós',
       body: [
-        'A Asegurate é pioneira na oferta de seguros exclusivos para comércios, empresas e sociedades, garantindo a proteção de capitais segurados não penhoráveis. Nossa missão é fornecer solidez jurídica, confidencialidade absoluta e uma visão de longo prazo para os nossos clientes mais exigentes.',
+        'Na ASEGURATE, somos especialistas em **proteção patrimonial estratégica** para proprietários de empresas, sociedades, comércios e profissionais independentes.',
+        'Projetamos estruturas de proteção pensadas para antecipar riscos, ordenar a continuidade do negócio e resguardar o valor do que foi construído.',
+        'Trabalhamos com um foco **exclusivo e confidencial**, combinando análise personalizada, solidez jurídica e uma execução clara: diagnóstico, proposta e definição.',
       ],
       beneficiosH2: 'Benefícios —',
-      misionH3: 'Nossa Missão',
+      misionH3: 'Nossa missão',
       misionBody: [
-        'Ser o parceiro estratégico de confiança para empresas e sociedades que buscam proteger seu patrimônio com máxima segurança jurídica. Comprometemo-nos a oferecer soluções personalizadas, confidenciais e de longo prazo, respaldadas pela nossa autoridade no mercado e pela nossa inabalável solidez institucional.',
+        'Nossa missão é proteger o patrimônio daqueles que constroem empresas —**proprietários, sócios, comerciantes e profissionais independentes**— antecipando riscos com estruturas sólidas, confidenciais e sustentáveis.',
+        'Acompanhamos aqueles que lideram e sustentam suas atividades na tomada de decisões estratégicas para garantir **continuidade, ordem patrimonial e visão de longo prazo**, com um processo claro e sob medida.',
       ],
     },
     features: [
@@ -147,7 +150,12 @@ const content = {
       { icon: ICONS.Juridico, title: 'Solidez Jurídica', desc: 'Respaldados por marcos legais robustos que garantem a intangibilidade dos seus ativos.' },
       { icon: ICONS.Innovacion, title: 'Visão de Longo Prazo', desc: 'Estratégias de proteção pensadas para o futuro da sua empresa.' },
     ],
-    benefits: [],
+    benefits: [
+      { icon: ICONS.Seguridad, title: 'Capital segurado não penhorável', desc: 'Protege o valor da sua empresa ou participações societárias sob uma estrutura projetada para proteger seu patrimônio.' },
+      { icon: ICONS.Exclusividad, title: 'Sem período de carência', desc: 'A cobertura começa desde o início. Uma solução pensada para agir quando o negócio precisa, sem esperas desnecessárias.' },
+      { icon: ICONS.Juridico, title: 'Fundo rentável em USD', desc: 'Além de proteger, o capital vai para um fundo rentável em dólares, combinando proteção e planejamento.' },
+      { icon: ICONS.Innovacion, title: 'Design personalizado e confidencial', desc: 'Cada caso é único. Analisamos sua estrutura e objetivos para projetar uma proposta sob medida, em um processo privado e profissional.' },
+    ],
     servicios: {
       h2: 'Serviços',
       subtitle: 'Soluções de Proteção Patrimonial',
@@ -155,15 +163,14 @@ const content = {
       coveragePoints: [
         'Capitais segurados não penhoráveis de até $USD',
         'Proteção jurídica especializada para comércios, empresas e sociedades',
-        'Absoluta confidencialidade em todas as operações',
-        'Atendimento personalizado em Punta del Este e arredores',
+        'Confidencialidade absoluta em todas as operações',
+        'Atendimento personalizado em Punta del Este e regiões vizinhas',
       ],
     },
     services: [
-      { icon: ICONS.Empresa, title: 'Seguros Empresariais', desc: 'Coberturas exclusivas desenvolvidas para empresas e sociedades com necessidades especiais de proteção.' },
-      { icon: ICONS.Rentabilidad, title: 'Capitais Não Penhoráveis', desc: 'Asseguramos capitais de até USD 1.200.000 com garantia de não penhora.' },
-      { icon: ICONS.Contrato, title: 'Assessoria Estratégica', desc: 'Consultoria personalizada para estruturar a melhor proteção para o seu patrimônio.' },
-      { icon: ICONS.Confidencialidad, title: 'Gestão Confidencial', desc: 'Tratamento discreto e profissional de todas as suas operações e documentação.' },
+      { icon: ICONS.Empresa, title: 'Proprietários de empresas e sociedades', desc: 'Projetamos esquemas de proteção baseados em um **capital segurado não penhorável**, sem período de carência, que pode representar o valor total da empresa ou de suas participações societárias. A solução se adapta à estrutura societária e pode incluir sócios, diretores ou pessoas-chave.' },
+      { icon: ICONS.Rentabilidad, title: 'Proprietários de comércios', desc: 'Para negócios onde a operação depende diretamente do proprietário, projetamos uma estrutura de proteção orientada à **continuidade operacional:** previsibilidade diante de imprevistos, proteção do valor construído e um esquema claro para não improvisar quando o comércio precisa de estabilidade.' },
+      { icon: ICONS.Contrato, title: 'Profissionais independentes', desc: 'Estruturamos uma proteção patrimonial estratégica com foco no **planejamento de aposentadoria**: um esquema em USD que constrói um **fundo de aposentadoria**.' },
     ],
     faq: { h2: 'Perguntas Frequentes' },
     contacto: {
@@ -171,10 +178,10 @@ const content = {
       subtitle: 'Agende uma Consulta Confidencial',
       formH3: 'Formulário de Contato',
       meetingH3: 'Agende uma Reunião',
-      meetingBody: 'Prefere falar diretamente conosco? Agende uma consulta confidencial no horário que melhor lhe convenha.',
+      meetingBody: 'Prefere falar diretamente conosco? Agende uma consulta confidencial no horário que for melhor para você.',
       meetingCta: 'Agende sua consulta',
       infoH3: 'Informações de Contato',
-      labels: { location: 'Localização', email: 'Email', phone: 'Telefone', hours: 'Horário' },
+      labels: { location: 'Localização', email: 'Email', phone: 'Telefone', hours: 'Horário', hoursValue: 'Seg – Sex: 8:00 – 20:00 | Sáb: 8:00 – 12:00' },
     },
     cta: {
       h2: 'Pronto para Proteger seu Patrimônio?',
@@ -187,12 +194,15 @@ const content = {
     nosotros: {
       h2: 'About Us',
       body: [
-        'Asegúrate is a pioneer in offering exclusive insurance for businesses and corporations, guaranteeing the protection of non-seizable insured capital. Our mission is to provide legal strength, absolute confidentiality and a long-term vision for our most demanding clients.',
+        'At ASEGURATE, we are specialists in **strategic asset protection** for business owners, partnerships, shops, and independent professionals.',
+        'We design protection structures intended to anticipate risks, organize business continuity, and safeguard the value of what has been built.',
+        'We work with an **exclusive and confidential** approach, combining personalized analysis, legal soundness, and clear execution: diagnosis, proposal, and definition.',
       ],
       beneficiosH2: 'Benefits —',
-      misionH3: 'Our Mission',
+      misionH3: 'Our mission',
       misionBody: [
-        'To be the trusted strategic partner for companies and corporations seeking to protect their assets with maximum legal security. We are committed to offering personalized, confidential and long-term solutions, backed by our authority in the market and our unwavering institutional strength.',
+        'Our mission is to protect the assets of those who build businesses—**owners, partners, merchants, and independent professionals**—by anticipating risks with solid, confidential, and sustainable structures.',
+        'We support those who lead and sustain their activities in making strategic decisions to guarantee **continuity, patrimonial order, and long-term vision**, with a clear and tailored process.',
       ],
     },
     features: [
@@ -201,23 +211,27 @@ const content = {
       { icon: ICONS.Juridico, title: 'Legal Strength', desc: 'Backed by robust legal frameworks that guarantee the intangibility of your assets.' },
       { icon: ICONS.Innovacion, title: 'Long-term Vision', desc: 'Protection strategies designed for the future of your company.' },
     ],
-    benefits: [],
+    benefits: [
+      { icon: ICONS.Seguridad, title: 'Non-seizable insured capital', desc: 'Safeguards the value of your company or corporate shares under a structure designed to protect your assets.' },
+      { icon: ICONS.Exclusividad, title: 'No waiting period', desc: 'Coverage begins right from the start. A solution designed to act when the business needs it, without unnecessary delays.' },
+      { icon: ICONS.Juridico, title: 'Profitable fund in USD', desc: 'In addition to protecting, the capital goes to a profitable fund in dollars, combining backing and planning.' },
+      { icon: ICONS.Innovacion, title: 'Personalized and confidential design', desc: 'Every case is unique. We analyze your structure and objectives to design a tailored proposal, in a private and professional process.' },
+    ],
     servicios: {
       h2: 'Services',
       subtitle: 'Asset Protection Solutions',
       coverageH3: 'Exclusive Coverage',
       coveragePoints: [
-        'Insured non-seizable capital of up to $USD',
-        'Specialized legal protection for businesses and corporations',
+        'Non-seizable insured capital up to $USD',
+        'Specialized legal protection for businesses, companies, and corporations',
         'Absolute confidentiality in all operations',
         'Personalized service in Punta del Este and surrounding areas',
       ],
     },
     services: [
-      { icon: ICONS.Empresa, title: 'Corporate Insurance', desc: 'Exclusive coverage designed for companies with special protection needs.' },
-      { icon: ICONS.Rentabilidad, title: 'Non-Seizable Capital', desc: 'We insure capital up to USD 1,200,000 with a non-seizure guarantee.' },
-      { icon: ICONS.Contrato, title: 'Strategic Advisory', desc: 'Personalized consulting to structure the best protection for your assets.' },
-      { icon: ICONS.Confidencialidad, title: 'Confidential Management', desc: 'Discreet and professional handling of all your operations and documentation.' },
+      { icon: ICONS.Empresa, title: 'Business and corporate owners', desc: 'We design protection schemes based on **non-seizable insured capital**, with no waiting period, which can represent the total value of the company or its corporate shares. The solution adapts to the corporate structure and can include partners, directors, or key personnel.' },
+      { icon: ICONS.Rentabilidad, title: 'Shop owners', desc: 'For businesses where operation directly depends on the owner, we design a protection structure oriented towards **operational continuity:** predictability in the face of unforeseen events, protection of the built value, and a clear scheme to avoid improvising when the business needs stability.' },
+      { icon: ICONS.Contrato, title: 'Independent professionals', desc: 'We structure strategic asset protection focused on **retirement planning**: a scheme in USD that builds a **retirement fund**.' },
     ],
     faq: { h2: 'Frequently Asked Questions' },
     contacto: {
@@ -228,7 +242,7 @@ const content = {
       meetingBody: 'Would you prefer to speak directly with us? Schedule a confidential consultation at a time that suits you best.',
       meetingCta: 'Schedule your consultation',
       infoH3: 'Contact Information',
-      labels: { location: 'Location', email: 'Email', phone: 'Phone', hours: 'Hours' },
+      labels: { location: 'Location', email: 'Email', phone: 'Phone', hours: 'Hours', hoursValue: 'Mon – Fri: 8:00 AM – 8:00 PM | Sat: 8:00 AM – 12:00 PM' },
     },
     cta: {
       h2: 'Ready to Protect Your Assets?',
@@ -237,12 +251,11 @@ const content = {
     },
   },
 }
-
-const contactDetails = (labels: { location: string; email: string; phone: string; hours: string }) => [
+const contactDetails = (labels: { location: string; email: string; phone: string; hours: string; hoursValue: string }) => [
   { icon: <MapPinIcon />, label: labels.location, value: 'Punta del Este, Uruguay' },
   { icon: <MailIcon />, label: labels.email, value: 'contacto@somosasegurate.com' },
   { icon: <PhoneIcon />, label: labels.phone, value: '+598 XXXX XXXX' },
-  { icon: null, label: labels.hours, value: 'Lun – Vie: 8:00 – 20:00 | Sáb: 8:00 – 12:00' },
+  { icon: null, label: labels.hours, value: labels.hoursValue },
 ]
 
 // ─── Component ────────────────────────────────────────────────────────────────
