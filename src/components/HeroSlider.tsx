@@ -216,13 +216,17 @@ export default function HeroSlider() {
               {/* Badge (always at top) */}
               <div className="shrink-0 mb-6">
                 <span
-                  className="inline-block text-sm font-semibold px-4 py-1.5 rounded-full backdrop-blur-sm border"
+                  className="inline-flex items-center gap-2 text-md font-semibold px-4 py-1.5 rounded-full backdrop-blur-sm border"
                   style={{
                     backgroundColor: 'rgba(198,162,58,0.18)',
                     borderColor: 'rgba(198,162,58,0.45)',
                     color: '#f0d98a',
                   }}
                 >
+                  {current === 0 && <img src="/brand/icons/Empresa.svg" alt="" className="w-4 h-4" style={{ filter: 'brightness(0) saturate(100%) invert(84%) sepia(21%) saturate(996%) hue-rotate(345deg) brightness(97%) contrast(92%)' }} />}
+                  {current === 1 && <img src="/brand/icons/Comercio.svg" alt="" className="w-4 h-4" style={{ filter: 'brightness(0) saturate(100%) invert(84%) sepia(21%) saturate(996%) hue-rotate(345deg) brightness(97%) contrast(92%)' }} />}
+                  {current === 2 && <img src="/brand/icons/Innovacion.svg" alt="" className="w-4 h-4" style={{ filter: 'brightness(0) saturate(100%) invert(84%) sepia(21%) saturate(996%) hue-rotate(345deg) brightness(97%) contrast(92%)' }} />}
+                  {current === 3 && <img src="/brand/icons/Seguridad.svg" alt="" className="w-4 h-4" style={{ filter: 'brightness(0) saturate(100%) invert(84%) sepia(21%) saturate(996%) hue-rotate(345deg) brightness(97%) contrast(92%)' }} />}
                   {slide.badge}
                 </span>
               </div>

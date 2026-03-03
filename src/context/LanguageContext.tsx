@@ -11,16 +11,25 @@ interface LanguageContextValue {
 
 const LanguageContext = createContext<LanguageContextValue>({
   lang: 'es',
-  setLang: () => {},
+  setLang: () => { },
 })
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
   const [lang, setLangState] = useState<Lang>('es')
 
-  // Persist preference in localStorage
+  // Persist preference in localStorage or detect browser language
   useEffect(() => {
     const stored = localStorage.getItem('lang') as Lang | null
-    if (stored === 'es' || stored === 'pt' || stored === 'en') setLangState(stored)
+    if (stored === 'es' || stored === 'pt' || stored === 'en') {
+      setLangState(stored)
+    } else {
+      const browserLang = navigator.language.split('-')[0]
+      if (browserLang === 'es' || browserLang === 'pt' || browserLang === 'en') {
+        setLangState(browserLang as Lang)
+      } else {
+        setLangState('es')
+      }
+    }
   }, [])
 
   const setLang = (l: Lang) => {

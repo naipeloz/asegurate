@@ -14,6 +14,7 @@ const ICONS = {
   Rentabilidad: '/brand/icons/Rentabilidad.svg',
   Contrato: '/brand/icons/Contrato.svg',
   Confidencialidad: '/brand/icons/Confidencialidad.svg',
+  Comercio: '/brand/icons/Comercio.svg',
 }
 
 // CSS filter: converts black SVG → brand gold #C6A23A
@@ -85,7 +86,7 @@ const content = {
       beneficiosH2: 'Beneficios —',
       misionH3: 'Nuestra misión',
       misionBody: [
-        'Nuestra misión es proteger el patrimonio de quienes construyen empresas —**dueños, socios, comerciantes y profesionales independientes**— anticipando riesgos con estructuras sólidas, confidenciales y sostenibles.',
+        'Nuestra misión es garantizar el patrimonio de quienes construyen empresas —**dueños, socios, comerciantes y profesionales independientes**— anticipando riesgos con estructuras sólidas, confidenciales y sostenibles.',
         'Acompañamos a quienes lideran y sostienen su actividad en la toma de decisiones estratégicas para garantizar **continuidad, orden patrimonial y visión de largo plazo**, con un proceso claro y a medida.',
       ],
     },
@@ -98,18 +99,18 @@ const content = {
     servicios: {
       h2: 'Servicios',
       subtitle: 'Soluciones de Protección Patrimonial',
-      coverageH3: 'Cobertura Exclusiva',
+      coverageH3: 'Respaldo Exclusivo',
       coveragePoints: [
         'Capitales asegurados no embargables de hasta $USD',
         'Protección jurídica especializada para comercios, empresas y sociedades',
         'Confidencialidad absoluta en todas las operaciones',
-        'Atención personalizada en Punta del Este y zonas aledañas',
+        'Atención personalizada a nivel internacional',
       ],
     },
     services: [
       { icon: ICONS.Empresa, title: 'Dueños de empresas y sociedades', desc: 'Diseñamos esquemas de respaldo basados en un **capital asegurado no embargable**, sin período de carencia, que puede representar el valor total de la empresa o de sus participaciones societarias. La solución se adapta a la estructura societaria y puede contemplar socios, directores o personas clave.' },
-      { icon: ICONS.Rentabilidad, title: 'Dueños de comercios', desc: 'Para negocios donde el funcionamiento depende directamente del dueño, diseñamos una estructura de respaldo orientada a **continuidad operativa:** previsibilidad ante imprevistos, protección del valor construido y un esquema claro para no improvisar cuando el comercio necesita estabilidad.' },
-      { icon: ICONS.Contrato, title: 'Profesionales independientes', desc: 'Estructuramos un respaldo patrimonial estratégico con foco en **planificación de retiro**: un esquema en USD que construye **fondo jubilatorio**.' },
+      { icon: ICONS.Comercio, title: 'Dueños de comercios', desc: 'Para negocios donde el funcionamiento depende directamente del dueño, diseñamos una estructura de respaldo orientada a **continuidad operativa:** previsibilidad ante imprevistos, protección del valor construido y un esquema claro para no improvisar cuando el comercio necesita estabilidad.' },
+      { icon: ICONS.Innovacion, title: 'Profesionales independientes', desc: 'Estructuramos un respaldo patrimonial estratégico con foco en **planificación de retiro**: un esquema en USD que construye **fondo jubilatorio**.' },
     ],
     faq: { h2: 'Preguntas Frecuentes' },
     contacto: {

@@ -7,15 +7,11 @@ const faqs = {
   es: [
     {
       question: '¿A quién está dirigido este respaldo?',
-      answer: 'Está pensado para deportistas profesionales que desean proteger su carrera, cubrir imprevistos y planificar su futuro económico.',
+      answer: 'Este respaldo está dirigido a empresarios, comerciantes y socios que desarrollan o constituyen empresas en Uruguay y desean incorporar estructura patrimonial sobre el valor económico de su inversión. También trabajamos en conjunto con consultoras, estudios contables y jurídicos que asesoran inversores extranjeros que se instalan en el país.',
     },
     {
       question: '¿Qué tipo de respaldo ofrece?',
       answer: 'Ofrece un capital asegurado que brinda protección económica ante lesiones, interrupciones de la actividad y permite planificar el retiro jubilatorio.',
-    },
-    {
-      question: '¿El deportista puede seguir compitiendo normalmente?',
-      answer: 'Sí. El respaldo acompaña la carrera deportiva sin interferir en la actividad ni en el rendimiento.',
     },
     {
       question: '¿El capital está disponible desde el inicio?',
@@ -25,27 +21,15 @@ const faqs = {
       question: '¿El capital es embargable?',
       answer: 'No. El capital asegurado es no embargable, ofreciendo mayor seguridad patrimonial.',
     },
-    {
-      question: '¿Se adapta a cada disciplina deportiva?',
-      answer: 'Sí. Las soluciones son personalizadas según el deporte, nivel de competencia y etapa de la carrera.',
-    },
-    {
-      question: '¿Sirve también para el retiro del deportista?',
-      answer: 'Sí. Permite planificar un retiro jubilatorio una vez finalizada la carrera deportiva.',
-    },
   ],
   pt: [
     {
       question: 'A quem se destina este respaldo?',
-      answer: 'É pensado para atletas profissionais que desejam proteger sua carreira, cobrir imprevistos e planejar seu futuro financeiro.',
+      answer: 'Este respaldo destina-se a empresários, comerciantes e sócios que desenvolvem ou constituem empresas no Uruguai e desejam incorporar uma estrutura patrimonial sobre o valor econômico do seu investimento. Também trabalhamos em conjunto com consultorias, escritórios de contabilidade e advocacia que assessoram investidores estrangeiros que se instalam no país.',
     },
     {
       question: 'Que tipo de respaldo oferece?',
       answer: 'Oferece um capital segurado que proporciona proteção financeira contra lesões, interrupções da atividade e permite planejar a aposentadoria.',
-    },
-    {
-      question: 'O atleta pode continuar competindo normalmente?',
-      answer: 'Sim. O respaldo acompanha a carreira esportiva sem interferir na atividade ou no desempenho.',
     },
     {
       question: 'O capital está disponível desde o início?',
@@ -55,27 +39,15 @@ const faqs = {
       question: 'O capital é penhorável?',
       answer: 'Não. O capital segurado é impenhorável, oferecendo maior segurança patrimonial.',
     },
-    {
-      question: 'Adapta-se a cada disciplina esportiva?',
-      answer: 'Sim. As soluções são personalizadas de acordo com o esporte, nível de competição e fase da carreira.',
-    },
-    {
-      question: 'Serve também para a aposentadoria do atleta?',
-      answer: 'Sim. Permite planejar uma aposentadoria após o término da carreira esportiva.',
-    },
   ],
   en: [
     {
       question: 'Who is this backing for?',
-      answer: 'It is designed for professional athletes who want to protect their career, cover unforeseen events, and plan their financial future.',
+      answer: 'This backing is aimed at entrepreneurs, merchants, and partners who develop or establish companies in Uruguay and wish to incorporate an asset structure over the economic value of their investment. We also work together with consulting, accounting, and legal firms that advise foreign investors settling in the country.',
     },
     {
       question: 'What kind of backing does it offer?',
       answer: 'It offers an insured capital that provides financial protection against injuries, activity interruptions, and allows for retirement planning.',
-    },
-    {
-      question: 'Can the athlete continue competing normally?',
-      answer: 'Yes. The backing accompanies the sports career without interfering with the activity or performance.',
     },
     {
       question: 'Is the capital available from the beginning?',
@@ -84,14 +56,6 @@ const faqs = {
     {
       question: 'Is the capital seizable?',
       answer: 'No. The insured capital is non-seizable, offering greater asset security.',
-    },
-    {
-      question: 'Does it adapt to each sports discipline?',
-      answer: 'Yes. The solutions are personalized according to the sport, level of competition, and stage of the career.',
-    },
-    {
-      question: 'Does it also serve for the athlete\'s retirement?',
-      answer: 'Yes. It allows planning for retirement once the sports career is over.',
     },
   ],
 }
