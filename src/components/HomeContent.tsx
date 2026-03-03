@@ -141,7 +141,7 @@ const content = {
       beneficiosH2: 'Benefícios —',
       misionH3: 'Nossa missão',
       misionBody: [
-        'Nossa missão é proteger o patrimônio daqueles que constroem empresas —**proprietários, sócios, comerciantes e profissionais independentes**— antecipando riscos com estruturas sólidas, confidenciais e sustentáveis.',
+        'Nossa missão é garantir o patrimônio daqueles que constroem empresas —**proprietários, sócios, comerciantes e profissionais independentes**— antecipando riscos com estruturas sólidas, confidenciais e sustentáveis.',
         'Acompanhamos aqueles que lideram e sustentam suas atividades na tomada de decisões estratégicas para garantir **continuidade, ordem patrimonial e visão de longo prazo**, com um processo claro e sob medida.',
       ],
     },
@@ -160,12 +160,12 @@ const content = {
     servicios: {
       h2: 'Serviços',
       subtitle: 'Soluções de Proteção Patrimonial',
-      coverageH3: 'Cobertura Exclusiva',
+      coverageH3: 'Respaldo Exclusivo',
       coveragePoints: [
         'Capitais segurados não penhoráveis de até $USD',
         'Proteção jurídica especializada para comércios, empresas e sociedades',
         'Confidencialidade absoluta em todas as operações',
-        'Atendimento personalizado em Punta del Este e regiões vizinhas',
+        'Atendimento personalizado a nível internacional',
       ],
     },
     services: [
@@ -202,7 +202,7 @@ const content = {
       beneficiosH2: 'Benefits —',
       misionH3: 'Our mission',
       misionBody: [
-        'Our mission is to protect the assets of those who build businesses—**owners, partners, merchants, and independent professionals**—by anticipating risks with solid, confidential, and sustainable structures.',
+        'Our mission is to guarantee the assets of those who build businesses—**owners, partners, merchants, and independent professionals**—by anticipating risks with solid, confidential, and sustainable structures.',
         'We support those who lead and sustain their activities in making strategic decisions to guarantee **continuity, patrimonial order, and long-term vision**, with a clear and tailored process.',
       ],
     },
@@ -221,12 +221,12 @@ const content = {
     servicios: {
       h2: 'Services',
       subtitle: 'Asset Protection Solutions',
-      coverageH3: 'Exclusive Coverage',
+      coverageH3: 'Exclusive Backing',
       coveragePoints: [
         'Non-seizable insured capital up to $USD',
         'Specialized legal protection for businesses, companies, and corporations',
         'Absolute confidentiality in all operations',
-        'Personalized service in Punta del Este and surrounding areas',
+        'Personalized service at an international level',
       ],
     },
     services: [

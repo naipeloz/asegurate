@@ -24,20 +24,21 @@ export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
     template: '%s | Asegúrate',
-    default: 'Asegúrate – Blindaje Empresarial en Uruguay',
+    default: 'Asegúrate – Protección Patrimonial Estratégica en Uruguay',
   },
   description:
-    'La primera empresa en Uruguay especializada en blindaje empresarial a través de estructuras aseguradas. Capitales no embargables de hasta USD 1.200.000. Punta del Este.',
+    'Especialistas en protección patrimonial estratégica para dueños de empresas, sociedades, comercios y profesionales independientes en Uruguay. Estructuras sólidas, confidenciales y a medida.',
   keywords: [
-    'seguros empresariales Uruguay',
-    'protección patrimonial',
+    'protección patrimonial Uruguay',
+    'seguros empresariales',
     'capitales no embargables',
     'blindaje empresarial',
+    'retiro jubilatorio independientes',
     'Punta del Este',
     'seguros Uruguay',
     'estructuras aseguradas',
     'patrimonio empresarial',
-    'seguros comercios Uruguay',
+    'continuidad operativa comercios',
   ],
   authors: [{ name: 'Asegúrate' }],
   creator: 'Asegúrate',
@@ -56,23 +57,23 @@ export const metadata: Metadata = {
     locale: 'es_UY',
     url: BASE_URL,
     siteName: 'Asegúrate',
-    title: 'Asegúrate – Blindaje Empresarial en Uruguay',
+    title: 'Asegúrate – Protección Patrimonial Estratégica',
     description:
-      'La primera empresa en Uruguay especializada en blindaje empresarial. Capitales asegurados no embargables de hasta USD 1.200.000.',
+      'Protección patrimonial para dueños de empresas, sociedades, comercios y profesionales independientes. Anticipamos riesgos con estructuras sólidas y sostenibles.',
     images: [
       {
         url: '/brand/logo/Asegurate_Horizontal_Tagline.png',
         width: 1200,
         height: 630,
-        alt: 'Asegúrate – Protección Patrimonial Exclusiva',
+        alt: 'Asegúrate – Protección Patrimonial Estratégica',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Asegúrate – Blindaje Empresarial en Uruguay',
+    title: 'Asegúrate – Protección Patrimonial Estratégica',
     description:
-      'La primera empresa en Uruguay especializada en blindaje empresarial. Capitales no embargables hasta USD 1.200.000.',
+      'Protección patrimonial para empresas, comercios y profesionales independientes. Estructuras sólidas en Uruguay.',
     images: ['/brand/logo/Asegurate_Horizontal_Tagline.png'],
   },
   robots: {
@@ -88,7 +89,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: BASE_URL,
-    languages: { 'es-UY': BASE_URL, 'pt-BR': BASE_URL },
+    languages: { 'es-UY': BASE_URL, 'pt-BR': BASE_URL, 'en-US': BASE_URL },
   },
 }
 
@@ -97,7 +98,7 @@ const jsonLd = {
   '@type': 'InsuranceAgency',
   name: 'Asegúrate',
   description:
-    'La primera empresa en Uruguay especializada en blindaje empresarial a través de estructuras aseguradas. Capitales no embargables de hasta USD 1.200.000.',
+    'Especialistas en protección patrimonial estratégica para dueños de empresas, sociedades, comercios y profesionales independientes en Uruguay.',
   url: BASE_URL,
   logo: `${BASE_URL}/brand/logo/Asegurate_Horizontal_Negro.svg`,
   address: {
@@ -107,7 +108,11 @@ const jsonLd = {
     addressCountry: 'UY',
   },
   areaServed: { '@type': 'Country', name: 'Uruguay' },
-  email: 'info@asegurate.com',
+  contactPoint: {
+    '@type': 'ContactPoint',
+    email: 'contacto@somosasegurate.com',
+    contactType: 'customer service',
+  },
   priceRange: '$$$$',
   openingHoursSpecification: [
     {
