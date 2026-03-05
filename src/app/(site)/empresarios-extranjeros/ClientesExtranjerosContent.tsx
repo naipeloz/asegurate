@@ -44,16 +44,16 @@ const content = {
   es: {
     hero: {
       badge: 'International Service',
-      h1: 'Clientes Extranjeros',
-      subtitle: 'Protección Internacional para su Patrimonio',
+      h1: 'Empresarios Extranjeros',
+      subtitle: 'Respaldo Internacional para su Patrimonio',
       cta1: 'Agendá tu consulta',
       cta2: 'Contactanos',
     },
     intro: {
-      heading: 'Servicio Especializado para Clientes Internacionales',
-      p1: 'En Asegúrate entendemos las necesidades únicas de los clientes extranjeros que buscan proteger su patrimonio en Uruguay. Ofrecemos un servicio integral y personalizado que combina nuestra profunda experiencia en el mercado local con una visión global.',
-      p2: 'Uruguay se ha consolidado como el destino preferido para la protección patrimonial internacional, gracias a su estabilidad jurídica, confidencialidad garantizada por ley, y su posición estratégica como centro financiero del Cono Sur. Nuestros capitales asegurados no embargables de hasta',
-      p2suffix: 'ofrecen la tranquilidad que su patrimonio merece.',
+      heading: 'Servicio Especializado para Empresarios Extranjeros',
+      p1: 'En Asegúrate entendemos las necesidades únicas de los empresarios extranjeros que buscan respaldar su patrimonio en Uruguay. Ofrecemos un servicio integral y personalizado que combina nuestra profunda experiencia en el mercado local con una visión global.',
+      p2: 'Nuestros capitales asegurados no embargables de hasta',
+      p2suffix: 'ofrecen la tranquilidad que su patrimonio merece. \nTambién trabajamos en conjunto con consultoras, estudios contables y jurídicos que asesoran inversores extranjeros que se instalan en el país.',
     },
     benefits: {
       heading: 'Nuestros Servicios Internacionales',

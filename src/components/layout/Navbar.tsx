@@ -12,7 +12,7 @@ const navLinksEs = [
   { label: 'Inicio', href: '/#inicio', section: 'inicio' },
   { label: 'Nosotros', href: '/#nosotros', section: 'nosotros' },
   { label: 'Servicios', href: '/#servicios', section: 'servicios' },
-  { label: 'Clientes Extranjeros', href: '/clientes-extranjeros', section: '__clientes__' },
+  { label: 'Empresarios Extranjeros', href: '/empresarios-extranjeros', section: '__clientes__' },
   { label: 'Preguntas Frecuentes', href: '/#faq', section: 'faq' },
   { label: 'Contacto', href: '/#contacto', section: 'contacto' },
 ]

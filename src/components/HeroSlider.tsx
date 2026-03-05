@@ -38,7 +38,7 @@ const slidesEs: Slide[] = [
     badge: 'Respaldo',
     title: 'La confianza se construye con trayectoria.',
     body: [
-      'Por eso trabajamos con una compañía con más de 30 años en Uruguay.',
+      'Tu futuro, respaldado por 30 años de experiencia.',
     ],
   },
 ]

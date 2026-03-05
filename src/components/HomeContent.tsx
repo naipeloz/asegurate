@@ -108,9 +108,9 @@ const content = {
       ],
     },
     services: [
-      { icon: ICONS.Empresa, title: 'Dueños de empresas y sociedades', desc: 'Diseñamos esquemas de respaldo basados en un **capital asegurado no embargable**, sin período de carencia, que puede representar el valor total de la empresa o de sus participaciones societarias. La solución se adapta a la estructura societaria y puede contemplar socios, directores o personas clave.' },
-      { icon: ICONS.Comercio, title: 'Dueños de comercios', desc: 'Para negocios donde el funcionamiento depende directamente del dueño, diseñamos una estructura de respaldo orientada a **continuidad operativa:** previsibilidad ante imprevistos, protección del valor construido y un esquema claro para no improvisar cuando el comercio necesita estabilidad.' },
-      { icon: ICONS.Innovacion, title: 'Profesionales independientes', desc: 'Estructuramos un respaldo patrimonial estratégico con foco en **planificación de retiro**: un esquema en USD que construye **fondo jubilatorio**.' },
+      { icon: ICONS.Empresa, title: 'Dueños de empresas y sociedades', desc: 'Diseñamos esquemas de respaldo basados en un **capital asegurado no embargable**, sin período de carencia, que representa el valor total de la empresa o de sus participaciones societarias. La solución se adapta a la estructura societaria y puede contemplar socios, directores o personas clave.' },
+      { icon: ICONS.Comercio, title: 'Dueños de comercios', desc: 'Para negocios donde el funcionamiento depende directamente del dueño, diseñamos una estructura de respaldo orientada a **continuidad operativa:** previsibilidad ante imprevistos, resplado del valor construido y un esquema claro para no improvisar cuando el comercio necesita estabilidad.' },
+      { icon: ICONS.Innovacion, title: 'Profesionales independientes', desc: 'Respaldamos a cada profesional independiente en su actividad garantizando su **retiro jubilatorio**' },
     ],
     faq: { h2: 'Preguntas Frecuentes' },
     contacto: {

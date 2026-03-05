@@ -6,21 +6,33 @@ import { useLanguage } from '@/context/LanguageContext'
 const faqs = {
   es: [
     {
-      question: '¿A quién está dirigido este respaldo?',
-      answer: 'Este respaldo está dirigido a empresarios, comerciantes y socios que desarrollan o constituyen empresas en Uruguay y desean incorporar estructura patrimonial sobre el valor económico de su inversión. También trabajamos en conjunto con consultoras, estudios contables y jurídicos que asesoran inversores extranjeros que se instalan en el país.',
+      question: '¿Por qué Asegurate?',
+      answer: 'Pioneros en Uruguay en combinar respaldo empresarial y crecimiento patrimonial en dólares, con el respaldo de tres décadas de trayectoria.',
     },
     {
-      question: '¿Qué tipo de respaldo ofrece?',
-      answer: 'Ofrece un capital asegurado que brinda protección económica ante lesiones, interrupciones de la actividad y permite planificar el retiro jubilatorio.',
+      question: '¿A quién está dirigido este respaldo?',
+      answer: 'A dueños de empresas, sociedades, profesionales independientes y comerciantes que quieren respaldar el valor de su actividad y transformar sus ingresos actuales en un fondo sólido en dólares para el futuro.',
     },
+    {
+      question: '¿Qué pasaría con tu empresa si mañana vos no estuvieras?',
+      answer: 'Asegurate garantiza el valor económico de tu actividad para que tu patrimonio y tu familia no queden expuestos ante imprevistos.',
+    },
+    // {
+    //   question: '¿Qué tipo de respaldo ofrecemos?',
+    //   answer: 'Ofrecemos un capital asegurado que brinda protección económica ante lesiones, interrupciones de la actividad y permite planificar el retiro jubilatorio.',
+    // },
     {
       question: '¿El capital está disponible desde el inicio?',
-      answer: 'Sí. La cobertura es sin período de carencia, brindando protección desde el primer momento.',
+      answer: 'Sí. El capital asegurado está disponible desde el inicio y es un capital asegurado no embargable.',
     },
     {
-      question: '¿El capital es embargable?',
-      answer: 'No. El capital asegurado es no embargable, ofreciendo mayor seguridad patrimonial.',
+      question: '¿Estás convirtiendo el éxito de hoy en tranquilidad futura?',
+      answer: 'Muchos empresarios facturan bien, pero pocos transforman esos ingresos en un respaldo sólido en dólares. Asegúrate te permite  respaldar el valor de tu actividad mientras construís patrimonio real para tu retiro. Si querés saber cómo aplicarlo a tu empresa, coordinemos una reunión personalizada.',
     },
+    // {
+    //   question: '¿El capital es embargable?',
+    //   answer: 'No. El capital asegurado es no embargable, ofreciendo mayor seguridad patrimonial.',
+    // },
   ],
   pt: [
     {
