@@ -21,7 +21,7 @@ const navLinksPt = [
   { label: 'Início', href: '/#inicio', section: 'inicio' },
   { label: 'Sobre nós', href: '/#nosotros', section: 'nosotros' },
   { label: 'Serviços', href: '/#servicios', section: 'servicios' },
-  { label: 'Clientes Estrangeiros', href: '/clientes-extranjeros', section: '__clientes__' },
+  { label: 'Empresários Estrangeiros', href: '/empresarios-extranjeros', section: '__clientes__' },
   { label: 'Perguntas Frequentes', href: '/#faq', section: 'faq' },
   { label: 'Contato', href: '/#contacto', section: 'contacto' },
 ]
@@ -30,7 +30,7 @@ const navLinksEn = [
   { label: 'Home', href: '/#inicio', section: 'inicio' },
   { label: 'About Us', href: '/#nosotros', section: 'nosotros' },
   { label: 'Services', href: '/#servicios', section: 'servicios' },
-  { label: 'Foreign Clients', href: '/clientes-extranjeros', section: '__clientes__' },
+  { label: 'Foreign Entrepreneurs', href: '/empresarios-extranjeros', section: '__clientes__' },
   { label: 'FAQ', href: '/#faq', section: 'faq' },
   { label: 'Contact', href: '/#contacto', section: 'contacto' },
 ]

@@ -169,9 +169,9 @@ const content = {
       ],
     },
     services: [
-      { icon: ICONS.Empresa, title: 'Proprietários de empresas e sociedades', desc: 'Projetamos esquemas de proteção baseados em um **capital segurado não penhorável**, sem período de carência, que pode representar o valor total da empresa ou de suas participações societárias. A solução se adapta à estrutura societária e pode incluir sócios, diretores ou pessoas-chave.' },
-      { icon: ICONS.Rentabilidad, title: 'Proprietários de comércios', desc: 'Para negócios onde a operação depende diretamente do proprietário, projetamos uma estrutura de proteção orientada à **continuidade operacional:** previsibilidade diante de imprevistos, proteção do valor construído e um esquema claro para não improvisar quando o comércio precisa de estabilidade.' },
-      { icon: ICONS.Contrato, title: 'Profissionais independentes', desc: 'Estruturamos uma proteção patrimonial estratégica com foco no **planejamento de aposentadoria**: um esquema em USD que constrói um **fundo de aposentadoria**.' },
+      { icon: ICONS.Empresa, title: 'Proprietários de empresas e sociedades', desc: 'Projetamos esquemas de respaldo baseados em um **capital segurado não penhorável**, sem período de carência, que representa o valor total da empresa ou de suas participações societárias. A solução se adapta à estrutura societária e pode incluir sócios, diretores ou pessoas-chave.' },
+      { icon: ICONS.Rentabilidad, title: 'Proprietários de comércios', desc: 'Para negócios onde a operação depende diretamente do proprietário, projetamos uma estrutura de respaldo orientada à **continuidade operacional:** previsibilidade diante de imprevistos, respaldo do valor construído e um esquema claro para não improvisar quando o comércio precisa de estabilidade.' },
+      { icon: ICONS.Contrato, title: 'Profissionais independentes', desc: 'Respaldamos cada profissional independente em sua atividade, garantindo sua **aposentadoria**.' },
     ],
     faq: { h2: 'Perguntas Frequentes' },
     contacto: {
@@ -230,9 +230,9 @@ const content = {
       ],
     },
     services: [
-      { icon: ICONS.Empresa, title: 'Business and corporate owners', desc: 'We design protection schemes based on **non-seizable insured capital**, with no waiting period, which can represent the total value of the company or its corporate shares. The solution adapts to the corporate structure and can include partners, directors, or key personnel.' },
-      { icon: ICONS.Rentabilidad, title: 'Shop owners', desc: 'For businesses where operation directly depends on the owner, we design a protection structure oriented towards **operational continuity:** predictability in the face of unforeseen events, protection of the built value, and a clear scheme to avoid improvising when the business needs stability.' },
-      { icon: ICONS.Contrato, title: 'Independent professionals', desc: 'We structure strategic asset protection focused on **retirement planning**: a scheme in USD that builds a **retirement fund**.' },
+      { icon: ICONS.Empresa, title: 'Business and corporate owners', desc: 'We design backing schemes based on **non-seizable insured capital**, with no waiting period, which represents the total value of the company or its corporate shares. The solution adapts to the corporate structure and can include partners, directors, or key personnel.' },
+      { icon: ICONS.Rentabilidad, title: 'Shop owners', desc: 'For businesses where operation directly depends on the owner, we design a backing structure oriented towards **operational continuity:** predictability in the face of unforeseen events, backing of the built value, and a clear scheme to avoid improvising when the business needs stability.' },
+      { icon: ICONS.Contrato, title: 'Independent professionals', desc: 'We back every independent professional in their activity, guaranteeing their **retirement**.' },
     ],
     faq: { h2: 'Frequently Asked Questions' },
     contacto: {

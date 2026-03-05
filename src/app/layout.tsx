@@ -23,8 +23,8 @@ const BASE_URL = 'https://asegurate.uy'
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    template: '%s | Asegúrate',
-    default: 'Asegúrate – Protección Patrimonial Estratégica en Uruguay',
+    template: 'Asegurate | %s ',
+    default: 'Asegurate – Protección Patrimonial Estratégica en Uruguay',
   },
   description:
     'Especialistas en protección patrimonial estratégica para dueños de empresas, sociedades, comercios y profesionales independientes en Uruguay. Estructuras sólidas, confidenciales y a medida.',
@@ -40,9 +40,9 @@ export const metadata: Metadata = {
     'patrimonio empresarial',
     'continuidad operativa comercios',
   ],
-  authors: [{ name: 'Asegúrate' }],
-  creator: 'Asegúrate',
-  publisher: 'Asegúrate',
+  authors: [{ name: 'Asegurate' }],
+  creator: 'Asegurate',
+  publisher: 'Asegurate',
   icons: {
     icon: [
       { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },

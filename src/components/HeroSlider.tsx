@@ -63,14 +63,14 @@ const slidesPt: Slide[] = [
     badge: 'Trabalhadores independentes',
     title: 'Você trabalha por conta própria.\nSeu respaldo também tem que depender de você. ',
     body: [
-      'Ser independente não significa estar sozinho. Proteja sua renda hoje e garanta sua aposentadoria amanhã. Respaldo para sua atividade, garantindo sua aposentadoria.',
+      'Ser independente não significa estar sozinho. Respalde sua atividade e garanta sua aposentadoria.',
     ],
   },
   {
     badge: 'Respaldo',
     title: 'A confiança é construída com trajetória.',
     body: [
-      'Por isso trabalhamos com uma empresa com mais de 30 anos no Uruguai.',
+      'Seu futuro, respaldado por 30 anos de experiência.',
     ],
   },
 ]
@@ -95,14 +95,14 @@ const slidesEn: Slide[] = [
     badge: 'Independent workers',
     title: 'You work for yourself.\nYour backup also has to depend on you. ',
     body: [
-      'Being independent doesn\'t mean being alone. Protect your income today and secure your retirement tomorrow. Backup for your activity, guaranteeing your retirement.',
+      'Being independent doesn\'t mean being alone. Back your activity and guarantee your retirement.',
     ],
   },
   {
     badge: 'Backing',
     title: 'Trust is built with a track record.',
     body: [
-      'That\'s why we work with a company with over 30 years in Uruguay.',
+      'Your future, backed by 30 years of experience.',
     ],
   },
 ]

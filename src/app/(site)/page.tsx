@@ -5,10 +5,10 @@ import HeroSlider from '@/components/HeroSlider'
 import HomeContent from '@/components/HomeContent'
 
 export const metadata: Metadata = {
-  title: 'Asegúrate – Blindaje Empresarial en Uruguay',
+  title: 'Blindaje Empresarial en Uruguay',
   description:
     'La primera empresa en Uruguay especializada en blindaje empresarial a través de estructuras aseguradas. Capitales no embargables de hasta USD 1.200.000. Punta del Este.',
-  alternates: { canonical: 'https://asegurate.uy' },
+  alternates: { canonical: 'https://somosasegurate.com' },
 }
 
 export default function HomePage() {

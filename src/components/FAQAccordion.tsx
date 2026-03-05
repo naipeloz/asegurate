@@ -36,39 +36,63 @@ const faqs = {
   ],
   pt: [
     {
-      question: 'A quem se destina este respaldo?',
-      answer: 'Este respaldo destina-se a empresários, comerciantes e sócios que desenvolvem ou constituem empresas no Uruguai e desejam incorporar uma estrutura patrimonial sobre o valor econômico do seu investimento. Também trabalhamos em conjunto com consultorias, escritórios de contabilidade e advocacia que assessoram investidores estrangeiros que se instalam no país.',
+      question: 'Por que Asegurate?',
+      answer: 'Pioneiros no Uruguai em combinar respaldo empresarial e crescimento patrimonial em dólares, com o respaldo de três décadas de trajetória.',
     },
     {
-      question: 'Que tipo de respaldo oferece?',
-      answer: 'Oferece um capital segurado que proporciona proteção financeira contra lesões, interrupções da atividade e permite planejar a aposentadoria.',
+      question: 'A quem se destina este respaldo?',
+      answer: 'A donos de empresas, sociedades, profissionais independentes e comerciantes que desejam respaldar o valor de sua atividade e transformar seus rendimentos atuais em um fundo sólido em dólares para o futuro.',
     },
+    {
+      question: 'O que aconteceria com a sua empresa se você não estivesse aqui amanhã?',
+      answer: 'A Asegurate garante o valor econômico da sua atividade para que o seu patrimônio e a sua família não fiquem expostos diante de imprevistos.',
+    },
+    // {
+    //   question: 'Que tipo de respaldo oferecemos?',
+    //   answer: 'Oferecemos um capital segurado que proporciona proteção financeira contra lesões, interrupções da atividade e permite planejar a aposentadoria.',
+    // },
     {
       question: 'O capital está disponível desde o início?',
-      answer: 'Sim. A cobertura é sem período de carência, oferecendo proteção desde o primeiro momento.',
+      answer: 'Sim. O capital segurado está disponível desde o início e é um capital segurado impenhorável.',
     },
     {
-      question: 'O capital é penhorável?',
-      answer: 'Não. O capital segurado é impenhorável, oferecendo maior segurança patrimonial.',
+      question: 'Você está transformando o sucesso de hoje em tranquilidade futura?',
+      answer: 'Muitos empresários faturam bem, mas poucos transformam esses rendimentos em um respaldo sólido em dólares. A Aseguráte permite respaldar o valor de sua atividade enquanto você constrói um patrimônio real para sua aposentadoria. Se quiser saber como aplicá-lo à sua empresa, vamos agendar uma reunião personalizada.',
     },
+    // {
+    //   question: 'O capital é penhorável?',
+    //   answer: 'Não. O capital segurado é impenhorável, oferecendo maior segurança patrimonial.',
+    // },
   ],
   en: [
     {
-      question: 'Who is this backing for?',
-      answer: 'This backing is aimed at entrepreneurs, merchants, and partners who develop or establish companies in Uruguay and wish to incorporate an asset structure over the economic value of their investment. We also work together with consulting, accounting, and legal firms that advise foreign investors settling in the country.',
+      question: 'Why Asegurate?',
+      answer: 'Pioneers in Uruguay in combining business backing and wealth growth in dollars, backed by three decades of experience.',
     },
     {
-      question: 'What kind of backing does it offer?',
-      answer: 'It offers an insured capital that provides financial protection against injuries, activity interruptions, and allows for retirement planning.',
+      question: 'Who is this backing for?',
+      answer: 'For business owners, partnerships, independent professionals, and merchants who want to back the value of their activity and transform their current income into a solid dollar fund for the future.',
     },
+    {
+      question: 'What would happen to your company if you were not here tomorrow?',
+      answer: 'Asegurate guarantees the economic value of your activity so that your assets and your family are not exposed to unforeseen events.',
+    },
+    // {
+    //   question: 'What kind of backing do we offer?',
+    //   answer: 'We offer an insured capital that provides financial protection against injuries, activity interruptions, and allows for retirement planning.',
+    // },
     {
       question: 'Is the capital available from the beginning?',
-      answer: 'Yes. The coverage has no waiting period, providing protection from the very first moment.',
+      answer: 'Yes. The insured capital is available from the beginning and is a non-seizable insured capital.',
     },
     {
-      question: 'Is the capital seizable?',
-      answer: 'No. The insured capital is non-seizable, offering greater asset security.',
+      question: 'Are you turning today’s success into future peace of mind?',
+      answer: 'Many business owners have good revenue, but few transform that income into solid backing in dollars. Aseguráte allows you to back the value of your activity while building real wealth for your retirement. If you want to know how to apply it to your company, let’s schedule a personalized meeting.',
     },
+    // {
+    //   question: 'Is the capital seizable?',
+    //   answer: 'No. The insured capital is non-seizable, offering greater asset security.',
+    // },
   ],
 }
 
