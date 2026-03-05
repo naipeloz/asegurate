@@ -101,10 +101,10 @@ const content = {
       subtitle: 'Soluciones de Protección Patrimonial',
       coverageH3: 'Respaldo Exclusivo',
       coveragePoints: [
-        'Capitales asegurados no embargables de hasta $USD',
-        'Protección jurídica especializada para comercios, empresas y sociedades',
-        'Confidencialidad absoluta en todas las operaciones',
-        'Atención personalizada a nivel internacional',
+        '**Enfoque estratégico y preventivo:** no reaccionamos ante el riesgo; lo anticipamos y diseñamos una estructura patrimonial.',
+        '**Diseño a medida:** la propuesta se arma en base a tu estructura societaria, objetivos y nivel de exposición real.',
+        '**Confidencialidad y servicio premium:** evaluación privada, comunicación abierta y acompañamiento profesional.',
+        '**Claridad en el proceso:** diagnóstico + propuesta en 2 reuniones, e implementación junto a aseguradora para ejecución sólida.',
       ],
     },
     services: [
@@ -117,15 +117,15 @@ const content = {
       h2: 'Contacto',
       subtitle: 'Agendá una Consulta Confidencial',
       formH3: 'Formulario de Contacto',
-      meetingH3: 'Agendá una Reunión',
-      meetingBody: '¿Prefieres hablar directamente con nosotros? Agendá una consulta confidencial en el horario que mejor te convenga.',
-      meetingCta: 'Agendá tu consulta',
+      meetingH3: 'Agendá tu Reunión',
+      meetingBody: '¡Estamos listos para asesorarte de manera personalizada!',
+      meetingCta: 'Agenda ahora',
       infoH3: 'Información de Contacto',
-      labels: { location: 'Ubicación', email: 'Email', phone: 'Teléfono', hours: 'Horario', hoursValue: 'Lun – Vie: 8:00 – 20:00 | Sáb: 8:00 – 12:00' },
+      labels: { location: 'Ubicación', email: 'Email', phone: 'Teléfono', hours: 'Horario', hoursValue: 'Lunes a Viernes: 8:00 a 20:00 | Sábados: 8:00 a 12:00' },
     },
     cta: {
-      h2: '¿Listo para Proteger su Patrimonio?',
-      body: 'Agendá una consulta confidencial con nuestros especialistas y descubre cómo podemos ayudarte.',
+      h2: '¿Listo para proteger tu patrimonio?',
+      body: 'Agendá tu consulta exclusiva con nuestros especialistas y descubrí cómo podemos ayudarte con una propuesta clara, confidencial y a medida.',
       button: 'Agendá tu consulta',
     },
   },
@@ -162,10 +162,10 @@ const content = {
       subtitle: 'Soluções de Proteção Patrimonial',
       coverageH3: 'Respaldo Exclusivo',
       coveragePoints: [
-        'Capitais segurados não penhoráveis de até $USD',
-        'Proteção jurídica especializada para comércios, empresas e sociedades',
-        'Confidencialidade absoluta em todas as operações',
-        'Atendimento personalizado a nível internacional',
+        '**Abordagem estratégica e preventiva:** não reagimos ao risco; antecipamo-lo e desenhamos uma estrutura patrimonial.',
+        '**Design sob medida:** a proposta é montada com base na sua estrutura societária, objetivos e nível de exposição real.',
+        '**Confidencialidade e serviço premium:** avaliação privada, comunicação aberta e acompanhamento profissional.',
+        '**Clareza no processo:** diagnóstico + proposta em 2 reuniões, e implementação junto à seguradora para execução sólida.',
       ],
     },
     services: [
@@ -178,15 +178,15 @@ const content = {
       h2: 'Contato',
       subtitle: 'Agende uma Consulta Confidencial',
       formH3: 'Formulário de Contato',
-      meetingH3: 'Agende uma Reunião',
-      meetingBody: 'Prefere falar diretamente conosco? Agende uma consulta confidencial no horário que for melhor para você.',
-      meetingCta: 'Agende sua consulta',
+      meetingH3: 'Agende sua Reunião',
+      meetingBody: 'Estamos prontos para assessorá-lo de forma personalizada!',
+      meetingCta: 'Agende agora',
       infoH3: 'Informações de Contato',
-      labels: { location: 'Localização', email: 'Email', phone: 'Telefone', hours: 'Horário', hoursValue: 'Seg – Sex: 8:00 – 20:00 | Sáb: 8:00 – 12:00' },
+      labels: { location: 'Localização', email: 'Email', phone: 'Telefone', hours: 'Horário', hoursValue: 'Segunda a Sexta: 8:00 às 20:00 | Sábados: 8:00 às 12:00' },
     },
     cta: {
-      h2: 'Pronto para Proteger seu Patrimônio?',
-      body: 'Agende uma consulta confidencial com nossos especialistas e descubra como podemos ajudá-lo.',
+      h2: 'Pronto para proteger seu patrimônio?',
+      body: 'Agende sua consulta exclusiva com nossos especialistas e descubra como podemos ajudá-lo com uma proposta clara, confidencial e sob medida.',
       button: 'Agende sua consulta',
     },
   },
@@ -223,10 +223,10 @@ const content = {
       subtitle: 'Asset Protection Solutions',
       coverageH3: 'Exclusive Backing',
       coveragePoints: [
-        'Non-seizable insured capital up to $USD',
-        'Specialized legal protection for businesses, companies, and corporations',
-        'Absolute confidentiality in all operations',
-        'Personalized service at an international level',
+        '**Strategic and preventive approach:** we do not react to risk; we anticipate it and design an asset structure.',
+        '**Custom design:** the proposal is built based on your corporate structure, objectives, and actual exposure level.',
+        '**Confidentiality and premium service:** private evaluation, open communication, and professional support.',
+        '**Clear process:** diagnosis + proposal in 2 meetings, and implementation working alongside the insurer for solid execution.',
       ],
     },
     services: [
@@ -239,23 +239,23 @@ const content = {
       h2: 'Contact',
       subtitle: 'Schedule a Confidential Consultation',
       formH3: 'Contact Form',
-      meetingH3: 'Schedule a Meeting',
-      meetingBody: 'Would you prefer to speak directly with us? Schedule a confidential consultation at a time that suits you best.',
-      meetingCta: 'Schedule your consultation',
+      meetingH3: 'Schedule your Meeting',
+      meetingBody: 'We are ready to provide you with personalized advice!',
+      meetingCta: 'Schedule now',
       infoH3: 'Contact Information',
-      labels: { location: 'Location', email: 'Email', phone: 'Phone', hours: 'Hours', hoursValue: 'Mon – Fri: 8:00 AM – 8:00 PM | Sat: 8:00 AM – 12:00 PM' },
+      labels: { location: 'Location', email: 'Email', phone: 'Phone', hours: 'Hours', hoursValue: 'Monday to Friday: 8:00 AM to 8:00 PM | Saturdays: 8:00 AM to 12:00 PM' },
     },
     cta: {
-      h2: 'Ready to Protect Your Assets?',
-      body: 'Schedule a confidential consultation with our specialists and discover how we can help you.',
+      h2: 'Ready to protect your assets?',
+      body: 'Schedule your exclusive consultation with our specialists and discover how we can help you with a clear, confidential, and tailored proposal.',
       button: 'Schedule your consultation',
     },
   },
 }
 const contactDetails = (labels: { location: string; email: string; phone: string; hours: string; hoursValue: string }) => [
-  { icon: <MapPinIcon />, label: labels.location, value: 'Punta del Este, Uruguay' },
+  { icon: <MapPinIcon />, label: labels.location, value: 'Av. Franklin Delano Roosevelt 61, Punta del Este, Departamento de Maldonado, Uruguay' },
   { icon: <MailIcon />, label: labels.email, value: 'contacto@somosasegurate.com' },
-  { icon: <PhoneIcon />, label: labels.phone, value: '+598 XXXX XXXX' },
+  { icon: <PhoneIcon />, label: labels.phone, value: '+598 93 300 617' },
   { icon: null, label: labels.hours, value: labels.hoursValue },
 ]
 
@@ -358,19 +358,12 @@ export default function HomeContent() {
           >
             <h3 className="font-bold text-3xl text-center mb-8 text-[#C6A23A]">{t.servicios.coverageH3}</h3>
             <ul className="flex flex-col gap-4">
-              {t.servicios.coveragePoints.map((point, i) => {
-                const parts = point.split('$USD')
-                return (
-                  <li key={i} className="flex items-start gap-3">
-                    <span className="mt-2 w-2 h-2 rounded-full bg-[#C6A23A] shrink-0" />
-                    <p className="text-lg leading-relaxed text-white/80">
-                      {parts[0]}
-                      {parts.length > 1 && <span className="font-semibold text-[#C6A23A]">USD 1.200.000</span>}
-                      {parts[1]}
-                    </p>
-                  </li>
-                )
-              })}
+              {t.servicios.coveragePoints.map((point, i) => (
+                <li key={i} className="flex items-start gap-3">
+                  <span className="mt-2 w-2 h-2 rounded-full bg-[#C6A23A] shrink-0" />
+                  <RichText text={point} className="text-lg leading-relaxed text-white/80" />
+                </li>
+              ))}
             </ul>
           </div>
         </div>

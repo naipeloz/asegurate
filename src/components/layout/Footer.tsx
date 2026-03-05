@@ -18,7 +18,7 @@ const content = {
     contactInfo: [
       'Punta del Este, Uruguay',
       'contacto@somosasegurate.com',
-      '+598 XXXX XXXX',
+      '+598 93 300 617',
     ],
     rights: '© 2026 Asegúrate. Todos los derechos reservados.',
     privacy: 'Política de Privacidad',
@@ -37,9 +37,9 @@ const content = {
     ],
     contactTitle: 'Contato',
     contactInfo: [
-      'Punta del Este, Uruguai',
+      'Av. Franklin Delano Roosevelt 61, Punta del Este, Departamento de Maldonado, Uruguai',
       'contacto@somosasegurate.com',
-      '+598 XXXX XXXX',
+      '+598 93 300 617',
     ],
     rights: '© 2026 Asegurate. Todos os direitos reservados.',
     privacy: 'Política de Privacidade',
@@ -58,9 +58,9 @@ const content = {
     ],
     contactTitle: 'Contact',
     contactInfo: [
-      'Punta del Este, Uruguay',
+      'Av. Franklin Delano Roosevelt 61, Punta del Este, Departamento de Maldonado, Uruguay',
       'contacto@somosasegurate.com',
-      '+598 XXXX XXXX',
+      '+598 93 300 617',
     ],
     rights: '© 2026 Asegurate. All rights reserved.',
     privacy: 'Privacy Policy',

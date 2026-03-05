@@ -103,6 +103,7 @@ const jsonLd = {
   logo: `${BASE_URL}/brand/logo/Asegurate_Horizontal_Negro.svg`,
   address: {
     '@type': 'PostalAddress',
+    streetAddress: 'Av. Franklin Delano Roosevelt 61',
     addressLocality: 'Punta del Este',
     addressRegion: 'Maldonado',
     addressCountry: 'UY',
@@ -111,6 +112,7 @@ const jsonLd = {
   contactPoint: {
     '@type': 'ContactPoint',
     email: 'contacto@somosasegurate.com',
+    telephone: '+59893300617',
     contactType: 'customer service',
   },
   priceRange: '$$$$',

@@ -65,8 +65,8 @@ const content = {
       ],
     },
     why: {
-      heading: '¿Por qué Uruguay?',
-      subtitle: 'Uruguay ofrece un entorno único y privilegiado para la protección patrimonial internacional',
+      heading: '¿Por qué Asegurate?',
+      subtitle: 'Asegurate ofrece un entorno único y privilegiado para la protección patrimonial internacional',
       cards: [
         { icon: ICONS.Juridico, title: 'Estabilidad Jurídica', desc: 'Uruguay cuenta con uno de los sistemas legales más sólidos y transparentes de América Latina, ofreciendo seguridad jurídica incomparable para la protección patrimonial internacional.' },
         { icon: ICONS.Confidencialidad, title: 'Confidencialidad', desc: 'El marco legal uruguayo garantiza la privacidad de las operaciones financieras y societarias, protegiendo la identidad y los activos de nuestros clientes internacionales.' },
@@ -105,8 +105,8 @@ const content = {
       ],
     },
     why: {
-      heading: 'Por que o Uruguai?',
-      subtitle: 'O Uruguai oferece um ambiente único e privilegiado para a proteção patrimonial internacional',
+      heading: 'Por que Asegurate?',
+      subtitle: 'Asegurate oferece um ambiente único e privilegiado para a proteção patrimonial internacional',
       cards: [
         { icon: ICONS.Juridico, title: 'Estabilidade Jurídica', desc: 'O Uruguai possui um dos sistemas legais mais sólidos e transparentes da América Latina, oferecendo segurança jurídica incomparável para a proteção patrimonial internacional.' },
         { icon: ICONS.Confidencialidad, title: 'Confidencialidade', desc: 'O marco legal uruguaio garante a privacidade das operações financeiras e societárias, protegendo a identidade e os ativos dos nossos clientes internacionais.' },
@@ -145,8 +145,8 @@ const content = {
       ],
     },
     why: {
-      heading: 'Why Uruguay?',
-      subtitle: 'Uruguay offers a unique and privileged environment for international asset protection',
+      heading: 'Why Asegurate?',
+      subtitle: 'Asegurate offers a unique and privileged environment for international asset protection',
       cards: [
         { icon: ICONS.Juridico, title: 'Legal Stability', desc: 'Uruguay has one of the most solid and transparent legal systems in Latin America, offering incomparable legal security for international asset protection.' },
         { icon: ICONS.Confidencialidad, title: 'Confidentiality', desc: 'The Uruguayan legal framework guarantees the privacy of financial and corporate operations, protecting the identity and assets of our international clients.' },
