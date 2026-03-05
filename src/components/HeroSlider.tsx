@@ -31,7 +31,7 @@ const slidesEs: Slide[] = [
     badge: 'Trabajadores independientes',
     title: 'Trabajas por tu cuenta.\n Tu respaldo también tiene que depender de vos. ',
     body: [
-      'Ser independiente no significa estar solo. Protegé tus ingresos hoy y asegura tu retiro mañana. Respaldo para tu actividad, garantizando tu retiro jubilatorio.	',
+      'Ser independiente no significa estar solo. Respaldá tu actividad y garantizá tu retiro jubilatorio.	',
     ],
   },
   {
