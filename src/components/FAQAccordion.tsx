@@ -27,7 +27,7 @@ const faqs = {
     },
     {
       question: '¿Estás convirtiendo el éxito de hoy en tranquilidad futura?',
-      answer: 'Muchos empresarios facturan bien, pero pocos transforman esos ingresos en un respaldo sólido en dólares. Asegúrate te permite  respaldar el valor de tu actividad mientras construís patrimonio real para tu retiro. Si querés saber cómo aplicarlo a tu empresa, coordinemos una reunión personalizada.',
+      answer: 'Muchos empresarios facturan bien, pero pocos transforman esos ingresos en un respaldo sólido en dólares. Asegurate te permite  respaldar el valor de tu actividad mientras construís patrimonio real para tu retiro. Si querés saber cómo aplicarlo a tu empresa, coordinemos una reunión personalizada.',
     },
     // {
     //   question: '¿El capital es embargable?',

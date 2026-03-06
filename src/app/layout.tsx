@@ -24,10 +24,10 @@ export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
     template: 'Asegurate | %s ',
-    default: 'Asegurate – Protección Patrimonial Estratégica en Uruguay',
+    default: 'Asegurate – Respaldo empresarial y crecimiento patrimonial"',
   },
   description:
-    'Especialistas en protección patrimonial estratégica para dueños de empresas, sociedades, comercios y profesionales independientes en Uruguay. Estructuras sólidas, confidenciales y a medida.',
+    'Especialistas en respaldo patrimonial estratégica para dueños de empresas, sociedades, comercios y profesionales independientes en Uruguay. Estructuras sólidas, confidenciales y a medida.',
   keywords: [
     'protección patrimonial Uruguay',
     'seguros empresariales',
@@ -56,24 +56,24 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'es_UY',
     url: BASE_URL,
-    siteName: 'Asegúrate',
-    title: 'Asegúrate – Protección Patrimonial Estratégica',
+    siteName: 'Asegurate',
+    title: 'Asegurate – Respaldo empresarial y crecimiento patrimonial"',
     description:
-      'Protección patrimonial para dueños de empresas, sociedades, comercios y profesionales independientes. Anticipamos riesgos con estructuras sólidas y sostenibles.',
+      'Respaldo patrimonial para dueños de empresas, sociedades, comercios y profesionales independientes. Anticipamos riesgos con estructuras sólidas y sostenibles.',
     images: [
       {
         url: '/brand/logo/Asegurate_Horizontal_Tagline.png',
         width: 1200,
         height: 630,
-        alt: 'Asegúrate – Protección Patrimonial Estratégica',
+        alt: 'Asegurate – Respaldo empresarial y crecimiento patrimonial"',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Asegúrate – Protección Patrimonial Estratégica',
+    title: 'Asegurate – Respaldo empresarial y crecimiento patrimonial"',
     description:
-      'Protección patrimonial para empresas, comercios y profesionales independientes. Estructuras sólidas en Uruguay.',
+      'Respaldo patrimonial para empresas, comercios y profesionales independientes. Estructuras sólidas en Uruguay.',
     images: ['/brand/logo/Asegurate_Horizontal_Tagline.png'],
   },
   robots: {
@@ -96,9 +96,9 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'InsuranceAgency',
-  name: 'Asegúrate',
+  name: 'Asegurate',
   description:
-    'Especialistas en protección patrimonial estratégica para dueños de empresas, sociedades, comercios y profesionales independientes en Uruguay.',
+    'Especialistas en respaldo patrimonial estratégica para dueños de empresas, sociedades, comercios y profesionales independientes en Uruguay.',
   url: BASE_URL,
   logo: `${BASE_URL}/brand/logo/Asegurate_Horizontal_Negro.svg`,
   address: {

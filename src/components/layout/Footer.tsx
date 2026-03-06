@@ -20,7 +20,7 @@ const content = {
       'contacto@somosasegurate.com',
       '+598 93 300 617',
     ],
-    rights: '© 2026 Asegúrate. Todos los derechos reservados.',
+    rights: '© 2026 Asegurate. Todos los derechos reservados.',
     privacy: 'Política de Privacidad',
     terms: 'Términos y Condiciones',
   },
@@ -102,7 +102,7 @@ export default function Footer() {
             <a href="/" className="inline-flex mb-5">
               <img
                 src="/brand/logo/Asegurate_Horizontal.svg"
-                alt="Asegúrate"
+                alt="Asegurate"
                 className="h-16"
               />
             </a>

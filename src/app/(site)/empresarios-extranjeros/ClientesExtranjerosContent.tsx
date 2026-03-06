@@ -51,7 +51,7 @@ const content = {
     },
     intro: {
       heading: 'Servicio Especializado para Empresarios Extranjeros',
-      p1: 'En Asegúrate entendemos las necesidades únicas de los empresarios extranjeros que buscan respaldar su patrimonio en Uruguay. Ofrecemos un servicio integral y personalizado que combina nuestra profunda experiencia en el mercado local con una visión global.',
+      p1: 'En Asegurate entendemos las necesidades únicas de los empresarios extranjeros que buscan respaldar su patrimonio en Uruguay. Ofrecemos un servicio integral y personalizado que combina nuestra profunda experiencia en el mercado local con una visión global.',
       p2: 'Nuestros capitales asegurados no embargables de hasta',
       p2suffix: 'ofrecen la tranquilidad que su patrimonio merece. \nTambién trabajamos en conjunto con consultoras, estudios contables y jurídicos que asesoran inversores extranjeros que se instalan en el país.',
     },

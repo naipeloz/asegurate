@@ -81,7 +81,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center shrink-0">
           <img
             src="/brand/logo/Asegurate_Horizontal.svg"
-            alt="Asegúrate"
+            alt="Asegurate"
             className="h-10"
           />
         </Link>

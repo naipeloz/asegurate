@@ -80,7 +80,7 @@ const content = {
       h2: 'Nosotros',
       body: [
         'En ASEGURATE somos especialistas en **respaldo patrimonial estratégico** para dueños de empresas, sociedades, comercios y profesionales independientes.',
-        'Diseñamos estructuras de protección pensadas para anticipar riesgos, ordenar la continuidad del negocio y resguardar el valor de lo construido.',
+        'Diseñamos estructuras de respaldo pensadas para anticipar riesgos, ordenar la continuidad del negocio y resguardar el valor de lo construido.',
         'Trabajamos con un enfoque **exclusivo y confidencial**, combinando análisis personalizado, solidez jurídica y una ejecución clara: diagnóstico, propuesta y definición.',
       ],
       beneficiosH2: 'Beneficios —',
@@ -98,7 +98,7 @@ const content = {
     ],
     servicios: {
       h2: 'Servicios',
-      subtitle: 'Soluciones de Protección Patrimonial',
+      subtitle: 'Soluciones de Respaldo Patrimonial',
       coverageH3: 'Respaldo Exclusivo',
       coveragePoints: [
         '**Enfoque estratégico y preventivo:** no reaccionamos ante el riesgo; lo anticipamos y diseñamos una estructura patrimonial.',
@@ -109,7 +109,7 @@ const content = {
     },
     services: [
       { icon: ICONS.Empresa, title: 'Dueños de empresas y sociedades', desc: 'Diseñamos esquemas de respaldo basados en un **capital asegurado no embargable**, sin período de carencia, que representa el valor total de la empresa o de sus participaciones societarias. La solución se adapta a la estructura societaria y puede contemplar socios, directores o personas clave.' },
-      { icon: ICONS.Comercio, title: 'Dueños de comercios', desc: 'Para negocios donde el funcionamiento depende directamente del dueño, diseñamos una estructura de respaldo orientada a **continuidad operativa:** previsibilidad ante imprevistos, resplado del valor construido y un esquema claro para no improvisar cuando el comercio necesita estabilidad.' },
+      { icon: ICONS.Comercio, title: 'Dueños de comercios', desc: 'Para negocios donde el funcionamiento depende directamente del dueño, diseñamos una estructura de respaldo orientada a **continuidad operativa:** previsibilidad ante imprevistos, respaldo del valor construido y un esquema claro para no improvisar cuando el comercio necesita estabilidad.' },
       { icon: ICONS.Innovacion, title: 'Profesionales independientes', desc: 'Respaldamos a cada profesional independiente en su actividad garantizando su **retiro jubilatorio**' },
     ],
     faq: { h2: 'Preguntas Frecuentes' },
