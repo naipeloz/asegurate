@@ -66,9 +66,9 @@ const content = {
     },
     why: {
       heading: '¿Por qué Asegurate?',
-      subtitle: 'Asegurate ofrece un entorno único y privilegiado para la protección patrimonial internacional',
+      subtitle: 'Asegurate ofrece un entorno único y privilegiado para la respaldo patrimonial internacional',
       cards: [
-        { icon: ICONS.Juridico, title: 'Estabilidad Jurídica', desc: 'Uruguay cuenta con uno de los sistemas legales más sólidos y transparentes de América Latina, ofreciendo seguridad jurídica incomparable para la protección patrimonial internacional.' },
+        { icon: ICONS.Juridico, title: 'Estabilidad Jurídica', desc: 'Uruguay cuenta con uno de los sistemas legales más sólidos y transparentes de América Latina, ofreciendo seguridad jurídica incomparable para la respaldo patrimonial internacional.' },
         { icon: ICONS.Confidencialidad, title: 'Confidencialidad', desc: 'El marco legal uruguayo garantiza la privacidad de las operaciones financieras y societarias, protegiendo la identidad y los activos de nuestros clientes internacionales.' },
         { icon: ICONS.Comercio, title: 'Ubicación Estratégica', desc: 'Punta del Este se posiciona como el hub financiero y de negocios del Cono Sur, con excelente conectividad internacional y una comunidad de alto poder adquisitivo.' },
         { icon: ICONS.Exclusividad, title: 'Calidad de Vida', desc: 'Uruguay ofrece una calidad de vida excepcional con seguridad, estabilidad política y una infraestructura de primer nivel para negocios e inversiones internacionales.' },
@@ -76,7 +76,7 @@ const content = {
     },
     cta: {
       heading: 'Hablemos sobre sus Necesidades',
-      body: 'Nuestro equipo de especialistas está listo para asesorarle sobre las mejores estrategias de protección patrimonial para clientes internacionales.',
+      body: 'Nuestro equipo de especialistas está listo para asesorarle sobre las mejores estrategias de respaldo patrimonial para clientes internacionales.',
       button: 'Agenda tu consulta',
     },
   },
