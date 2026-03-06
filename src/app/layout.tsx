@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
     template: 'Asegurate | %s ',
-    default: 'Asegurate – Respaldo empresarial y crecimiento patrimonial"',
+    default: 'Asegurate – Blindaje Empresarial en Uruguay',
   },
   description:
     'Especialistas en respaldo patrimonial estratégica para dueños de empresas, sociedades, comercios y profesionales independientes en Uruguay. Estructuras sólidas, confidenciales y a medida.',
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     locale: 'es_UY',
     url: BASE_URL,
     siteName: 'Asegurate',
-    title: 'Asegurate – Respaldo empresarial y crecimiento patrimonial"',
+    title: 'Asegurate – Blindaje Empresarial en Uruguay',
     description:
       'Respaldo patrimonial para dueños de empresas, sociedades, comercios y profesionales independientes. Anticipamos riesgos con estructuras sólidas y sostenibles.',
     images: [
@@ -65,13 +65,13 @@ export const metadata: Metadata = {
         url: '/brand/logo/Asegurate_Horizontal_Tagline.png',
         width: 1200,
         height: 630,
-        alt: 'Asegurate – Respaldo empresarial y crecimiento patrimonial"',
+        alt: 'Asegurate – Blindaje Empresarial en Uruguay',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Asegurate – Respaldo empresarial y crecimiento patrimonial"',
+    title: 'Asegurate – Blindaje Empresarial en Uruguay',
     description:
       'Respaldo patrimonial para empresas, comercios y profesionales independientes. Estructuras sólidas en Uruguay.',
     images: ['/brand/logo/Asegurate_Horizontal_Tagline.png'],
