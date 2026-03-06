@@ -7,7 +7,7 @@ import HomeContent from '@/components/HomeContent'
 export const metadata: Metadata = {
   title: 'Blindaje Empresarial en Uruguay',
   description:
-    'La primera empresa en Uruguay especializada en blindaje empresarial a través de estructuras aseguradas. Capitales no embargables de hasta USD 1.200.000. Punta del Este.',
+    'Respaldo patrimonial para dueños de empresas, sociedades, comercios y profesionales independientes. Anticipamos riesgos con estructuras sólidas y sostenibles.',
   alternates: { canonical: 'https://somosasegurate.com' },
 }
 

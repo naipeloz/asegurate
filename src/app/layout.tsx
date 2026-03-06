@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     default: 'Asegurate – Blindaje Empresarial en Uruguay',
   },
   description:
-    'Especialistas en respaldo patrimonial estratégica para dueños de empresas, sociedades, comercios y profesionales independientes en Uruguay. Estructuras sólidas, confidenciales y a medida.',
+    'Respaldo patrimonial para dueños de empresas, sociedades, comercios y profesionales independientes. Anticipamos riesgos con estructuras sólidas y sostenibles.',
   keywords: [
     'protección patrimonial Uruguay',
     'seguros empresariales',
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Asegurate – Blindaje Empresarial en Uruguay',
     description:
-      'Respaldo patrimonial para empresas, comercios y profesionales independientes. Estructuras sólidas en Uruguay.',
+      'Respaldo patrimonial para dueños de empresas, sociedades, comercios y profesionales independientes. Anticipamos riesgos con estructuras sólidas y sostenibles.',
     images: ['/brand/logo/Asegurate_Horizontal_Tagline.png'],
   },
   robots: {
