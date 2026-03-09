@@ -104,11 +104,8 @@ const content = {
         '**Enfoque estratégico y preventivo:** no reaccionamos ante el riesgo; lo anticipamos y diseñamos una estructura patrimonial.',
         '**Diseño a medida:** la propuesta se arma en base a tu estructura societaria, objetivos y nivel de exposición real.',
         '**Confidencialidad y servicio premium:** evaluación privada, comunicación abierta y acompañamiento personalizado.',
-        '**Claridad en el proceso:**',
-        '**1.⁠ ⁠Reunión de análisis estratégico:** Comenzamos con una conversación personalizada para comprender tu realidad patrimonial o empresarial, tus necesidades de protección y tus objetivos a futuro.',
-        '**2.⁠ ⁠Diseño de la estrategia:** Con esa información estructuramos una solución alineada a tu perfil y a la planificación que buscás para tu patrimonio.',
-        '**3.⁠ ⁠Implementación: ** En una segunda reunión revisamos la estrategia propuesta y, con tu aprobación, avanzamos con su implementación.',
-        '**Dale a tu patrimonio el respaldo que necesita. Agendá tu reunión.',
+        '**Claridad en el proceso:** ⁠Reunión de análisis estratégico, diseño de la estrategia, ⁠Implementación',
+        'Dale a tu patrimonio el respaldo que necesita. Agendá tu reunión.',
       ],
     },
     services: [
