@@ -60,15 +60,15 @@ const content = {
       subtitle: 'Soluciones diseñadas para proteger su patrimonio desde cualquier parte del mundo',
       cards: [
         { icon: ICONS.Comercio, title: 'Asesoramiento Internacional', desc: 'Orientación experta para clientes extranjeros que buscan estructurar sus activos en Uruguay, con conocimiento profundo del marco legal local e internacional.' },
-        { icon: ICONS.Juridico, title: 'Estructuras Legales', desc: 'Diseñamos las estructuras societarias y de seguros más adecuadas para proteger su patrimonio dentro del robusto marco jurídico uruguayo.' },
+        { icon: ICONS.Juridico, title: 'Estructuras Legales', desc: 'Diseñamos las estructuras societárias más efectivas para respaldar tu patrimonio dentro del robusto marco jurídico uruguayo.' },
         { icon: ICONS.Confidencialidad, title: 'Máxima Confidencialidad', desc: 'Garantizamos la total privacidad de su información y operaciones, respaldados por la legislación uruguaya sobre confidencialidad financiera.' },
       ],
     },
     why: {
       heading: '¿Por qué Asegurate?',
-      subtitle: 'Asegurate ofrece un entorno único y privilegiado para la respaldo patrimonial internacional',
+      subtitle: 'Asegurate ofrece un entorno único y privilegiado para el respaldo patrimonial internacional',
       cards: [
-        { icon: ICONS.Juridico, title: 'Estabilidad Jurídica', desc: 'Uruguay cuenta con uno de los sistemas legales más sólidos y transparentes de América Latina, ofreciendo seguridad jurídica incomparable para la respaldo patrimonial internacional.' },
+        { icon: ICONS.Juridico, title: 'Estabilidad Jurídica', desc: 'Uruguay cuenta con uno de los sistemas legales más sólidos y transparentes de América Latina, ofreciendo seguridad jurídica incomparable para el respaldo patrimonial internacional.' },
         { icon: ICONS.Confidencialidad, title: 'Confidencialidad', desc: 'El marco legal uruguayo garantiza la privacidad de las operaciones financieras y societarias, protegiendo la identidad y los activos de nuestros clientes internacionales.' },
         { icon: ICONS.Comercio, title: 'Ubicación Estratégica', desc: 'Punta del Este se posiciona como el hub financiero y de negocios del Cono Sur, con excelente conectividad internacional y una comunidad de alto poder adquisitivo.' },
         { icon: ICONS.Exclusividad, title: 'Calidad de Vida', desc: 'Uruguay ofrece una calidad de vida excepcional con seguridad, estabilidad política y una infraestructura de primer nivel para negocios e inversiones internacionales.' },

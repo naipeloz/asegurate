@@ -80,7 +80,7 @@ const content = {
       h2: 'Nosotros',
       body: [
         'En ASEGURATE somos especialistas en **respaldo patrimonial estratégico** para dueños de empresas, sociedades, comercios y profesionales independientes.',
-        'Diseñamos estructuras de respaldo pensadas para anticipar riesgos, ordenar la continuidad del negocio y resguardar el valor de lo construido.',
+        'Diseñamos estructuras garantizadas para respaldar el valor de lo construido, de esta manera organizar la continuidad del negocio.',
         'Trabajamos con un enfoque **exclusivo y confidencial**, combinando análisis personalizado, solidez jurídica y una ejecución clara: diagnóstico, propuesta y definición.',
       ],
       beneficiosH2: 'Beneficios —',
@@ -92,8 +92,8 @@ const content = {
     },
     benefits: [
       { icon: ICONS.Seguridad, title: 'Capital asegurado no embargable', desc: 'Resguarda el valor de tu empresa o participaciones societarias bajo una estructura diseñada para proteger tu patrimonio.' },
-      { icon: ICONS.Exclusividad, title: 'Sin período de carencia', desc: 'La cobertura comienza desde el inicio. Una solución pensada para actuar cuando el negocio lo necesita, sin esperas innecesarias.' },
-      { icon: ICONS.Juridico, title: 'Fondo rentable en USD', desc: 'Además de proteger, el capital va a un fondo rentable en dólares, combinando respaldo y planificación.' },
+      { icon: ICONS.Exclusividad, title: 'Sin período de carencia', desc: 'El respaldo comienza desde el inicio. Una solución pensada para actuar cuando el negocio lo necesita, sin esperas innecesarias.' },
+      { icon: ICONS.Juridico, title: 'Fondo rentable en USD', desc: 'Además de respaldar, el capital va a un fondo rentable en dólares, combinando respaldo y planificación.' },
       { icon: ICONS.Innovacion, title: 'Diseño personalizado y confidencial', desc: 'Cada caso es único. Analizamos tu estructura y objetivos para diseñar una propuesta a medida, en un proceso privado y profesional.' },
     ],
     servicios: {
@@ -103,12 +103,16 @@ const content = {
       coveragePoints: [
         '**Enfoque estratégico y preventivo:** no reaccionamos ante el riesgo; lo anticipamos y diseñamos una estructura patrimonial.',
         '**Diseño a medida:** la propuesta se arma en base a tu estructura societaria, objetivos y nivel de exposición real.',
-        '**Confidencialidad y servicio premium:** evaluación privada, comunicación abierta y acompañamiento profesional.',
-        '**Claridad en el proceso:** diagnóstico + propuesta en 2 reuniones, e implementación junto a aseguradora para ejecución sólida.',
+        '**Confidencialidad y servicio premium:** evaluación privada, comunicación abierta y acompañamiento personalizado.',
+        '**Claridad en el proceso:**',
+        '**1.⁠ ⁠Reunión de análisis estratégico:** Comenzamos con una conversación personalizada para comprender tu realidad patrimonial o empresarial, tus necesidades de protección y tus objetivos a futuro.',
+        '**2.⁠ ⁠Diseño de la estrategia:** Con esa información estructuramos una solución alineada a tu perfil y a la planificación que buscás para tu patrimonio.',
+        '**3.⁠ ⁠Implementación: ** En una segunda reunión revisamos la estrategia propuesta y, con tu aprobación, avanzamos con su implementación.',
+        '**Dale a tu patrimonio el respaldo que necesita. Agendá tu reunión.',
       ],
     },
     services: [
-      { icon: ICONS.Empresa, title: 'Dueños de empresas y sociedades', desc: 'Diseñamos esquemas de respaldo basados en un **capital asegurado no embargable**, sin período de carencia, que representa el valor total de la empresa o de sus participaciones societarias. La solución se adapta a la estructura societaria y puede contemplar socios, directores o personas clave.' },
+      { icon: ICONS.Empresa, title: 'Dueños de empresas y sociedades', desc: 'Diseñamos esquemas de respaldo basados en un **capital asegurado no embargable**, sin período de carencia, que representa el valor total de la empresa o de sus participaciones societárias. La solución se adapta a la estructura societaria y puede contemplar socios, directores o personas clave.' },
       { icon: ICONS.Comercio, title: 'Dueños de comercios', desc: 'Para negocios donde el funcionamiento depende directamente del dueño, diseñamos una estructura de respaldo orientada a **continuidad operativa:** previsibilidad ante imprevistos, respaldo del valor construido y un esquema claro para no improvisar cuando el comercio necesita estabilidad.' },
       { icon: ICONS.Innovacion, title: 'Profesionales independientes', desc: 'Respaldamos a cada profesional independiente en su actividad garantizando su **retiro jubilatorio**' },
     ],

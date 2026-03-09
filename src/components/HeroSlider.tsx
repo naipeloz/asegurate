@@ -15,7 +15,7 @@ interface Slide {
 const slidesEs: Slide[] = [
   {
     badge: 'Empresas y sociedades',
-    title: 'En Uruguay muchos empresarios construyen patrimonio pero pocos lo protegen estratégicamente.\n Asegurate nace para cambiar eso.',
+    title: 'En Uruguay muchos empresarios construyen patrimonio pero pocos lo respaldan estratégicamente.\n Asegurate nace para cambiar eso.',
     body: [
       'Somos la primera empresa en Uruguay especializada en blindaje empresarial a través de estructuras aseguradas.',
     ],
