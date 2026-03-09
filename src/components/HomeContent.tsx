@@ -119,7 +119,7 @@ const content = {
       subtitle: 'Agendá  tu consulta personalizada',
       formH3: 'Formulario de Contacto',
       meetingH3: 'Agendá tu reunión personalizada',
-      meetingBody: '¡Estamos listos para asesorarte de manera personalizada!',
+      meetingBody: '¡Estamos listos para asesorarte!',
       meetingCta: 'Agenda ahora',
       infoH3: 'Información de Contacto',
       labels: { location: 'Ubicación', email: 'Email', phone: 'Teléfono', hours: 'Horario', hoursValue: 'Lunes a Viernes: 8:00 a 20:00 | Sábados: 8:00 a 12:00' },
