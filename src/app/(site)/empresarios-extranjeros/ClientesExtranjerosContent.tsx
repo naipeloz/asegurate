@@ -15,7 +15,7 @@ const ICONS = {
 // CSS filter: converts black SVG → brand gold #C6A23A
 const GOLD_FILTER = 'brightness(0) saturate(100%) invert(68%) sepia(83%) saturate(350%) hue-rotate(3deg) brightness(100%) contrast(88%)'
 
-const CALENDLY_URL = 'https://calendly.com/asegurate'
+const CALENDLY_URL = 'https://calendly.com/somosasegurate'
 
 // ─── Icons ───────────────────────────────────────────────────────────────────
 function CalendarIcon({ size = 20 }: { size?: number }) {

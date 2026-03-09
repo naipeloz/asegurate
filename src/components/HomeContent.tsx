@@ -20,7 +20,7 @@ const ICONS = {
 // CSS filter: converts black SVG → brand gold #C6A23A
 const GOLD_FILTER = 'brightness(0) saturate(100%) invert(68%) sepia(83%) saturate(350%) hue-rotate(3deg) brightness(100%) contrast(88%)'
 
-const CALENDLY_URL = 'https://calendly.com/asegurate'
+const CALENDLY_URL = 'https://calendly.com/somosasegurate'
 
 // ─── Inline SVG icons ─────────────────────────────────────────────────────────
 function CalendarIcon({ size = 20 }: { size?: number }) {
@@ -105,7 +105,7 @@ const content = {
         '**Diseño a medida:** la propuesta se arma en base a tu estructura societaria, objetivos y nivel de exposición real.',
         '**Confidencialidad y servicio premium:** evaluación privada, comunicación abierta y acompañamiento personalizado.',
         '**Claridad en el proceso:** ⁠Reunión de análisis estratégico, diseño de la estrategia, ⁠Implementación',
-        'Dale a tu patrimonio el respaldo que necesita. Agendá tu reunión.',
+        'Dale a tu patrimonio el respaldo que necesita. Agendá tu reunión personalizada.',
       ],
     },
     services: [
@@ -116,9 +116,9 @@ const content = {
     faq: { h2: 'Preguntas Frecuentes' },
     contacto: {
       h2: 'Contacto',
-      subtitle: 'Agendá una Consulta Personalizada',
+      subtitle: 'Agendá  tu consulta personalizada',
       formH3: 'Formulario de Contacto',
-      meetingH3: 'Agendá tu Reunión',
+      meetingH3: 'Agendá tu reunión personalizada',
       meetingBody: '¡Estamos listos para asesorarte de manera personalizada!',
       meetingCta: 'Agenda ahora',
       infoH3: 'Información de Contacto',

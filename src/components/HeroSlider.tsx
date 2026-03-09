@@ -109,7 +109,7 @@ const slidesEn: Slide[] = [
 
 
 
-const CALENDLY_URL = 'https://calendly.com/asegurate'
+const CALENDLY_URL = 'https://calendly.com/somosasegurate'
 
 const discoverLabels = { es: 'Descubrí más', pt: 'Descubra mais', en: 'Discover more' }
 const ctaLabels = { es: 'Agendá tu consulta', pt: 'Agende sua consulta', en: 'Schedule a consultation' }
