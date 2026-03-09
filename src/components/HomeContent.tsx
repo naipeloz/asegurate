@@ -109,14 +109,14 @@ const content = {
       ],
     },
     services: [
-      { icon: ICONS.Empresa, title: 'Dueños de empresas y sociedades', desc: 'Diseñamos esquemas de respaldo basados en un **capital asegurado no embargable**, sin período de carencia, que representa el valor total de la empresa o de sus participaciones societárias. La solución se adapta a la estructura societaria y puede contemplar socios, directores o personas clave.' },
+      { icon: ICONS.Empresa, title: 'Dueños de empresas y sociedades', desc: 'Diseñamos esquemas de respaldo basados en un **capital asegurado no embargable**, sin período de carencia, que representa el valor total de la empresa o de sus participaciones societarias. La solución se adapta a la estructura societaria y puede contemplar socios, directores o personas clave.' },
       { icon: ICONS.Comercio, title: 'Dueños de comercios', desc: 'Para negocios donde el funcionamiento depende directamente del dueño, diseñamos una estructura de respaldo orientada a **continuidad operativa:** previsibilidad ante imprevistos, respaldo del valor construido y un esquema claro para no improvisar cuando el comercio necesita estabilidad.' },
       { icon: ICONS.Innovacion, title: 'Profesionales independientes', desc: 'Respaldamos a cada profesional independiente en su actividad garantizando su **retiro jubilatorio**' },
     ],
     faq: { h2: 'Preguntas Frecuentes' },
     contacto: {
       h2: 'Contacto',
-      subtitle: 'Agendá una Consulta Confidencial',
+      subtitle: 'Agendá una Consulta Personalizada',
       formH3: 'Formulario de Contacto',
       meetingH3: 'Agendá tu Reunión',
       meetingBody: '¡Estamos listos para asesorarte de manera personalizada!',
@@ -153,7 +153,7 @@ const content = {
       { icon: ICONS.Innovacion, title: 'Visão de Longo Prazo', desc: 'Estratégias de proteção pensadas para o futuro da sua empresa.' },
     ],
     benefits: [
-      { icon: ICONS.Seguridad, title: 'Capital segurado não penhorável', desc: 'Protege o valor da sua empresa ou participações societárias sob uma estrutura projetada para proteger seu patrimônio.' },
+      { icon: ICONS.Seguridad, title: 'Capital segurado não penhorável', desc: 'Protege o valor da sua empresa ou participações societarias sob uma estrutura projetada para proteger seu patrimônio.' },
       { icon: ICONS.Exclusividad, title: 'Sem período de carência', desc: 'A cobertura começa desde o início. Uma solução pensada para agir quando o negócio precisa, sem esperas desnecessárias.' },
       { icon: ICONS.Juridico, title: 'Fundo rentável em USD', desc: 'Além de proteger, o capital vai para um fundo rentável em dólares, combinando proteção e planejamento.' },
       { icon: ICONS.Innovacion, title: 'Design personalizado e confidencial', desc: 'Cada caso é único. Analisamos sua estrutura e objetivos para projetar uma proposta sob medida, em um processo privado e profissional.' },
@@ -170,7 +170,7 @@ const content = {
       ],
     },
     services: [
-      { icon: ICONS.Empresa, title: 'Proprietários de empresas e sociedades', desc: 'Projetamos esquemas de respaldo baseados em um **capital segurado não penhorável**, sem período de carência, que representa o valor total da empresa ou de suas participações societárias. A solução se adapta à estrutura societária e pode incluir sócios, diretores ou pessoas-chave.' },
+      { icon: ICONS.Empresa, title: 'Proprietários de empresas e sociedades', desc: 'Projetamos esquemas de respaldo baseados em um **capital segurado não penhorável**, sem período de carência, que representa o valor total da empresa ou de suas participações societarias. A solução se adapta à estrutura societária e pode incluir sócios, diretores ou pessoas-chave.' },
       { icon: ICONS.Rentabilidad, title: 'Proprietários de comércios', desc: 'Para negócios onde a operação depende diretamente do proprietário, projetamos uma estrutura de respaldo orientada à **continuidade operacional:** previsibilidade diante de imprevistos, respaldo do valor construído e um esquema claro para não improvisar quando o comércio precisa de estabilidade.' },
       { icon: ICONS.Contrato, title: 'Profissionais independentes', desc: 'Respaldamos cada profissional independente em sua atividade, garantindo sua **aposentadoria**.' },
     ],

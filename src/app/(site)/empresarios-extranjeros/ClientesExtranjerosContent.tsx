@@ -60,7 +60,7 @@ const content = {
       subtitle: 'Soluciones diseñadas para proteger su patrimonio desde cualquier parte del mundo',
       cards: [
         { icon: ICONS.Comercio, title: 'Asesoramiento Internacional', desc: 'Orientación experta para clientes extranjeros que buscan estructurar sus activos en Uruguay, con conocimiento profundo del marco legal local e internacional.' },
-        { icon: ICONS.Juridico, title: 'Estructuras Legales', desc: 'Diseñamos las estructuras societárias más efectivas para respaldar tu patrimonio dentro del robusto marco jurídico uruguayo.' },
+        { icon: ICONS.Juridico, title: 'Estructuras Legales', desc: 'Diseñamos las estructuras societarias más efectivas para respaldar tu patrimonio dentro del robusto marco jurídico uruguayo.' },
         { icon: ICONS.Confidencialidad, title: 'Máxima Confidencialidad', desc: 'Garantizamos la total privacidad de su información y operaciones, respaldados por la legislación uruguaya sobre confidencialidad financiera.' },
       ],
     },
@@ -76,7 +76,7 @@ const content = {
     },
     cta: {
       heading: 'Hablemos sobre sus Necesidades',
-      body: 'Nuestro equipo de especialistas está listo para asesorarle sobre las mejores estrategias de respaldo patrimonial para clientes internacionales.',
+      body: 'Nuestro equipo de especialistas está listo para asesorarte sobre las mejores estrategias de respaldo patrimonial para clientes internacionales.',
       button: 'Agenda tu consulta',
     },
   },
@@ -100,7 +100,7 @@ const content = {
       subtitle: 'Soluções desenvolvidas para proteger seu patrimônio de qualquer parte do mundo',
       cards: [
         { icon: ICONS.Comercio, title: 'Assessoria Internacional', desc: 'Orientação especializada para clientes estrangeiros que buscam estruturar seus ativos no Uruguai, com profundo conhecimento do marco legal local e internacional.' },
-        { icon: ICONS.Juridico, title: 'Estruturas Legais', desc: 'Desenvolvemos as estruturas societárias e de seguros mais adequadas para proteger seu patrimônio dentro do robusto marco jurídico uruguaio.' },
+        { icon: ICONS.Juridico, title: 'Estruturas Legais', desc: 'Desenvolvemos as estruturas societarias e de seguros mais adequadas para proteger seu patrimônio dentro do robusto marco jurídico uruguaio.' },
         { icon: ICONS.Confidencialidad, title: 'Máxima Confidencialidade', desc: 'Garantimos a total privacidade de suas informações e operações, respaldados pela legislação uruguaia sobre confidencialidade financeira.' },
       ],
     },
@@ -109,7 +109,7 @@ const content = {
       subtitle: 'Asegurate oferece um ambiente único e privilegiado para a proteção patrimonial internacional',
       cards: [
         { icon: ICONS.Juridico, title: 'Estabilidade Jurídica', desc: 'O Uruguai possui um dos sistemas legais mais sólidos e transparentes da América Latina, oferecendo segurança jurídica incomparável para a proteção patrimonial internacional.' },
-        { icon: ICONS.Confidencialidad, title: 'Confidencialidade', desc: 'O marco legal uruguaio garante a privacidade das operações financeiras e societárias, protegendo a identidade e os ativos dos nossos clientes internacionais.' },
+        { icon: ICONS.Confidencialidad, title: 'Confidencialidade', desc: 'O marco legal uruguaio garante a privacidade das operações financeiras e societarias, protegendo a identidade e os ativos dos nossos clientes internacionais.' },
         { icon: ICONS.Comercio, title: 'Localização Estratégica', desc: 'Punta del Este se posiciona como o hub financeiro e de negócios do Cone Sul, com excelente conectividade internacional e uma comunidade de alto poder aquisitivo.' },
         { icon: ICONS.Exclusividad, title: 'Qualidade de Vida', desc: 'O Uruguai oferece uma qualidade de vida excepcional com segurança, estabilidade política e uma infraestrutura de primeiro nível para negócios e investimentos internacionais.' },
       ],
