@@ -208,7 +208,7 @@ export default function HeroSlider() {
             <img
               src="/brand/logo/Asegurate_Horizontal_Tagline.svg"
               alt="Asegurate"
-              className="h-28 md:h-38 md:h-56 mb-6 hidden sm:block"
+              className="h-28 md:h-38 md:h-56 mb-6 sm:block"
             />
 
             {/* Fixed-height container to prevent layout shift */}
