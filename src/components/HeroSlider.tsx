@@ -200,21 +200,21 @@ export default function HeroSlider() {
       {/* Slide content */}
       <div
         key={animKey}
-        className="hero-slide-enter relative h-full flex items-center justify-center text-center"
+        className="hero-slide-enter relative h-full flex md:items-center justify-center text-center"
       >
         <div className="w-full max-w-[1600px] mx-auto px-8 lg:px-16 flex flex-col items-center">
-          <div className="w-full  flex flex-col items-center pt-8 md:pt-0">
+          <div className="w-full flex flex-col items-center pt-2 md:pt-8 md:pt-0">
             {/* Logo */}
             <img
               src="/brand/logo/Asegurate_Horizontal_Tagline.svg"
               alt="Asegurate"
-              className="h-28 md:h-38 md:h-56 mb-6 sm:block"
+              className="h-18 md:h-38 md:h-56 mb-2 md:mb-6 sm:block"
             />
 
             {/* Fixed-height container to prevent layout shift */}
-            <div className="flex flex-col items-center h-[320px] md:h-[280px]  w-[280px] md:w-full mb-8">
+            <div className="flex flex-col items-center h-[320px] md:h-[280px] w-[280px] md:w-full mb-8">
               {/* Badge (always at top) */}
-              <div className="shrink-0 mb-6">
+              <div className="shrink-0 mb-2 mdmb-6">
                 <span
                   className="inline-flex items-center gap-2 text-md font-semibold px-4 py-1.5 rounded-full backdrop-blur-sm border"
                   style={{
@@ -234,14 +234,14 @@ export default function HeroSlider() {
               {/* Title & Body Container (centered in remaining space) */}
               <div className="flex-1 flex flex-col justify-center items-center w-full">
                 {/* Title */}
-                <h1 className="text-white font-bold md:text-2xl lg:text-5xl text-xl leading-tight mb-5 whitespace-pre-line text-center w-full">
+                <h1 className="text-white font-bold text-md md:text-2xl lg:text-5xl text-xl leading-tight mb-5 whitespace-pre-line text-center w-full">
                   {slide.title}
                 </h1>
 
                 {/* Body paragraphs */}
                 <div className="flex flex-col gap-3 items-center w-full">
                   {slide.body.map((p, i) => (
-                    <p key={i} className="text-base lg:text-lg leading-relaxed max-w-[1000px] text-center" style={{ color: 'rgba(255,255,255,0.80)' }}>
+                    <p key={i} className="text-base text-xs md:text-lg lg:text-lg leading-relaxed max-w-[1000px] text-center" style={{ color: 'rgba(255,255,255,0.80)' }}>
                       {p}
                     </p>
                   ))}
@@ -250,7 +250,7 @@ export default function HeroSlider() {
             </div>
 
             {/* CTA buttons */}
-            <div className="flex flex-wrap gap-3 mt-4 justify-center">
+            <div className="flex flex-wrap gap-3 mt-[-30px] md:mt-4 justify-center">
               <a
                 href={CALENDLY_URL}
                 target="_blank"
@@ -291,7 +291,7 @@ export default function HeroSlider() {
       </button>
 
       {/* Progress dots */}
-      <div className="absolute bottom-20 left-1/2 -translate-x-1/2 flex items-center gap-2">
+      <div className="absolute bottom-20 left-1/2 -translate-x-1/2 hidden md:flex items-center gap-2">
         {slides.map((_, i) => (
           <button
             key={i}
@@ -306,7 +306,7 @@ export default function HeroSlider() {
       {/* "Descubrí más" scroll indicator */}
       <button
         onClick={() => document.getElementById('nosotros')?.scrollIntoView({ behavior: 'smooth' })}
-        className="absolute bottom-5 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 group"
+        className="absolute bottom-2 md:bottom-5 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 group"
         aria-label={discoverLabels[lang]}
       >
         <span
