@@ -112,7 +112,7 @@ const jsonLd = {
   contactPoint: {
     '@type': 'ContactPoint',
     email: 'contacto@somosasegurate.com',
-    telephone: '+59893300617',
+    telephone: '+59894022035',
     contactType: 'customer service',
   },
   priceRange: '$$$$',
